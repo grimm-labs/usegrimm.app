@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function Header() {
     return (
         <header className="bg-white">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex-1 md:flex md:items-center md:gap-12">
-                        <a className="block text-green-600" href="#">
+                        <Link href={"/"} className="block text-green-600">
                             <span className="sr-only">Home</span>
                             <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -12,17 +14,20 @@ export default function Header() {
                                     fill="currentColor"
                                 />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                     <div className="md:flex md:items-center md:gap-12">
                         <nav aria-label="Global" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <a className="font-medium text-gray-900" href="#">X(Formely Twitter)</a>
+                                    <Link href={"/faq"} className="text-gray-500 transition hover:opacity-75">FAQ</Link>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/grimmapp" target="_blank" className="text-gray-500 transition hover:opacity-75">X(Formely Twitter)</a>
                                 </li>
 
                                 <li>
-                                    <a className="font-medium text-gray-900" href="#">LinkedIn</a>
+                                    <a href="https://linkedin.com/company/grimm" target="_blank" className="text-gray-500 transition hover:opacity-75">LinkedIn</a>
                                 </li>
                             </ul>
                         </nav>
