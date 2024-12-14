@@ -13,7 +13,7 @@ export const Donation = () => {
 
       {/* Description */}
       <p className="text-gray-600 text-sm mb-6">
-        Support Grimm App by donating Bitcoin—scan the QR code or copy the address below. Thank you for your generosity!
+        Support Grimm App by donating Bitcoin — scan the QR code or copy the address below.
       </p>
 
       {/* QR Code */}
