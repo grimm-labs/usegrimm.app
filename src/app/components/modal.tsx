@@ -58,18 +58,15 @@ export const Modal: React.FC<ModalProps> = ({
 
             {/* Modal Container */}
             <div className="fixed inset-0 z-10 w-screen overflow-y-auto flex items-center justify-center">
-                <div className={`relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all duration-300 ${
+                <div 
+                    className={`relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all duration-300 ${
                     isOpen 
                         ? "scale-100 translate-y-0 opacity-100" 
                         : "scale-95 translate-y-4 opacity-0"
                 } sm:w-full ${sizeClasses[size]}`}>
                     {/* Modal Content */}
                     <div className="grid justify-items-end pt-4 pr-4">
-                        <IoIosCloseCircle
-                            size={45}
-                            onClick={onClose}
-                            className="text-red-500 cursor-pointer"
-                        />
+                        <IoIosCloseCircle size={45} onClick={onClose} className="text-red-500 cursor-pointer"/>
                     </div>
                     {content}
                 </div>
