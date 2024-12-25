@@ -7,8 +7,8 @@ export default function FAQ() {
     <div className="flex flex-col justify-between min-h-screen">
       <Header />
       <div className="container mx-auto px-4 py-6">
-        <h1 className="text-4xl font-bold text-center">Frequently Asked Questions (FAQ)</h1>
-        <p className="mt-2 text-lg text-center">Everything you need to know about our self-custodial Bitcoin wallet.</p>
+        <h1 className="text-4xl font-bold text-center text-gray-600 mb-8">Frequently Asked Questions (FAQ)</h1>
+        <p className="mt-2 text-lg text-center text-gray-600 mb-8">Everything you need to know about our self-custodial Bitcoin wallet.</p>
         <div className="flex flex-col">
           <FAQItem title="What is a self-custodial wallet?" content="A self-custodial wallet is a type of wallet where you have full control and ownership of your private keys. This means you are the only one with access to your funds, without relying on a third party. It’s crucial to securely back up your private keys to avoid losing access to your Bitcoin." />
           <FAQItem title="Can I buy and sell Bitcoin directly through the app?" content="Yes! Our app allows you to buy and sell Bitcoin directly, provided you complete a Know Your Customer (KYC) identity verification process. This ensures compliance with local regulations and the security of your transactions." />

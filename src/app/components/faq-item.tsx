@@ -28,8 +28,8 @@ export const FAQItem: React.FC<FAQItemProps> = ({
                 className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
                 onClick={toggleOpen}
             >
-                <h2 className="text-lg font-medium">{title}</h2>
-                <span className="relative size-5 shrink-0">
+                <h2 className="text-lg font-bold">{title}</h2>
+                <span className="relative size-5 shrink-0 text-primary-600">
                     {!isOpen ? (
                         <IoMdAdd
                             className="size-5 transition-all duration-300 ease-in-out"
