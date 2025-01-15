@@ -11,7 +11,7 @@ export default function Privacy() {
           <p className="text-sm md:text-base text-gray-600 mb-4 text-center">Last updated: December 22, 2024</p>
 
           <p className="mb-6">
-            Grimm Technologies ("us", "we", or "our") operates the Grimm App software application (the "Service").
+            Grimm Technologies (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;) operates the Grimm App software application (the &quot;Service&quot;).
             This Privacy Policy explains how we collect, use, and protect your Personal Information when you use the Service.
             By using the Service, you agree to the collection and use of information as outlined in this policy.
           </p>
@@ -19,12 +19,12 @@ export default function Privacy() {
           <h2 className="text-xl font-semibold text-blue-600 mb-4">Information Collection and Use</h2>
           <p className="mb-6">
             While using our Service, we may ask you to provide certain personally identifiable information such as your name,
-            email address, or other details ("Personal Information"). This information is used to improve your experience with the Service.
+            email address, or other details (&quot;Personal Information&quot;). This information is used to improve your experience with the Service.
           </p>
 
           <h2 className="text-xl font-semibold text-blue-600 mb-4">Log Data</h2>
           <p className="mb-6">
-            We may collect information sent by your browser when you access the Service ("Log Data"). This data may include
+            We may collect information sent by your browser when you access the Service (&quot;Log Data&quot;). This data may include
             your IP address, browser type, pages visited, and other diagnostic information. We may use third-party services
             like Google Analytics to analyze this data.
           </p>

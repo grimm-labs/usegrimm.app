@@ -10,7 +10,7 @@ export default function Terms() {
         <p className="text-sm text-gray-500 text-center mb-8">Last Updated: December 22, 2024</p>
 
         <div className="space-y-6">
-          <p>Welcome to <strong>Grimm App</strong>, your Bitcoin wallet. Please read these Terms of Use ("Terms") carefully before using the Grimm App software application (the "Service"), operated by Grimm Technologies ("we", "our", or "us").</p>
+          <p>Welcome to <strong>Grimm App</strong>, your Bitcoin wallet. Please read these Terms of Use (&quot;Terms&quot;) carefully before using the Grimm App software application (the &quot;Service&quot;), operated by Grimm Technologies (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;).</p>
 
           <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access the Service.</p>
 
@@ -38,7 +38,7 @@ export default function Terms() {
           <p>Grimm App does not store private keys, passwords, or recovery phrases. It is your responsibility to secure your device and maintain the confidentiality of your credentials. We are not liable for any loss of funds due to unauthorized access or misuse.</p>
 
           <h2 className="text-2xl font-semibold text-gray-700">Disclaimer of Warranties</h2>
-          <p>The Service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties regarding the reliability, availability, or suitability of the Service for your purposes. Use of the Service is at your sole risk.</p>
+          <p>The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. We make no warranties regarding the reliability, availability, or suitability of the Service for your purposes. Use of the Service is at your sole risk.</p>
 
           <h2 className="text-2xl font-semibold text-gray-700">Limitation of Liability</h2>
           <p>To the fullest extent permitted by law, Grimm Technologies shall not be held liable for any damages, including but not limited to loss of funds, data, or profits arising from your use or inability to use the Service.</p>

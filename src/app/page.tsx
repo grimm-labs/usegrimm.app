@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
+import logo from "@/app/assets/screenshot.png";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function Home() {
             </h1>
 
             <blockquote className="text-lg text-gray-600 italic border-l-4 border-orange-600 pl-6 py-2">
-              "Bitcoin is the most important invention in the history of the world since the Internet."
+              Bitcoin is the most important invention in the history of the world since the Internet.
               <footer className="mt-3 font-s  emibold text-gray-800 text-base">
                 — Roger Ver • Bitcoin angel investor and evangelist
               </footer>
@@ -46,7 +47,7 @@ export default function Home() {
             <div className="space-y-6">
               <button
                 onClick={() => setIsDownloadModalOpen(true)}
-                className="bg-green-600 px-8 py-4 rounded-full text-white font-semibold hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all"
+                className="bg-green-600 px-8 py-4 rounded-full text-white transition-colors transition-all"
               >
                 Download Grimm App
               </button>
@@ -61,7 +62,7 @@ export default function Home() {
             <div className="relative z-10 rounded-3xl overflow-hidden">
               <div className="relative w-full max-h-[600px]">
                 <Image
-                  src={require("@/app/assets/screenshot.png")}
+                  src={logo}
                   alt="Grimm App Interface"
                   className="object-scale-down w-full h-auto"
                   style={{height: 600}}
