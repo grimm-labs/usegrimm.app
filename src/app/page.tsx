@@ -17,21 +17,16 @@ export default function Home() {
       <div className="absolute inset-0 pointer-events-none z-0 opacity-10" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E...%22)`
       }} />
-
       <Header />
-
       <main className="container flex-1 flex mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col w-full md:flex-row items-center gap-16">
           {/* Left Content */}
           <div className="flex-1 space-y-10 max-w-xl">
-            {/* <div>
-              <span className="inline-flex items-center gap-2 text-orange-600 px-6 py-3 rounded-full font-thin bg-orange-50/80 border border-orange-200 shadow-sm">
-                <span className="font-semibold text-sm text-white bg-orange-600 py-1 px-3 sm:px-1 rounded-full">
-                  Grimm App
-                </span>
-                <span className="text-sm">Bitcoin superapp for Financial Freedom</span>
+            <div>
+              <span className="inline-flex items-center gap-2 text-orange-600 px-6 py-3 rounded-full font-thin bg-orange-50/80 border border-orange-200 shadow-lg">
+                <span className="text-sm">More than a wallet, <span className="font-bold">Grimm App</span> is your companion to financial freedom</span>
               </span>
-            </div> */}
+            </div>
 
             <h1 className="text-5xl md:text-4xl font-bold leading-tight tracking-tight">
               Bitcoin superapp for Financial Freedom
@@ -45,14 +40,13 @@ export default function Home() {
             </blockquote>
 
             <div className="space-y-6">
-              <button
-                onClick={() => setIsDownloadModalOpen(true)}
-                className="bg-green-600 px-8 py-4 rounded-full text-white transition-colors transition-all"
-              >
-                Download Grimm App
-              </button>
+              <a href="https://tally.so/r/3lYBrV" target="_blank" className="text-sm">
+                <button className="bg-green-600 px-3 py-2 rounded-full text-white transition-colors transition-all shadow-lg">
+                  Join waitlist
+                </button>`
+              </a>
               <p className="text-sm text-gray-500 pl-2">
-                Available on iOS, Android, and as direct APK download
+                Will be available on iOS, Android, and as direct APK download
               </p>
             </div>
           </div>

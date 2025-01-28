@@ -20,14 +20,20 @@ export default function Header() {
                         <nav aria-label="Global" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <Link href={"/faq"} className="text-gray-500 transition hover:opacity-75">FAQ</Link>
+                                    <Link href={"faq"} className="text-gray-500 transition hover:opacity-75">FAQ</Link>
                                 </li>
                                 <li>
-                                    <a href="https://x.com/grimmapp" target="_blank" className="text-gray-500 transition hover:opacity-75">X(Formely Twitter)</a>
+                                    <a href="https://x.com/useGrimmApp" target="_blank" className="text-gray-500 transition hover:opacity-75">X(Formely Twitter)</a>
                                 </li>
-
                                 <li>
-                                    <a href="https://linkedin.com/company/grimm" target="_blank" className="text-gray-500 transition hover:opacity-75">LinkedIn</a>
+                                    <a href="https://linkedin.com/company/grimm-app" target="_blank" className="text-gray-500 transition hover:opacity-75">LinkedIn</a>
+                                </li>
+                                <li>
+                                    <a href="https://tally.so/r/3lYBrV" target="_blank">
+                                        <button className="bg-green-600 px-3 py-2 rounded-full text-white transition-colors transition-all shadow-lg">
+                                            Join waitlist
+                                        </button>`
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
