@@ -91,8 +91,8 @@ export default function Header() {
           <nav
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } absolute top-16 right-0 z-50 w-full bg-white border-t border-gray-200 shadow-md
-            md:static md:block md:border-0 md:shadow-none md:w-auto`}
+            } absolute top-16 right-0 z-50 w-full bg-white border-t border-gray-200
+            md:static md:block md:border-0 md:w-auto`}
           >
             <ul
               className="
@@ -139,7 +139,7 @@ export default function Header() {
                   rel="noreferrer"
                   className="block px-2 py-1"
                 >
-                  <button className="bg-green-600 px-3 py-2 rounded-full text-white transition-colors transition-all shadow-lg hover:bg-green-700 w-full md:w-auto">
+                  <button className="bg-green-600 px-3 py-2 rounded-full text-white transition-colors transition-all hover:bg-green-700 w-full md:w-auto">
                     Join waitlist
                   </button>
                 </a>

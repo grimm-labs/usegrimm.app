@@ -1,22 +1,30 @@
 "use client"
 
 import React, { useState } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
-import logo from "@/app/assets/screenshot.png";
+
+import logo1 from "@/app/assets/screen_home.png";
+import logo2 from "@/app/assets/screen_receive.png";
+import logo3 from "@/app/assets/screen_settings.png";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+  const images = [logo1, logo2, logo3];
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="flex flex-col justify-between min-h-screen relative overflow-hidden bg-gradient-to-br from-white to-gray-50">
       {/* Background Pattern */}
-      <div className="absolute inset-0 pointer-events-none z-0 opacity-10" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E...%22)`
-      }} />
+      <div
+        className="absolute inset-0 pointer-events-none z-0 opacity-10"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E...%22)`
+        }}
+      />
       <Header />
       <main className="container flex-1 flex mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 my-6">
         <div className="flex flex-col w-full md:flex-row items-center gap-16">
@@ -131,19 +139,29 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* Right Content - App Screenshot */}
           <div className="flex-1 relative max-w-md">
             <div className="relative z-10 rounded-3xl overflow-hidden">
-              <div className="relative w-full max-h-[600px]">
+              <div className="relative w-full max-h-[600px] transition-all duration-500 ease-in-out">
                 <Image
-                  src={logo}
-                  alt="Grimm App Interface"
+                  key={activeIndex}
+                  src={images[activeIndex]}
+                  alt={`Grimm App Interface ${activeIndex + 1}`}
                   className="object-scale-down w-full h-auto"
-                  style={{height: 600}}
+                  style={{ height: 600 }}
                 />
               </div>
             </div>
-            {/* Decorative Elements */}
+            <div className="flex justify-center mt-4 space-x-4">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveIndex(index)}
+                  className={`w-4 h-4 rounded-full transition-colors ${
+                    activeIndex === index ? "bg-green-600" : "bg-gray-300"
+                  }`}
+                ></button>
+              ))}
+            </div>
             <div className="absolute -top-8 -right-8 w-72 h-72 bg-orange-600/10 rounded-full blur-lg" />
             <div className="absolute -bottom-8 -left-8 w-72 h-72 bg-green-600/10 rounded-full blur-lg" />
           </div>
