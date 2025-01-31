@@ -32,41 +32,77 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* BOUTON HAMBURGER (mobile) */}
-          <div className="md:hidden">
+          {/* Zone Mobile (HAMBURGER + BOUTON JOIN WAITLIST) */}
+          <div className="flex items-center gap-2 md:hidden">
+            <a
+              href="https://tally.so/r/3lYBrV"
+              target="_blank"
+              rel="noreferrer"
+              className="block"
+            >
+              <button className="bg-green-600 px-3 py-2 rounded-full text-white text-sm transition-colors transition-all hover:bg-green-700">
+                Join waitlist
+              </button>
+            </a>
+
             <button
               type="button"
               onClick={toggleMenu}
               className="text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-600"
             >
-              <span className="sr-only">Open Menu</span>
-              {/* Icône Hamburger */}
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <span className="sr-only">
+                {isMenuOpen ? "Close Menu" : "Open Menu"}
+              </span>
+              {isMenuOpen ? (
+                /* Icône Croix */
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                /* Icône Hamburger */
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
             </button>
           </div>
 
           {/* NAVIGATION (Desktop & Mobile) */}
           <nav
-            // Sur desktop (md+), la nav est toujours affichée (block)
-            // Sur mobile, on l'affiche quand isMenuOpen est true
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } absolute top-16 right-0 z-50 w-full bg-white border-t border-gray-200 shadow-md 
+            } absolute top-16 right-0 z-50 w-full bg-white border-t border-gray-200 shadow-md
             md:static md:block md:border-0 md:shadow-none md:w-auto`}
           >
-            <ul className="flex flex-col p-4 md:flex-row md:items-center md:gap-6 md:p-0 text-sm">
+            <ul
+              className="
+                flex 
+                flex-col items-center justify-center text-center
+                p-4 
+                md:flex-row md:items-center md:justify-start md:gap-6 md:p-0 
+                text-sm
+              "
+            >
               <li>
                 <Link
                   href="/faq"
@@ -95,7 +131,8 @@ export default function Header() {
                   LinkedIn
                 </a>
               </li>
-              <li>
+              {/* Bouton Join Waitlist UNIQUEMENT sur Desktop */}
+              <li className="hidden md:block">
                 <a
                   href="https://tally.so/r/3lYBrV"
                   target="_blank"

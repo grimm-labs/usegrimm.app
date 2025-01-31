@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Grimm - The only Bitcoin Wallet you need",
+  title: "Grimm App- The only Bitcoin Wallet you need",
   description: "Experience the future of finance with Grimm. Send, receive, and spend bitcoin effortlessly wherever you are. Enjoy seamless transactions with absolutely zero fees!",
 };
 

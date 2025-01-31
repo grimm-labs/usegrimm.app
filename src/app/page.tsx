@@ -31,7 +31,6 @@ export default function Home() {
                   text-orange-600 
                   bg-orange-50/80 
                   border border-orange-200 
-                  shadow 
                   rounded-full 
                   px-4 py-2 
                   text-xs

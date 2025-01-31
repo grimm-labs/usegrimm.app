@@ -19,12 +19,7 @@ export default function Footer() {
       )}
 
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        {/* 
-          On empile d'abord la liste <ul>, puis le paragraphe <p> dans le code.
-          Ensuite, on ajuste leur ordre en CSS avec les classes `order-*`.
-        */}
         <div className="flex flex-col items-center gap-4 py-4 sm:flex-row sm:justify-between">
-          {/* --- LISTE DE LIENS --- */}
           <ul className="flex flex-wrap justify-center gap-4 text-sm order-1 sm:order-2">
             <li>
               <Link href="/terms" className="text-gray-500 transition hover:opacity-75">
@@ -50,10 +45,8 @@ export default function Footer() {
               </button>
             </li>
           </ul>
-
-          {/* --- PARAGRAPHE COPYRIGHT --- */}
           <p className="text-sm text-gray-500 text-center sm:text-left order-2 sm:order-1">
-            &copy; 2022. Grimm Technologies. All rights reserved.
+            &copy; 2022. Grimm App. All rights reserved.
           </p>
         </div>
       </div>
