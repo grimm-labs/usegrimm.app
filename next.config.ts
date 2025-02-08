@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: "/usegrimm.app",
-  assetPrefix: "/usegrimm.app",
+  output: 'export',
 };
 
 export default nextConfig;
