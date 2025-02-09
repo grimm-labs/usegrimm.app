@@ -12,7 +12,7 @@ jobs:
       BUCKET: usegrimm.app
       DIST: out
       REGION: us-east-1
-      DIST_ID: Cloudfront_id
+      DIST_ID: EOHMAJ2PY9NR8
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -39,19 +39,13 @@ jobs:
           aws-region: ${{ env.REGION }}
 
       - name: Install Dependencies
-        run: |
-          node --version
-          npm ci --production
+        run: npm ci --production
 
       - name: Build Static Website
         run: npm run build
 
       - name: Copy files to the production website with the AWS CLI
-        run: |
-          aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
+        run: aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
 
-      - name: Copy files to the production website with the AWS CLI
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ env.DIST_ID }} \
-            --paths "/*"
+      - name: Cloudfront invalidation
+        run: aws cloudfront create-invalidation --distribution-id ${{ env.DIST_ID }} --paths "/*"
