@@ -36,14 +36,14 @@ export default function Footer() {
                 Contact Us
               </a>
             </li>
-            <li>
+            {/* <li>
               <button
                 onClick={() => setIsDonationModalOpen(true)}
                 className="text-gray-500 transition hover:opacity-75"
               >
                 Donate
               </button>
-            </li>
+            </li> */}
           </ul>
           <p className="text-sm text-gray-500 text-center sm:text-left order-2 sm:order-1">
             &copy; 2022. Grimm App. All rights reserved.
