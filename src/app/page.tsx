@@ -17,7 +17,7 @@ export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="flex flex-col justify-between min-h-screen relative overflow-hidden bg-gradient-to-br from-white to-gray-50">
+    <div className="flex flex-col justify-between min-h-screen relative overflow-hidden from-white to-gray-50">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 pointer-events-none z-0 opacity-10"

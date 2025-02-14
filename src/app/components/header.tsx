@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white border-b border-gray-100">
+    <header className="border-b border-gray-100">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* LOGO */}
@@ -91,7 +91,7 @@ export default function Header() {
           <nav
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } absolute top-16 right-0 z-50 w-full bg-white border-t border-gray-200
+            } absolute top-16 right-0 z-50 w-full border-t border-gray-200
             md:static md:block md:border-0 md:w-auto`}
           >
             <ul

@@ -16,6 +16,21 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-page {
+  height: 100vh;
+  overflow: auto;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  /* background-color: red; */
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
 }

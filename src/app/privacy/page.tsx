@@ -6,7 +6,7 @@ export default function Privacy() {
     <div className="flex flex-col justify-between min-h-screen">
       <Header />
       <div className="flex items-center justify-center min-h-screen">
-        <div className="bg-white p-6 md:p-12 max-w-4xl w-full">
+        <div className=" p-6 md:p-12 max-w-4xl w-full">
           <h1 className="text-2xl md:text-4xl font-bold text-center text-blue-600 mb-6">Privacy Policy</h1>
           <p className="text-sm md:text-base text-gray-600 mb-4 text-center">Last updated: December 22, 2024</p>
 

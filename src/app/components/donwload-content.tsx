@@ -47,7 +47,7 @@ export const DownloadContent = () => {
                         </div>
                     </button>
 
-                    <button className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg px-6 py-3 hover:opacity-90 transition-opacity">
+                    <button className="w-full flex items-center justify-center gap-3 from-purple-600 to-blue-500 text-white rounded-lg px-6 py-3 hover:opacity-90 transition-opacity">
                         <FaDownload className="text-xl" />
                         <div className="text-left">
                             <div className="text-xs">Download</div>

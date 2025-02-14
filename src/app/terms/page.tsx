@@ -5,7 +5,7 @@ export default function Terms() {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <Header />
-      <div className="container mx-auto p-6 max-w-4xl bg-white">
+      <div className="container mx-auto p-6 max-w-4xl">
         <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Terms of Use</h1>
         <p className="text-sm text-gray-500 text-center mb-8">Last Updated: December 22, 2024</p>
 
