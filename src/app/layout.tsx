@@ -14,8 +14,29 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Grimm App- The only Bitcoin Wallet you need",
-  description: "Experience the future of finance with Grimm. Send, receive, and spend bitcoin effortlessly wherever you are. Enjoy seamless transactions with absolutely zero fees!",
+  title: "Grimm App - Your Bitcoin Superapp",
+  description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+  openGraph: {
+    title: "Grimm App - Your Bitcoin Superapp",
+    description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+    url: 'https://usegrimm.app',
+    siteName: 'Grimm App',
+    images: [
+      {
+        url: 'https://usegrimm.app/_next/static/media/og-image.png',
+        width: 1200,
+        height: 630,
+      },
+      {
+        url: 'https://usegrimm.app/_next/static/media/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Grimm App - Your Bitcoin Superapp',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
