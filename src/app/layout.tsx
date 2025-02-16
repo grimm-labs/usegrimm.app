@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     siteName: 'Grimm App',
     images: [
       {
-        url: 'https://i.ibb.co/JF73g3wt/Group-9.png',
+        url: 'https://usegrimm.app/og-image.png',
         width: 1200,
         height: 630,
       },
       {
-        url: 'https://i.ibb.co/JF73g3wt/Group-9.png',
+        url: 'https://usegrimm.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Grimm App - Your Bitcoin Superapp',
