@@ -8,16 +8,14 @@ import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
 
 import logo1 from "@/app/assets/screen_home.png";
-import logo2 from "@/app/assets/screen_receive.png";
-import logo3 from "@/app/assets/screen_settings.png";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
-  const images = [logo1, logo2, logo3];
+  const images = [logo1];
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="flex flex-col justify-between min-h-screen relative overflow-hidden from-white to-gray-50">
+    <div className="flex flex-col justify-between min-h-screen relative from-white to-gray-50">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 pointer-events-none z-0 opacity-10"
@@ -150,17 +148,6 @@ export default function Home() {
                   style={{ height: 600 }}
                 />
               </div>
-            </div>
-            <div className="flex justify-center mt-4 space-x-4">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  className={`w-4 h-4 rounded-full transition-colors ${
-                    activeIndex === index ? "bg-green-600" : "bg-gray-300"
-                  }`}
-                ></button>
-              ))}
             </div>
             <div className="absolute -top-8 -right-8 w-72 h-72 bg-orange-600/10 rounded-full blur-lg" />
             <div className="absolute -bottom-8 -left-8 w-72 h-72 bg-green-600/10 rounded-full blur-lg" />
