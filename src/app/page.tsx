@@ -7,13 +7,13 @@ import Header from "./components/header";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
 
-import screenshot from "@/app/assets/screen_home.png";
+import screenshot from "@/app/assets/screenshot.png";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
 
   return (
-    <div className="flex flex-col justify-between min-h-screen relative from-white to-gray-50">
+    <div className="flex flex-col justify-between min-h-screen relative from-white to-gray-50 overflow-x-hidden">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 pointer-events-none z-0 opacity-10"
@@ -51,16 +51,16 @@ export default function Home() {
             </div>
             <h1
               className="
-                font-bold 
+                 
                 tracking-tight 
-                leading-tight 
+                leading-7 
                 text-3xl 
                 sm:text-4xl 
                 md:text-5xl 
-                lg:text-6xl
+                lg:text-5xl
               "
             >
-              Bitcoin superapp for Financial Freedom
+              Grimm App – The next-gen self-custodial Bitcoin superapp for seamless Lightning payments. ⚡ 🚀
             </h1>
             <blockquote
               className="
