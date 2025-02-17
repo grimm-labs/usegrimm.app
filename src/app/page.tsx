@@ -7,12 +7,10 @@ import Header from "./components/header";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
 
-import logo1 from "@/app/assets/screen_home.png";
+import screenshot from "@/app/assets/screen_home.png";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
-  const images = [logo1];
-  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="flex flex-col justify-between min-h-screen relative from-white to-gray-50">
@@ -140,13 +138,7 @@ export default function Home() {
           <div className="flex-1 relative max-w-md">
             <div className="relative z-10 rounded-3xl overflow-hidden">
               <div className="relative w-full max-h-[600px] transition-all duration-500 ease-in-out">
-                <Image
-                  key={activeIndex}
-                  src={images[activeIndex]}
-                  alt={`Grimm App Interface ${activeIndex + 1}`}
-                  className="object-scale-down w-full h-auto"
-                  style={{ height: 600 }}
-                />
+                <Image src={screenshot} alt="Grimm App screenshot" className="object-scale-down w-full h-auto" style={{ height: 600 }} />
               </div>
             </div>
             <div className="absolute -top-8 -right-8 w-72 h-72 bg-orange-600/10 rounded-full blur-lg" />
