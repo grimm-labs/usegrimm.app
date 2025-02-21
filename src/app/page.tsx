@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -18,7 +18,7 @@ export default function Home() {
       <div
         className="absolute inset-0 pointer-events-none z-0 opacity-10"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E...%22)`
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E...%22)`,
         }}
       />
       <Header />
@@ -26,41 +26,21 @@ export default function Home() {
         <div className="flex flex-col w-full md:flex-row items-center gap-16">
           {/* Left Content */}
           <div className="flex-1 max-w-xl space-y-10">
-            <div>
+            <div className="w-full text-center">
               <span
-                className="
-                  inline-flex 
-                  items-center 
-                  gap-2 
-                  text-orange-600 
-                  bg-orange-50/80 
-                  border border-orange-200 
-                  rounded-full 
-                  px-4 py-2 
-                  text-xs
-                  sm:px-6 sm:py-3
-                  sm:text-sm 
-                  md:text-base 
-                  font-thin
-                "
+                className="inline-flex items-center gap-2 text-orange-600 bg-orange-50/80 border border-orange-200 rounded-full px-4 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm md:text-base font-thin"
               >
                 <span className="leading-tight">
-                  More than a wallet, <span className="font-bold">Grimm App</span> is your companion to financial freedom
+                  More than a wallet,{" "}
+                  <span className="font-bold">Grimm App</span> is your companion
+                  to financial freedom
                 </span>
               </span>
             </div>
             <h1
-              className="
-                 
-                tracking-tight 
-                leading-7 
-                text-3xl 
-                sm:text-4xl 
-                md:text-5xl 
-                lg:text-5xl
-              "
+              className="tracking-tight leading-8 text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
             >
-              Grimm App – The next-gen self-custodial Bitcoin superapp for seamless Lightning payments. ⚡ 🚀
+              The next-gen self-custodial Bitcoin superapp for seamless Lightning payments. ⚡ 🚀
             </h1>
             <blockquote
               className="
@@ -76,7 +56,8 @@ export default function Home() {
                 text-gray-600
               "
             >
-              Bitcoin is the most important invention in the history of the world since the Internet.
+              Bitcoin is the most important invention in the history of the
+              world since the Internet.
               <footer
                 className="
                   mt-3 
@@ -101,8 +82,8 @@ export default function Home() {
                 sm:text-left
               "
             >
-              <a 
-                href="https://tally.so/r/3lYBrV" 
+              <a
+                href="https://tally.so/r/3lYBrV"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -138,7 +119,12 @@ export default function Home() {
           <div className="flex-1 relative max-w-md">
             <div className="relative z-10 rounded-3xl overflow-hidden">
               <div className="relative w-full max-h-[600px] transition-all duration-500 ease-in-out">
-                <Image src={screenshot} alt="Grimm App screenshot" className="object-scale-down w-full h-auto" style={{ height: 600 }} />
+                <Image
+                  src={screenshot}
+                  alt="Grimm App screenshot"
+                  className="object-scale-down w-full h-auto"
+                  style={{ height: 600 }}
+                />
               </div>
             </div>
             <div className="absolute -top-8 -right-8 w-72 h-72 bg-orange-600/10 rounded-full blur-lg" />

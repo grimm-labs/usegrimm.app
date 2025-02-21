@@ -84,7 +84,7 @@ export default function Header() {
 
           <nav
             className={`${
-              isMenuOpen ? "block" : "hidden"
+              isMenuOpen ? "block bg-white border shadow" : "hidden"
             } absolute top-16 right-0 z-50 w-full border-t border-gray-200
             md:static md:block md:border-0 md:w-auto`}
           >
