@@ -14,13 +14,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-between min-h-screen relative from-white to-gray-50 overflow-x-hidden">
-      {/* Background Pattern */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0 opacity-10"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E...%22)`,
-        }}
-      />
       <Header />
       <main className="container flex-1 flex mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 my-6">
         <div className="flex flex-col w-full md:flex-row items-center gap-16">
@@ -37,11 +30,9 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <h1
-              className="tracking-tight leading-8 text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
-            >
+            <div className="tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-5xl my-2">
               The next-gen self-custodial Bitcoin superapp for seamless Lightning payments. ⚡ 🚀
-            </h1>
+            </div>
             <blockquote
               className="
                 border-l-4 

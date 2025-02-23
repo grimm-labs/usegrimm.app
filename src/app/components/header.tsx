@@ -23,7 +23,7 @@ export default function Header() {
               <Image
                 src={logo}
                 alt="Grimm App"
-                style={{ width: 50 }}
+                style={{ width: 45 }}
               />
             </Link>
           </div>
