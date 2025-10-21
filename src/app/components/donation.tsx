@@ -13,7 +13,8 @@ export const Donation = () => {
 
       {/* Description */}
       <p className="text-gray-600 text-sm mb-6">
-        Support Grimm App by donating Bitcoin — scan the QR code or copy the address below.
+        Support Grimm App by donating Bitcoin — scan the QR code or copy the
+        address below.
       </p>
 
       {/* QR Code */}
@@ -27,15 +28,22 @@ export const Donation = () => {
       </div>
 
       {/* Bitcoin Address */}
-      <div className="bg-green-500 text-white text-sm font-mono px-4 py-2 rounded-md mb-4 cursor-pointer hover:bg-green-600"
-           onClick={() => navigator.clipboard.writeText("bc1qh5flgxstwg07mcuphxw0g8avnr2ecmtx4susyg")}
-           title="Click to copy">
+      <div
+        className="bg-green-500 text-white text-sm font-mono px-4 py-2 rounded-md mb-4 cursor-pointer hover:bg-green-600"
+        onClick={() =>
+          navigator.clipboard.writeText(
+            "bc1qh5flgxstwg07mcuphxw0g8avnr2ecmtx4susyg",
+          )
+        }
+        title="Click to copy"
+      >
         bc1qh5flgxstwg07mcuphxw0g8avnr2ecmtx4susyg
       </div>
 
       {/* Footer Note */}
       <p className="text-xs text-gray-500">
-        All donations will be used exclusively for the development and improvement of Grimm App. Thank you for your support!
+        All donations will be used exclusively for the development and
+        improvement of Grimm App. Thank you for your support!
       </p>
     </div>
   );

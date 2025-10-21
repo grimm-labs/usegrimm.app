@@ -1,136 +1,91 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import { Modal } from "./components/modal";
-import { DownloadContent } from "./components/donwload-content";
-
-import screenshot from "@/app/assets/screenshot.png";
+import { HeroSection } from "./components/home/hero-section";
+import { FeaturesSection } from "./components/home/features-section";
+import { TestimonialSection } from "./components/home/testimonial-section";
+import { FAQPreview } from "./components/home/faq-preview";
+import { motion } from "framer-motion";
+import { AnimatedSection } from "./components/home/animated-section";
 
 export default function Home() {
-  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
-
   return (
-    <div className="flex flex-col justify-between min-h-screen relative from-white to-gray-50 overflow-x-hidden">
+    <div className="flex flex-col justify-between min-h-screen relative overflow-x-hidden">
       <Header />
-      <main className="container flex-1 flex mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 my-6">
-        <div className="flex flex-col w-full md:flex-row items-center gap-16">
-          {/* Left Content */}
-          <div className="flex-1 max-w-xl space-y-10">
-            <div className="w-full text-center">
-              <span
-                className="inline-flex items-center gap-2 text-orange-600 bg-orange-50/80 border border-orange-200 rounded-full px-4 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm md:text-base font-thin"
+
+      <main className="flex-1 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+        {/* Hero Section */}
+        <HeroSection />
+
+        {/* Features Section */}
+        <FeaturesSection />
+
+        {/* Testimonial Section (remplace Quote) */}
+        <TestimonialSection />
+
+        {/* FAQ Preview */}
+        <FAQPreview />
+
+        {/* CTA Final */}
+        <AnimatedSection delay={0.3}>
+          <section className="py-12 md:py-20 text-center relative overflow-hidden">
+            {/* Background elements */}
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 h-48 md:w-64 md:h-64 bg-green-600/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-36 h-36 md:w-48 md:h-48 bg-orange-600/10 rounded-full blur-3xl" />
+
+            <div className="relative z-10">
+              <motion.h2
+                className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
               >
-                <span className="leading-tight">
-                  More than a wallet,{" "}
-                  <span className="font-bold">Grimm App</span> is your companion
-                  to financial freedom
-                </span>
-              </span>
-            </div>
-            <div className="tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-5xl my-2">
-              The next-gen self-custodial Bitcoin superapp for seamless Lightning payments. ⚡ 🚀
-            </div>
-            <blockquote
-              className="
-                border-l-4 
-                border-orange-600 
-                pl-4 
-                sm:pl-6 
-                py-2 
-                italic 
-                text-base
-                sm:text-lg
-                md:text-xl
-                text-gray-600
-              "
-            >
-              Bitcoin is the most important invention in the history of the
-              world since the Internet.
-              <footer
-                className="
-                  mt-3 
-                  font-semibold 
-                  text-gray-800 
-                  text-xs 
-                  sm:text-sm 
-                  md:text-base
-                "
+                Engineering Sovereignty
+              </motion.h2>
+
+              <motion.p
+                className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
               >
-                — Roger Ver • Bitcoin angel investor and evangelist
-              </footer>
-            </blockquote>
-            <div
-              className="
-                space-y-6 
-                flex 
-                flex-col 
-                items-center
-                text-center 
-                sm:items-start 
-                sm:text-left
-              "
-            >
-              <a
-                href="https://tally.so/r/3lYBrV"
-                target="_blank"
-                rel="noreferrer"
+                We build the tools and infrastructure you deserve to buy, sell,
+                hold, and spend Bitcoin without compromise.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <button
-                  className="
-                    bg-green-600 
-                    px-3 
-                    py-2 
-                    rounded-full 
-                    text-white 
-                    transition-colors
-                    shadow
-                    w-full 
-                    sm:w-auto
-                    hover:bg-green-700
-                  "
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.grimm.app"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  Join waitlist
-                </button>
-              </a>
-              <p
-                className="
-                  text-xs 
-                  sm:text-sm 
-                  text-gray-500 
-                  sm:pl-2
-                "
-              >
-                Will be available on iOS, Android, and as direct APK download
-              </p>
+                  <motion.button
+                    className="bg-green-600 px-6 py-3 md:px-8 md:py-4 rounded-full text-white font-semibold text-base md:text-lg hover:bg-green-700 transition-colors shadow-lg"
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow:
+                        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Download
+                  </motion.button>
+                </a>
+              </motion.div>
             </div>
-          </div>
-          <div className="flex-1 relative max-w-md">
-            <div className="relative z-10 rounded-3xl overflow-hidden">
-              <div className="relative w-full max-h-[600px] transition-all duration-500 ease-in-out">
-                <Image
-                  src={screenshot}
-                  alt="Grimm App screenshot"
-                  className="object-scale-down w-full h-auto"
-                  style={{ height: 600 }}
-                />
-              </div>
-            </div>
-            <div className="absolute -top-8 -right-8 w-72 h-72 bg-orange-600/10 rounded-full blur-lg" />
-            <div className="absolute -bottom-8 -left-8 w-72 h-72 bg-green-600/10 rounded-full blur-lg" />
-          </div>
-        </div>
+          </section>
+        </AnimatedSection>
       </main>
-      {isDownloadModalOpen && (
-        <Modal
-          isOpen={isDownloadModalOpen}
-          content={<DownloadContent />}
-          onClose={() => setIsDownloadModalOpen(false)}
-          size="xl"
-        />
-      )}
+
       <Footer />
     </div>
   );
