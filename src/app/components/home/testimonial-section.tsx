@@ -32,9 +32,9 @@ export const TestimonialSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <blockquote className="text-2xl md:text-3xl italic text-gray-700 leading-relaxed mb-6 max-w-4xl mx-auto">
-              "I built this wallet so that it would offer all the advanced
+              &ldquo;I built this wallet so that it would offer all the advanced
               features I want, but also that my mom could use it without being
-              confused."
+              confused.&rdquo;
             </blockquote>
             <footer className="text-xl font-semibold text-gray-600">
               — JONATHAN NENBA, founder of Grimm App
@@ -73,9 +73,9 @@ export const TestimonialSection = () => {
               <p className="text-gray-600 leading-relaxed text-lg">
                 Connect your Grimm App account to buy bitcoin, sell bitcoin and
                 make flat payments directly with your self-custodial wallet.
-                This is optional, and you don't have to link an account if you
-                don't want to. It's so easy, it feels like using a custodial
-                app!
+                This is optional, and you don&apos;t have to link an account if
+                you don&apos;t want to. It&apos;s so easy, it feels like using a
+                custodial app!
               </p>
             </motion.div>
           </div>

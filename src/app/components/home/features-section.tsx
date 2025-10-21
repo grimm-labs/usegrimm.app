@@ -151,8 +151,8 @@ export const FeaturesSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Many said it couldn't be done, but we've achieved our impossible
-              dream: the perfect Bitcoin wallet, for anyone.
+              Many said it couldn&apos;t be done, but we&apos;ve achieved our
+              impossible dream: the perfect Bitcoin wallet, for anyone.
             </motion.p>
           </div>
         </AnimatedSection>
