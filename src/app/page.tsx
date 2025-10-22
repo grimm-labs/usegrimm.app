@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { HeroSection } from "./components/home/hero-section";
@@ -9,11 +9,18 @@ import { TestimonialSection } from "./components/home/testimonial-section";
 import { FAQPreview } from "./components/home/faq-preview";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./components/home/animated-section";
+import { Modal } from "./components/modal";
+import { DownloadContent } from "./components/donwload-content";
 
 export default function Home() {
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+
+  const openDownloadModal = () => setIsDownloadModalOpen(true);
+  const closeDownloadModal = () => setIsDownloadModalOpen(false);
+
   return (
     <div className="flex flex-col justify-between min-h-screen relative overflow-x-hidden">
-      <Header />
+      <Header onDownloadClick={openDownloadModal} />
 
       <main className="flex-1 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 md:py-8">
         {/* Hero Section */}
@@ -57,36 +64,28 @@ export default function Home() {
                 hold, and spend Bitcoin without compromise.
               </motion.p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+              <button
+                onClick={openDownloadModal}
+                className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium"
               >
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.grimm.app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <motion.button
-                    className="bg-green-600 px-6 py-3 md:px-8 md:py-4 rounded-full text-white font-semibold text-base md:text-lg hover:bg-green-700 transition-colors shadow-lg"
-                    whileHover={{
-                      scale: 1.05,
-                      boxShadow:
-                        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Download
-                  </motion.button>
-                </a>
-              </motion.div>
+                Download
+              </button>
             </div>
           </section>
         </AnimatedSection>
       </main>
 
       <Footer />
+
+      {/* Modal au niveau racine */}
+      {isDownloadModalOpen && (
+        <Modal
+          isOpen={isDownloadModalOpen}
+          content={<DownloadContent />}
+          onClose={closeDownloadModal}
+          size="large"
+        />
+      )}
     </div>
   );
 }

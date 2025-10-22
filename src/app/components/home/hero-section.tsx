@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import phoneImage from "@/app/assets/screenshot.png";
 import googlePlayButton from "@/app/assets/googlePlay.png";
+import appStoreButton from "@/app/assets/appStore.png";
 
 export const HeroSection = () => {
   return (
@@ -28,9 +29,9 @@ export const HeroSection = () => {
             Start using GrimmApp
           </p>
 
-          <div className="space-y-4 flex justify-center lg:justify-start">
+          <div className="flex flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="https://play.google.com/store/apps/details?id=com.grimm.app"
+              href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
               target="_blank"
               rel="noreferrer"
               className="inline-block"
@@ -38,9 +39,18 @@ export const HeroSection = () => {
               <Image
                 src={googlePlayButton}
                 alt="Get it on Google Play"
-                className="h-14 md:h-16 w-auto hover:opacity-90 transition-opacity cursor-pointer"
-                width={220}
-                height={70}
+                className="w-full max-w-[180px] sm:max-w-[210px] hover:opacity-90 transition-opacity cursor-pointer"
+                width={180}
+                height={78}
+              />
+            </a>
+            <a href="#" className="inline-block">
+              <Image
+                src={appStoreButton}
+                alt="Download on the App Store"
+                className="w-full max-w-[180px] sm:max-w-[210px] hover:opacity-90 transition-opacity cursor-pointer"
+                width={180}
+                height={78}
               />
             </a>
           </div>

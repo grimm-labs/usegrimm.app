@@ -32,15 +32,15 @@ export const Modal: React.FC<ModalProps> = ({
   if (!isVisible) return null;
 
   const sizeClasses = {
-    small: "sm:max-w-sm",
-    medium: "sm:max-w-lg",
-    large: "sm:max-w-2xl",
-    xl: "sm:max-w-4xl",
+    small: "max-w-sm",
+    medium: "max-w-lg",
+    large: "max-w-2xl",
+    xl: "max-w-4xl",
   };
 
   return (
     <div
-      className={`fixed inset-0 z-10 transition-opacity duration-300 ${
+      className={`fixed inset-0 z-50 transition-opacity duration-300 ${
         isOpen ? "opacity-100" : "opacity-0"
       }`}
       aria-labelledby="modal-title"
@@ -57,22 +57,24 @@ export const Modal: React.FC<ModalProps> = ({
       ></div>
 
       {/* Modal Container */}
-      <div className="fixed inset-0 z-10 w-screen overflow-y-auto flex items-center justify-center">
+      <div className="fixed inset-0 z-50 w-screen overflow-y-auto flex items-center justify-center p-4">
         <div
-          className={`relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all duration-300 ${
+          className={`relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all duration-300 w-full ${
             isOpen
               ? "scale-100 translate-y-0 opacity-100"
               : "scale-95 translate-y-4 opacity-0"
-          } sm:w-full ${sizeClasses[size]}`}
+          } ${sizeClasses[size]} mx-auto`}
         >
-          {/* Modal Content */}
-          <div className="grid justify-items-end pt-4 pr-4">
+          {/* Close Button */}
+          <div className="absolute top-2 right-2 z-10">
             <IoIosCloseCircle
-              size={45}
+              size={32}
               onClick={onClose}
-              className="text-red-500 cursor-pointer"
+              className="text-red-500 cursor-pointer hover:text-red-600 transition-colors"
             />
           </div>
+
+          {/* Modal Content */}
           {content}
         </div>
       </div>

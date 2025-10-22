@@ -43,7 +43,7 @@ export const TestimonialSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -61,7 +61,7 @@ export const TestimonialSection = () => {
             </motion.div>
 
             <motion.div
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

@@ -72,7 +72,7 @@ export const FAQPreview = () => {
                 y: -5,
                 transition: { duration: 0.2 },
               }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
             >
               <motion.h3
                 className="text-xl font-bold text-gray-800 mb-4"
@@ -100,7 +100,7 @@ export const FAQPreview = () => {
           <div className="text-center">
             <Link href="/faq">
               <motion.button
-                className="bg-gray-800 px-8 py-4 rounded-full text-white font-semibold hover:bg-gray-900 transition-colors shadow-lg"
+                className="bg-gray-800 px-8 py-4 rounded-full text-white font-semibold hover:bg-gray-900 transition-colors shadow-md"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

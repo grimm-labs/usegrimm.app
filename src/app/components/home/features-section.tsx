@@ -5,20 +5,10 @@ import { FeatureCard } from "./feature-card";
 import {
   FaMoneyBillWave,
   FaCloudUploadAlt,
-  FaGlobe,
-  FaHeadset,
-  FaShieldAlt,
-  FaServer,
   FaBolt,
-  FaInfoCircle,
-  FaCode,
   FaUserSecret,
-  FaMask,
-  FaTags,
-  FaRedoAlt,
   FaExchangeAlt,
   FaEye,
-  FaLock,
 } from "react-icons/fa";
 import {
   AnimatedSection,
@@ -65,66 +55,6 @@ export const FeaturesSection = () => {
         "Receive to any offline wallet, monitor balances and transaction history of your hardware wallets.",
       icon: <FaEye size={24} />,
     },
-    {
-      title: "Multi-currency support",
-      description:
-        "Support for multiple currencies and SATS/BTC display options for international users.",
-      icon: <FaGlobe size={24} />,
-    },
-    {
-      title: "24/7 Customer support",
-      description:
-        "Get help from our dedicated support team through multiple channels including Telegram.",
-      icon: <FaHeadset size={24} />,
-    },
-    {
-      title: "Advanced security features",
-      description:
-        "Secure storage for private keys, open-source crypto libraries, screenshot prevention and secure in-app keyboard.",
-      icon: <FaLock size={24} />,
-    },
-    {
-      title: "Connect to your own node",
-      description:
-        "Maintain self-sovereignty by connecting to your own Bitcoin server for direct access to the Bitcoin network.",
-      icon: <FaServer size={24} />,
-    },
-    {
-      title: "Cold storage integration",
-      description:
-        "Secure integration with cold storage solutions without putting funds at risk.",
-      icon: <FaShieldAlt size={24} />,
-    },
-    {
-      title: "Advanced wallet details",
-      description:
-        "View detailed descriptions, xpubs and derivation paths of your wallet for advanced users.",
-      icon: <FaInfoCircle size={24} />,
-    },
-    {
-      title: "Fully free and open-source",
-      description:
-        "All our software is public and reproducible. No backdoors, no data leaks. Fully transparent.",
-      icon: <FaCode size={24} />,
-    },
-    {
-      title: "Privacy first approach",
-      description:
-        "No KYC, email or phone required, no data collection, no push notifications, no IP tracking. Privacy by default.",
-      icon: <FaMask size={24} />,
-    },
-    {
-      title: "Coin control and labelling",
-      description:
-        "Smart labelling and coin control to protect privacy and manage UTXOs effectively.",
-      icon: <FaTags size={24} />,
-    },
-    {
-      title: "Securely recover from backup",
-      description:
-        "Import backups, discover funds and sweep them to a new wallet with complete security.",
-      icon: <FaRedoAlt size={24} />,
-    },
   ];
 
   return (
@@ -158,7 +88,7 @@ export const FeaturesSection = () => {
         </AnimatedSection>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={StaggerContainer}
           initial="hidden"
           whileInView="visible"

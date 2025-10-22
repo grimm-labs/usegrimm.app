@@ -4,9 +4,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 
-import logo from "@/app/assets/logo.png";
+import logo from "@/app/assets/logo_19.png";
 
-export default function Header() {
+interface HeaderProps {
+  onDownloadClick: () => void;
+}
+
+export default function Header({ onDownloadClick }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -14,17 +18,14 @@ export default function Header() {
   };
 
   return (
-    <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm">
+    <header className="bg-transparent backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             <Link href={"/"} className="block text-green-600">
               <span className="sr-only">Home</span>
-              <Image src={logo} alt="Grimm App" style={{ width: 40 }} />
+              <Image src={logo} alt="Grimm App" style={{ width: 180 }} />
             </Link>
-            <span className="text-lg font-bold text-gray-800 hidden sm:block">
-              Grimm App
-            </span>
           </div>
 
           <nav className="hidden md:block">
@@ -58,30 +59,23 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.grimm.app"
-                  target="_blank"
-                  rel="noreferrer"
+                <button
+                  onClick={onDownloadClick}
+                  className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium"
                 >
-                  <button className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium">
-                    Download
-                  </button>
-                </a>
+                  Download
+                </button>
               </li>
             </ul>
           </nav>
 
           <div className="flex items-center gap-3 md:hidden">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.grimm.app"
-              target="_blank"
-              rel="noreferrer"
-              className="block"
+            <button
+              onClick={onDownloadClick}
+              className="bg-green-600 px-4 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium text-sm"
             >
-              <button className="bg-green-600 px-3 py-1.5 rounded-full text-white text-sm transition-colors hover:bg-green-700">
-                Download
-              </button>
-            </a>
+              Download
+            </button>
 
             <button
               type="button"

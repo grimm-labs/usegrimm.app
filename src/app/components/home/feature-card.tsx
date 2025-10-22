@@ -20,7 +20,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         scale: 1.02,
         transition: { duration: 0.2 },
       }}
-      className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full"
+      className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 h-full"
     >
       <div className="flex items-center gap-4 mb-6">
         <motion.div
