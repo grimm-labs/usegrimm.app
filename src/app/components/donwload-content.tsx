@@ -68,6 +68,8 @@ export const DownloadContent = () => {
         </div>
       </div>
 
+      <div className="mt-4 sm:mt-6 pt-4 border-t border-gray-100"></div>
+
       {/* Bottom Text */}
       <div className="mt-3 text-center text-gray-400 text-xs">
         Join thousands of Bitcoin users worldwide

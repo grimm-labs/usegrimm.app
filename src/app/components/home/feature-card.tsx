@@ -33,7 +33,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         >
           {icon}
         </motion.div>
-        <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
+        <h3 className="text-2xl font-medium text-gray-800">{title}</h3>
       </div>
       <p className="text-gray-600 leading-relaxed text-lg">{description}</p>
     </motion.div>

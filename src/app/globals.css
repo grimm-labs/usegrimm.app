@@ -173,3 +173,7 @@ html {
     background-attachment: scroll;
   }
 }
+
+.text-2xl.font-medium {
+  font-weight: 550;
+}
