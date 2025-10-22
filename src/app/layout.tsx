@@ -15,27 +15,29 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Grimm App - Your Bitcoin Superapp",
-  description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+  description:
+    "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
   openGraph: {
     title: "Grimm App - Your Bitcoin Superapp",
-    description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
-    url: 'https://usegrimm.app',
-    siteName: 'Grimm App',
+    description:
+      "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+    url: "https://usegrimm.app",
+    siteName: "Grimm App",
     images: [
       {
-        url: 'https://usegrimm.app/og-image.png',
+        url: "https://usegrimm.app/og-image.png",
         width: 1200,
         height: 630,
       },
       {
-        url: 'https://usegrimm.app/og-image.png',
+        url: "https://usegrimm.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: 'Grimm App - Your Bitcoin Superapp',
+        alt: "Grimm App - Your Bitcoin Superapp",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
 };
 
@@ -46,10 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="main-page">
-          {children}
-        </div>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div className="main-page">{children}</div>
       </body>
     </html>
   );

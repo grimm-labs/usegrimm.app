@@ -1,66 +1,79 @@
-"use client"
+"use client";
 
 import { QRCodeSVG } from "qrcode.react";
-
 import React from "react";
-import { FaGooglePlay, FaAppStoreIos, FaDownload } from "react-icons/fa";
+import Image from "next/image";
+import googlePlayButton from "@/app/assets/googlePlay.png";
+import appStoreButton from "@/app/assets/appStore.png";
 
 export const DownloadContent = () => {
-    return (
-        <div className="p-8 max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-                {/* Left Section - Text */}
-                <div className="flex-1 space-y-4 text-center md:text-left">
-                    <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-                        Get Grimm App Now!
-                    </h2>
-                    <p className="text-gray-600 text-lg">
-                        Scan the QR code to directly install Grimm App on your device.
-                    </p>
-                </div>
+  return (
+    <div className="p-4 sm:p-6 max-w-2xl mx-auto">
+      {/* Header Section */}
+      <div className="text-center mb-4 sm:mb-6">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">
+          Download Grimm App
+        </h2>
+        <p className="text-gray-600 text-sm sm:text-base">
+          Get the best Bitcoin wallet for your device
+        </p>
+      </div>
 
-                {/* Middle Section - QR Code */}
-                <div className="flex-1 flex justify-center items-center">
-                    <div className="bg-white p-4 rounded-xl">
-                        <QRCodeSVG
-                            size={200}
-                            value="https://onelink.to/455hxv"
-                        />
-                    </div>
-                </div>
-
-                {/* Right Section - Download Options */}
-                <div className="flex-1 space-y-4">
-                    <button className="w-full flex items-center justify-center gap-3 bg-black text-white rounded-lg px-6 py-3 hover:bg-gray-800 transition-colors">
-                        <FaGooglePlay className="text-xl" />
-                        <div className="text-left">
-                            <div className="text-xs">GET IT ON</div>
-                            <div className="text-sm font-semibold">Google Play</div>
-                        </div>
-                    </button>
-
-                    <button className="w-full flex items-center justify-center gap-3 bg-black text-white rounded-lg px-6 py-3 hover:bg-gray-800 transition-colors">
-                        <FaAppStoreIos className="text-xl" />
-                        <div className="text-left">
-                            <div className="text-xs">Download on the</div>
-                            <div className="text-sm font-semibold">App Store</div>
-                        </div>
-                    </button>
-
-                    <button className="w-full flex items-center justify-center gap-3 from-purple-600 to-blue-500 text-white rounded-lg px-6 py-3 hover:opacity-90 transition-opacity">
-                        <FaDownload className="text-xl" />
-                        <div className="text-left">
-                            <div className="text-xs">Download</div>
-                            <div className="text-sm font-semibold">APK File</div>
-                        </div>
-                    </button>
-                </div>
-            </div>
-
-            {/* Bottom Text - Optional */}
-            <div className="mt-8 text-center text-gray-500 text-sm">
-                Join millions of users already enjoying Grimm App
-            </div>
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-between">
+        {/* QR Code Section */}
+        <div className="flex-1 flex flex-col items-center order-2 sm:order-1">
+          <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm border border-gray-100">
+            <QRCodeSVG
+              size={160}
+              value="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
+              className="mx-auto"
+            />
+          </div>
+          <p className="text-gray-500 text-xs mt-2 text-center max-w-xs">
+            Scan with your phone camera
+          </p>
         </div>
-    );
+
+        {/* Download Options */}
+        <div className="flex-1 space-y-3 sm:space-y-4 w-full order-1 sm:order-2">
+          <div className="space-y-2 sm:space-y-3">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-[1.02] active:scale-95"
+            >
+              <Image
+                src={googlePlayButton}
+                alt="Get it on Google Play"
+                className="w-full max-w-[180px] sm:max-w-[210px] mx-auto h-auto hover:opacity-90 transition-opacity"
+                width={180}
+                height={78}
+              />
+            </a>
+
+            <a
+              href="#"
+              className="block transition-transform hover:scale-[1.02] active:scale-95"
+            >
+              <Image
+                src={appStoreButton}
+                alt="Download on the App Store"
+                className="w-full max-w-[180px] sm:max-w-[210px] mx-auto h-auto hover:opacity-90 transition-opacity"
+                width={180}
+                height={78}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4 sm:mt-6 pt-4 border-t border-gray-100"></div>
+
+      {/* Bottom Text */}
+      <div className="mt-3 text-center text-gray-400 text-xs">
+        Join thousands of Bitcoin users worldwide
+      </div>
+    </div>
+  );
 };

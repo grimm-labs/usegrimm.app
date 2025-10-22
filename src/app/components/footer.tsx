@@ -1,15 +1,20 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { Modal } from "./modal";
 import { Donation } from "./donation";
 import { useState } from "react";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import logo from "@/app/assets/logo_19.png";
+import Image from "next/image";
+import googlePlayButton from "@/app/assets/googlePlay.png";
+import appSToreButton from "@/app/assets/appStore.png";
 
 export default function Footer() {
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
 
   return (
-    <footer className="border-t border-gray-100">
+    <>
       {isDonationModalOpen && (
         <Modal
           isOpen={isDonationModalOpen}
@@ -18,38 +23,110 @@ export default function Footer() {
         />
       )}
 
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-4 py-4 sm:flex-row sm:justify-between">
-          <ul className="flex flex-wrap justify-center gap-4 text-sm order-1 sm:order-2">
-            <li>
-              <Link href="/terms" className="text-gray-500 transition hover:opacity-75">
-                Terms
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="text-gray-500 transition hover:opacity-75">
-                Privacy
-              </Link>
-            </li>
-            <li>
-              <a href="mailto:contact@usegrimm.app" className="text-gray-500 transition hover:opacity-75">
-                Contact Us
-              </a>
-            </li>
-            {/* <li>
-              <button
-                onClick={() => setIsDonationModalOpen(true)}
-                className="text-gray-500 transition hover:opacity-75"
-              >
-                Donate
-              </button>
-            </li> */}
-          </ul>
-          <p className="text-sm text-gray-500 text-center sm:text-left order-2 sm:order-1">
-            &copy; 2022. Grimm App. All rights reserved.
-          </p>
+      <footer className="border-t border-gray-200 bg-white/90 backdrop-blur-sm">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="py-12 flex flex-col md:flex-row justify-between items-center md:items-start gap-8 text-center">
+            {/* Section gauche - Logo et réseaux sociaux */}
+            <div className="flex flex-col items-center md:items-start">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center">
+                  <Link href={"/"} className="block text-green-600">
+                    <span className="sr-only">Home</span>
+                    <Image src={logo} alt="Grimm App" style={{ width: 180 }} />
+                  </Link>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4 max-w-md">
+                The best mobile Bitcoin wallet of all time
+              </p>
+              <div className="flex gap-4 justify-center md:justify-start">
+                <a
+                  href="https://x.com/useGrimmApp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-400 hover:text-green-600 transition-colors"
+                >
+                  <FaTwitter size={20} />
+                </a>
+                <a
+                  href="https://linkedin.com/company/grimm-app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-400 hover:text-green-600 transition-colors"
+                >
+                  <FaLinkedin size={20} />
+                </a>
+                <a
+                  href="https://github.com/grimm-labs/usegrimm.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-400 hover:text-green-600 transition-colors"
+                >
+                  <FaGithub size={20} />
+                </a>
+              </div>
+            </div>
+
+            {/* Section droite - Download */}
+            <div className="flex flex-col items-center">
+              <h3 className="font-semibold text-gray-800 mb-4">Download</h3>
+              <div className="flex flex-row gap-3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
+                  className="block"
+                >
+                  <Image
+                    src={googlePlayButton}
+                    alt="Get it on Google Play"
+                    className="w-full max-w-[180px] sm:max-w-[210px] hover:opacity-90 transition-opacity cursor-pointer"
+                    width={180}
+                    height={78}
+                  />
+                </a>
+                <a href="#" className="block">
+                  <Image
+                    src={appSToreButton}
+                    alt="Get it on App Store"
+                    className="w-full max-w-[180px] sm:max-w-[210px] hover:opacity-90 transition-opacity cursor-pointer"
+                    width={180}
+                    height={78}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-200 py-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-sm text-gray-500 text-center md:text-left order-2 md:order-1">
+                &copy; {new Date().getFullYear()} Grimm App. All rights
+                reserved.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm order-1 md:order-2 mb-4 md:mb-0">
+                <Link
+                  href="/terms"
+                  className="text-gray-500 hover:text-green-600 transition-colors"
+                >
+                  Terms
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="text-gray-500 hover:text-green-600 transition-colors"
+                >
+                  Privacy
+                </Link>
+                <a
+                  href="mailto:contact@usegrimm.app"
+                  className="text-gray-500 hover:text-green-600 transition-colors"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
