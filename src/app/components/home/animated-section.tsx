@@ -38,7 +38,9 @@ export const AnimatedItem = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.4, 0, 0.2, 1],
+      // framer-motion's TypeScript types expect an Easing or string;
+      // use a cubic-bezier string instead of numeric array to satisfy types
+      ease: "cubic-bezier(0.4, 0, 0.2, 1)",
     },
   },
 };
