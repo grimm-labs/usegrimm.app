@@ -5,9 +5,11 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import { Modal } from "../components/modal";
 import { DownloadContent } from "../components/donwload-content";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Privacy() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+  const t = useTranslations();
 
   const openDownloadModal = () => setIsDownloadModalOpen(true);
   const closeDownloadModal = () => setIsDownloadModalOpen(false);
@@ -19,11 +21,11 @@ export default function Privacy() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Privacy Policy
+            {t("privacyPage.title")}
           </h1>
           <div className="w-20 h-1 bg-green-600 mx-auto mb-4"></div>
           <p className="text-sm text-gray-500">
-            Last updated: December 22, 2024
+            {t("privacyPage.lastUpdated")}
           </p>
         </div>
 
@@ -31,101 +33,77 @@ export default function Privacy() {
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 space-y-8">
           <section className="space-y-4">
             <p className="text-gray-600 leading-relaxed">
-              Grimm Technologies (&quot;us&quot;, &quot;we&quot;, or
-              &quot;our&quot;) operates the Grimm App software application (the
-              &quot;Service&quot;). This Privacy Policy explains how we collect,
-              use, and protect your Personal Information when you use the
-              Service. By using the Service, you agree to the collection and use
-              of information as outlined in this policy.
+              {t("privacyPage.sections.introduction")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Information Collection and Use
+              {t("privacyPage.sections.informationCollection.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              While using our Service, we may ask you to provide certain
-              personally identifiable information such as your name, email
-              address, or other details (&quot;Personal Information&quot;). This
-              information is used to improve your experience with the Service.
+              {t("privacyPage.sections.informationCollection.description")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Log Data
+              {t("privacyPage.sections.logData.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              We may collect information sent by your browser when you access
-              the Service (&quot;Log Data&quot;). This data may include your IP
-              address, browser type, pages visited, and other diagnostic
-              information. We may use third-party services like Google Analytics
-              to analyze this data.
+              {t("privacyPage.sections.logData.description")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Cookies
+              {t("privacyPage.sections.cookies.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Cookies are small files stored on your device to improve your
-              experience with the Service. You can disable cookies in your
-              browser settings, but doing so may limit some functionality of the
-              Service.
+              {t("privacyPage.sections.cookies.description")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Security
+              {t("privacyPage.sections.security.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              We take the security of your Personal Information seriously and
-              implement measures to protect it. However, no method of
-              transmission over the Internet or electronic storage is completely
-              secure.
+              {t("privacyPage.sections.security.description")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Your Rights
+              {t("privacyPage.sections.yourRights.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              You have the right to access, correct, or delete your Personal
-              Information. If required by law, you may also revoke consent for
-              the use of your data. To exercise these rights, please contact us.
+              {t("privacyPage.sections.yourRights.description")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Changes to This Privacy Policy
+              {t("privacyPage.sections.changes.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              This Privacy Policy is effective as of December 22, 2024, and may
-              be updated periodically. Changes will be posted here, and
-              continued use of the Service constitutes acceptance of the updated
-              policy.
+              {t("privacyPage.sections.changes.description")}
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
               <div className="w-2 h-6 bg-green-600 mr-3 rounded-full"></div>
-              Contact Us
+              {t("privacyPage.sections.contact.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              If you have any questions about this Privacy Policy, please
-              contact us at{" "}
+              {t("privacyPage.sections.contact.description")}{" "}
               <a
                 href="mailto:support@usegrimm.app"
                 className="text-green-600 underline hover:text-green-700 transition-colors font-medium"

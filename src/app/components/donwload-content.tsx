@@ -5,17 +5,20 @@ import React from "react";
 import Image from "next/image";
 import googlePlayButton from "@/app/assets/googlePlay.png";
 import appStoreButton from "@/app/assets/appStore.png";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const DownloadContent = () => {
+  const t = useTranslations();
+
   return (
     <div className="p-4 sm:p-6 max-w-2xl mx-auto">
       {/* Header Section */}
       <div className="text-center mb-4 sm:mb-6">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">
-          Download Grimm App
+          {t("download.title")}
         </h2>
         <p className="text-gray-600 text-sm sm:text-base">
-          Get the best Bitcoin wallet for your device
+          {t("download.subtitle")}
         </p>
       </div>
 
@@ -30,7 +33,7 @@ export const DownloadContent = () => {
             />
           </div>
           <p className="text-gray-500 text-xs mt-2 text-center max-w-xs">
-            Scan with your phone camera
+            {t("download.scan")}
           </p>
         </div>
 
@@ -72,7 +75,7 @@ export const DownloadContent = () => {
 
       {/* Bottom Text */}
       <div className="mt-3 text-center text-gray-400 text-xs">
-        Join thousands of Bitcoin users worldwide
+        {t("download.join")}
       </div>
     </div>
   );

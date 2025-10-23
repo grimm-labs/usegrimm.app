@@ -9,9 +9,12 @@ import logo from "@/app/assets/logo_19.png";
 import Image from "next/image";
 import googlePlayButton from "@/app/assets/googlePlay.png";
 import appSToreButton from "@/app/assets/appStore.png";
+import { useTranslations } from "@/hooks/useTranslations";
+import { LanguageSwitcher } from "./language-switcher";
 
 export default function Footer() {
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
+  const t = useTranslations();
 
   return (
     <>
@@ -31,13 +34,13 @@ export default function Footer() {
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex items-center">
                   <Link href={"/"} className="block text-green-600">
-                    <span className="sr-only">Home</span>
+                    <span className="sr-only">{t("common.home")}</span>
                     <Image src={logo} alt="Grimm App" style={{ width: 180 }} />
                   </Link>
                 </div>
               </div>
               <p className="text-gray-600 mb-4 max-w-md">
-                The best mobile Bitcoin wallet of all time
+                {t("hero.title")} {t("hero.titleHighlight")}
               </p>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a
@@ -67,9 +70,11 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Section droite - Download */}
+            {/* Section centre - Navigation */}
             <div className="flex flex-col items-center">
-              <h3 className="font-semibold text-gray-800 mb-4">Download</h3>
+              <h3 className="font-semibold text-gray-800 mb-4">
+                {t("common.download")}
+              </h3>
               <div className="flex flex-row gap-3">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
@@ -94,13 +99,21 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+
+            {/* Section droite - Sélecteur de langue */}
+            <div className="flex flex-col items-center">
+              <h3 className="font-semibold text-gray-800 mb-4">
+                {t("common.language")}
+              </h3>
+              <LanguageSwitcher />
+            </div>
           </div>
 
           <div className="border-t border-gray-200 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-500 text-center md:text-left order-2 md:order-1">
-                &copy; {new Date().getFullYear()} Grimm App. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Grimm App.{" "}
+                {t("common.allRightsReserved")}
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm order-1 md:order-2 mb-4 md:mb-0">
@@ -108,19 +121,19 @@ export default function Footer() {
                   href="/terms"
                   className="text-gray-500 hover:text-green-600 transition-colors"
                 >
-                  Terms
+                  {t("common.terms")}
                 </Link>
                 <Link
                   href="/privacy"
                   className="text-gray-500 hover:text-green-600 transition-colors"
                 >
-                  Privacy
+                  {t("common.privacy")}
                 </Link>
                 <a
                   href="mailto:contact@usegrimm.app"
                   className="text-gray-500 hover:text-green-600 transition-colors"
                 >
-                  Contact Us
+                  {t("common.contact")}
                 </a>
               </div>
             </div>
