@@ -8,23 +8,23 @@ import {
   AnimatedItem,
   StaggerContainer,
 } from "./animated-section";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const FAQPreview = () => {
+  const t = useTranslations();
+
   const faqs = [
     {
-      question: "What is a self-custodial wallet ?",
-      answer:
-        "A self-custodial wallet is a type of wallet where you have full control and ownership of your private keys. This means you are the only one with access to your funds, without relying on a third party. It’s crucial to securely back up your private keys to avoid losing access to your Bitcoin.",
+      question: t("faq.preview.selfCustodial.question"),
+      answer: t("faq.preview.selfCustodial.answer"),
     },
     {
-      question: "Can I buy and sell Bitcoin directly through the app ?",
-      answer:
-        "Yes! Our app allows you to buy and sell Bitcoin directly, provided you complete a Know Your Customer (KYC) identity verification process. This ensures compliance with local regulations and the security of your transactions.",
+      question: t("faq.preview.buySell.question"),
+      answer: t("faq.preview.buySell.answer"),
     },
     {
-      question: "Is my personal information secure ?",
-      answer:
-        "Absolutely! We prioritize the privacy and security of your data. All personal information is securely stored and never shared with third parties without your explicit consent.",
+      question: t("faq.preview.security.question"),
+      answer: t("faq.preview.security.answer"),
     },
   ];
 
@@ -43,7 +43,7 @@ export const FAQPreview = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Frequently Asked Questions
+              {t("faq.title")}
             </motion.h2>
             <motion.p
               className="text-xl text-gray-600 max-w-2xl mx-auto"
@@ -52,7 +52,7 @@ export const FAQPreview = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Everything you need to know about Grimm App
+              {t("faq.subtitle")}
             </motion.p>
           </div>
         </AnimatedSection>
@@ -104,7 +104,7 @@ export const FAQPreview = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                See all questions
+                {t("common.seeAll")}
               </motion.button>
             </Link>
           </div>

@@ -1,0 +1,246 @@
+{
+  "common": {
+    "download": "Télécharger",
+    "seeAll": "Voir tout",
+    "home": "Accueil",
+    "faq": "FAQ",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "support": "Support",
+    "beta": "BETA",
+    "allRightsReserved": "Tous droits réservés.",
+    "language": "Langue"
+  },
+  "header": {
+    "twitter": "X (Twitter)",
+    "linkedin": "LinkedIn"
+  },
+  "hero": {
+    "title": "Le meilleur portefeuille Bitcoin mobile",
+    "titleHighlight": "de tous les temps",
+    "subtitle": "Concentré sur la confidentialité, la sécurité et la facilité d'utilisation pour les transactions Bitcoin quotidiennes.",
+    "startUsing": "Commencez à utiliser GrimmApp"
+  },
+  "features": {
+    "title": "Fonctionnalités du portefeuille",
+    "subtitle": "Beaucoup disaient que c'était impossible, mais nous avons réalisé notre rêve impossible : le portefeuille Bitcoin parfait, pour tous.",
+    "lightning": {
+      "title": "Paiements Lightning instantanés et économiques",
+      "description": "Paiements Lightning sans gestion de liquidités et de canaux. Envoyez et recevez des paiements en un clic."
+    },
+    "swaps": {
+      "title": "Échanges automatiques entre réseaux",
+      "description": "Déplacez vos fonds entre les réseaux Bitcoin, Lightning et Liquid en utilisant des atomic swaps non custodials."
+    },
+    "privacy": {
+      "title": "Transactions confidentielles",
+      "description": "Fonctionnalités de confidentialité avancées pour protéger vos informations financières et vos détails de transaction."
+    },
+    "fees": {
+      "title": "Gestion intelligente des frais",
+      "description": "Des calculs de frais personnalisables basés sur le mempool et les technologies RBF vous assurent de ne jamais surpayer les frais de minage."
+    },
+    "backup": {
+      "title": "Sauvegarde cloud chiffrée facile et sécurisée",
+      "description": "Sécurisez votre portefeuille avec des sauvegardes cloud chiffrées qui protègent vos fonds tout en permettant une récupération facile."
+    },
+    "hardware": {
+      "title": "Portefeuilles matériels en lecture seule",
+      "description": "Recevez sur n'importe quel portefeuille hors ligne, surveillez les soldes et l'historique des transactions de vos portefeuilles matériels."
+    }
+  },
+  "testimonial": {
+    "title": "Adapté aux débutants comme aux experts.",
+    "quote": "J'ai conçu ce portefeuille pour qu'il offre toutes les fonctionnalités avancées que je souhaite, mais aussi pour que ma mère puisse l'utiliser sans être confuse.",
+    "author": "— JONATHAN NENBA, fondateur de Grimm App",
+    "compatibility": {
+      "title": "Compatibilité multi-réseaux",
+      "description": "Effectuez des transactions sur le réseau Bitcoin, le réseau Lightning et le réseau Liquid. En utilisant les technologies d'atomic swap non custodials, vous pouvez déplacer des fonds entre les réseaux de manière anonyme et sécurisée."
+    },
+    "integration": {
+      "title": "Intégration native avec l'exchange Grimm App",
+      "description": "Connectez votre compte Grimm App pour acheter du bitcoin, vendre du bitcoin et effectuer des paiements en monnaie fiduciaire directement avec votre portefeuille self-custodial. Ceci est optionnel, et vous n'avez pas à lier un compte si vous ne le souhaitez pas. C'est si facile que cela donne l'impression d'utiliser une application custodiale !"
+    }
+  },
+  "faq": {
+    "title": "Foire Aux Questions",
+    "subtitle": "Tout ce que vous devez savoir sur Grimm App",
+    "preview": {
+      "selfCustodial": {
+        "question": "Qu'est-ce qu'un portefeuille self-custodial ?",
+        "answer": "Un portefeuille self-custodial est un type de portefeuille où vous avez un contrôle total et la propriété de vos clés privées. Cela signifie que vous êtes le seul à avoir accès à vos fonds, sans dépendre d'un tiers. Il est crucial de sauvegarder vos clés privées en toute sécurité pour éviter de perdre l'accès à vos Bitcoin."
+      },
+      "buySell": {
+        "question": "Puis-je acheter et vendre du Bitcoin directement via l'application ?",
+        "answer": "Oui ! Notre application vous permet d'acheter et de vendre du Bitcoin directement, à condition de compléter un processus de vérification d'identité Know Your Customer (KYC). Cela assure la conformité avec les réglementations locales et la sécurité de vos transactions."
+      },
+      "security": {
+        "question": "Mes informations personnelles sont-elles sécurisées ?",
+        "answer": "Absolument ! Nous priorisons la confidentialité et la sécurité de vos données. Toutes les informations personnelles sont stockées en toute sécurité et ne sont jamais partagées avec des tiers sans votre consentement explicite."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ingénierie de la Souveraineté",
+    "subtitle": "Nous construisons les outils et l'infrastructure que vous méritez pour acheter, vendre, détenir et dépenser du Bitcoin sans compromis."
+  },
+  "download": {
+    "title": "Télécharger Grimm App",
+    "subtitle": "Obtenez le meilleur portefeuille Bitcoin pour votre appareil",
+    "scan": "Scannez avec l'appareil photo de votre téléphone",
+    "join": "Rejoignez des milliers d'utilisateurs Bitcoin dans le monde"
+  },
+  "donation": {
+    "title": "Soutenez Grimm App avec un don Bitcoin 💛",
+    "description": "Soutenez Grimm App en faisant un don Bitcoin — scannez le code QR ou copiez l'adresse ci-dessous.",
+    "footer": "Tous les dons seront utilisés exclusivement pour le développement et l'amélioration de Grimm App. Merci pour votre soutien !"
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour : 22 décembre 2024",
+    "sections": {
+      "welcome": {
+        "part1": "Bienvenue dans",
+        "part2": ", votre portefeuille Bitcoin. Veuillez lire attentivement ces Conditions d'utilisation (\"Conditions\") avant d'utiliser l'application logicielle Grimm App (le \"Service\"), exploitée par Grimm Technologies (\"nous\", \"notre\")."
+      },
+      "acceptance": "Votre accès et votre utilisation du Service sont conditionnés par votre acceptation et votre conformité à ces Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le Service. En accédant ou en utilisant le Service, vous acceptez d'être lié par ces Conditions. Si vous n'acceptez pas une partie de ces Conditions, vous ne pouvez pas accéder au Service.",
+      "content": {
+        "title": "Contenu",
+        "part1": "Notre Service peut vous permettre de gérer, stocker et partager des informations relatives à vos avoirs et transactions Bitcoin. Vous êtes seul responsable des informations ou contenus que vous fournissez via le Service.",
+        "part2": "En utilisant le Service, vous nous accordez une licence non exclusive, mondiale, gratuite et libre de redevances pour utiliser, adapter, modifier et afficher toutes les données non personnelles nécessaires au fonctionnement et à l'amélioration du Service."
+      },
+      "links": {
+        "title": "Liens vers des services tiers",
+        "description": "Le Service peut contenir des liens vers des sites Web ou services tiers qui ne sont pas détenus ou contrôlés par Grimm Technologies. Nous n'assumons aucune responsabilité concernant le contenu, les politiques de confidentialité ou les pratiques de tout site Web ou service tiers. Votre utilisation de tout site Web ou service tiers est à vos risques et périls."
+      },
+      "acceptableUse": {
+        "title": "Utilisation acceptable",
+        "part1": "Vous acceptez de ne pas utiliser le Service :",
+        "list": [
+          "De toute manière illégale, frauduleuse ou nuisible.",
+          "Pour compromettre la sécurité ou la fonctionnalité du Service.",
+          "Pour accéder au Service par des moyens non autorisés."
+        ],
+        "part2": "Nous nous réservons le droit de résilier l'accès au Service en cas de violation de ces Conditions."
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "description": "Tout le contenu fourni par le Service, y compris les logos, marques, logiciels et éléments de conception, est la propriété intellectuelle de Grimm Technologies et protégé par les lois applicables en matière de droit d'auteur et de marques. Vous ne pouvez pas reproduire, distribuer ou autrement utiliser le contenu sans notre consentement écrit explicite."
+      },
+      "security": {
+        "title": "Sécurité et risques",
+        "description": "Grimm App ne stocke pas les clés privées, mots de passe ou phrases de récupération. Il est de votre responsabilité de sécuriser votre appareil et de maintenir la confidentialité de vos identifiants. Nous ne sommes pas responsables de toute perte de fonds due à un accès non autorisé ou à une mauvaise utilisation."
+      },
+      "disclaimer": {
+        "title": "Avertissement sur les garanties",
+        "description": "Le Service est fourni \"TEL QUEL\" et \"TEL QUE DISPONIBLE\". Nous ne donnons aucune garantie concernant la fiabilité, la disponibilité ou l'adéquation du Service à vos fins. L'utilisation du Service est à vos risques et périls."
+      },
+      "liability": {
+        "title": "Limitation de responsabilité",
+        "description": "Dans la mesure maximale permise par la loi, Grimm Technologies ne pourra être tenue responsable de tout dommage, y compris, sans limitation, la perte de fonds, de données ou de profits découlant de votre utilisation ou de votre incapacité à utiliser le Service."
+      },
+      "indemnification": {
+        "title": "Indemnisation",
+        "description": "Vous acceptez d'indemniser et de dégager de toute responsabilité Grimm Technologies pour toute réclamation, dommage ou dépense découlant de votre utilisation du Service, de votre violation de ces Conditions ou de votre violation de tout droit d'un tiers."
+      },
+      "changes": {
+        "title": "Modifications des Conditions",
+        "description": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Toute modification sera effective immédiatement après sa publication. L'utilisation continue du Service après modification constitue votre acceptation des Conditions révisées."
+      },
+      "governingLaw": {
+        "title": "Droit applicable",
+        "description": "Ces Conditions sont régies et interprétées conformément aux lois de la République du Cameroun. Tout litige découlant de ces Conditions sera résolu par les tribunaux du Cameroun."
+      },
+      "termination": {
+        "title": "Résiliation",
+        "description": "Nous pouvons résilier ou suspendre votre accès au Service à tout moment en cas de violation de ces Conditions. Lors de la résiliation, tous les droits qui vous sont accordés en vertu de ces Conditions cesseront immédiatement."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "description": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à :"
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : 22 décembre 2024",
+    "sections": {
+      "introduction": "Grimm Technologies (\"nous\", \"notre\") exploite l'application logicielle Grimm App (le \"Service\"). Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos Informations Personnelles lorsque vous utilisez le Service. En utilisant le Service, vous acceptez la collecte et l'utilisation des informations comme décrit dans cette politique.",
+      "informationCollection": {
+        "title": "Collecte et utilisation des informations",
+        "description": "Lors de l'utilisation de notre Service, nous pouvons vous demander de fournir certaines informations personnellement identifiables telles que votre nom, adresse e-mail ou autres détails (\"Informations Personnelles\"). Ces informations sont utilisées pour améliorer votre expérience avec le Service."
+      },
+      "logData": {
+        "title": "Données de journalisation",
+        "description": "Nous pouvons collecter les informations envoyées par votre navigateur lorsque vous accédez au Service (\"Données de Journalisation\"). Ces données peuvent inclure votre adresse IP, le type de navigateur, les pages visitées et d'autres informations de diagnostic. Nous pouvons utiliser des services tiers comme Google Analytics pour analyser ces données."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Les cookies sont de petits fichiers stockés sur votre appareil pour améliorer votre expérience avec le Service. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur, mais cela peut limiter certaines fonctionnalités du Service."
+      },
+      "security": {
+        "title": "Sécurité",
+        "description": "Nous prenons la sécurité de vos Informations Personnelles au sérieux et mettons en œuvre des mesures pour les protéger. Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée."
+      },
+      "yourRights": {
+        "title": "Vos droits",
+        "description": "Vous avez le droit d'accéder, de corriger ou de supprimer vos Informations Personnelles. Si la loi l'exige, vous pouvez également révoquer votre consentement pour l'utilisation de vos données. Pour exercer ces droits, veuillez nous contacter."
+      },
+      "changes": {
+        "title": "Modifications de cette politique de confidentialité",
+        "description": "Cette Politique de Confidentialité est effective à partir du 22 décembre 2024 et peut être mise à jour périodiquement. Les modifications seront publiées ici, et l'utilisation continue du Service constitue l'acceptation de la politique mise à jour."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "description": "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à"
+      }
+    }
+  },
+  "faqPage": {
+    "title": "Foire Aux Questions (FAQ)",
+    "subtitle": "Tout ce que vous devez savoir sur notre portefeuille Bitcoin self-custodial.",
+    "questions": [
+      {
+        "question": "Qu'est-ce qu'un portefeuille self-custodial ?",
+        "answer": "Un portefeuille self-custodial est un type de portefeuille où vous avez un contrôle total et la propriété de vos clés privées. Cela signifie que vous êtes le seul à avoir accès à vos fonds, sans dépendre d'un tiers. Il est crucial de sauvegarder vos clés privées en toute sécurité pour éviter de perdre l'accès à vos Bitcoin."
+      },
+      {
+        "question": "Puis-je acheter et vendre du Bitcoin directement via l'application ?",
+        "answer": "Oui ! Notre application vous permet d'acheter et de vendre du Bitcoin directement, à condition de compléter un processus de vérification d'identité Know Your Customer (KYC). Cela assure la conformité avec les réglementations locales et la sécurité de vos transactions."
+      },
+      {
+        "question": "Pourquoi dois-je compléter le KYC pour acheter ou vendre du Bitcoin ?",
+        "answer": "La vérification KYC (Know Your Customer) est une exigence légale qui aide à prévenir la fraude, le blanchiment d'argent et autres activités illégales. Elle assure un environnement sûr et réglementé pour toutes les transactions."
+      },
+      {
+        "question": "Mes informations personnelles sont-elles sécurisées ?",
+        "answer": "Absolument ! Nous priorisons la confidentialité et la sécurité de vos données. Toutes les informations personnelles sont stockées en toute sécurité et ne sont jamais partagées avec des tiers sans votre consentement explicite."
+      },
+      {
+        "question": "L'application est-elle personnalisable ?",
+        "answer": "Oui, notre application est conçue pour être personnalisable. Vous pouvez personnaliser l'apparence et certaines fonctionnalités selon vos préférences, créant ainsi une expérience utilisateur unique."
+      },
+      {
+        "question": "Quels frais sont associés aux transactions ?",
+        "answer": "Nous maintenons des frais transparents pour l'achat, la vente et le transfert de Bitcoin. Vous pouvez consulter les informations détaillées sur les frais dans l'application avant de finaliser une transaction."
+      },
+      {
+        "question": "Que se passe-t-il si je perds ma clé privée ?",
+        "answer": "En tant que portefeuille self-custodial, vous êtes le seul propriétaire de vos clés privées. Si vous les perdez, nous ne pouvons pas les récupérer pour vous. Nous recommandons fortement de sauvegarder vos clés privées en toute sécurité dans un endroit sûr."
+      },
+      {
+        "question": "L'application prend-elle en charge d'autres cryptomonnaies ?",
+        "answer": "Actuellement, notre application se concentre exclusivement sur le Bitcoin pour offrir une expérience optimisée et sécurisée. Cependant, nous prévoyons de prendre en charge d'autres cryptomonnaies à l'avenir."
+      },
+      {
+        "question": "L'application est-elle disponible dans tous les pays ?",
+        "answer": "L'application est accessible dans la plupart des pays, mais certaines fonctionnalités, telles que l'achat et la vente de Bitcoin, peuvent être restreintes en fonction des réglementations locales."
+      },
+      {
+        "question": "Comment puis-je obtenir de l'aide si je rencontre un problème ?",
+        "answer": "Notre équipe de support est là pour vous aider. Vous pouvez nous contacter directement via l'application ou envoyer un e-mail à notre service client. Nous répondrons à vos demandes aussi rapidement que possible."
+      }
+    ]
+  }
+}

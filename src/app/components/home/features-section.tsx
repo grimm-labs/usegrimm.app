@@ -16,43 +16,40 @@ import {
   StaggerContainer,
 } from "./animated-section";
 import { motion } from "framer-motion";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const FeaturesSection = () => {
+  const t = useTranslations();
+
   const features = [
     {
-      title: "Instant and cheap lightning payments",
-      description:
-        "Lightning payments without liquidity and channel management. Send and receive payments seamlessly with one click.",
+      title: t("features.lightning.title"),
+      description: t("features.lightning.description"),
       icon: <FaBolt size={24} />,
     },
     {
-      title: "Automatic cross-network swaps",
-      description:
-        "Seamlessly move funds between Bitcoin, Lightning, and Liquid networks using non-custodial atomic swaps.",
+      title: t("features.swaps.title"),
+      description: t("features.swaps.description"),
       icon: <FaExchangeAlt size={24} />,
     },
     {
-      title: "Confidential transactions",
-      description:
-        "Enhanced privacy features to protect your financial information and transaction details.",
+      title: t("features.privacy.title"),
+      description: t("features.privacy.description"),
       icon: <FaUserSecret size={24} />,
     },
     {
-      title: "Smart fee management",
-      description:
-        "Customizable mempool-based fee calculations and RBF technologies ensure you never overpay mining fees.",
+      title: t("features.fees.title"),
+      description: t("features.fees.description"),
       icon: <FaMoneyBillWave size={24} />,
     },
     {
-      title: "Easy and secure encrypted cloud backup",
-      description:
-        "Secure your wallet with encrypted cloud backups that protect your funds while ensuring easy recovery.",
+      title: t("features.backup.title"),
+      description: t("features.backup.description"),
       icon: <FaCloudUploadAlt size={24} />,
     },
     {
-      title: "Watch-only hardware wallets",
-      description:
-        "Receive to any offline wallet, monitor balances and transaction history of your hardware wallets.",
+      title: t("features.hardware.title"),
+      description: t("features.hardware.description"),
       icon: <FaEye size={24} />,
     },
   ];
@@ -72,7 +69,7 @@ export const FeaturesSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Wallet Features
+              {t("features.title")}
             </motion.h2>
             <motion.p
               className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -81,8 +78,7 @@ export const FeaturesSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Many said it couldn&apos;t be done, but we&apos;ve achieved our
-              impossible dream: the perfect Bitcoin wallet, for anyone.
+              {t("features.subtitle")}
             </motion.p>
           </div>
         </AnimatedSection>

@@ -11,9 +11,11 @@ import { motion } from "framer-motion";
 import { AnimatedSection } from "./components/home/animated-section";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+  const t = useTranslations();
 
   const openDownloadModal = () => setIsDownloadModalOpen(true);
   const closeDownloadModal = () => setIsDownloadModalOpen(false);
@@ -29,7 +31,7 @@ export default function Home() {
         {/* Features Section */}
         <FeaturesSection />
 
-        {/* Testimonial Section (remplace Quote) */}
+        {/* Testimonial Section */}
         <TestimonialSection />
 
         {/* FAQ Preview */}
@@ -50,7 +52,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                Engineering Sovereignty
+                {t("cta.title")}
               </motion.h2>
 
               <motion.p
@@ -60,15 +62,14 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                We build the tools and infrastructure you deserve to buy, sell,
-                hold, and spend Bitcoin without compromise.
+                {t("cta.subtitle")}
               </motion.p>
 
               <button
                 onClick={openDownloadModal}
                 className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium"
               >
-                Download
+                {t("common.download")}
               </button>
             </div>
           </section>

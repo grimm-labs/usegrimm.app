@@ -2,20 +2,20 @@
 
 import React from "react";
 import { QRCodeSVG } from "qrcode.react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const Donation = () => {
+  const t = useTranslations();
+
   return (
     <div className="bg-white rounded-lg p-6 sm:p-8 text-center max-w-md mx-auto">
       {/* Title */}
       <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-        Support Grimm App with a Bitcoin Donation 💛
+        {t("donation.title")}
       </h3>
 
       {/* Description */}
-      <p className="text-gray-600 text-sm mb-6">
-        Support Grimm App by donating Bitcoin — scan the QR code or copy the
-        address below.
-      </p>
+      <p className="text-gray-600 text-sm mb-6">{t("donation.description")}</p>
 
       {/* QR Code */}
       <div className="flex justify-center items-center mb-6">
@@ -41,10 +41,7 @@ export const Donation = () => {
       </div>
 
       {/* Footer Note */}
-      <p className="text-xs text-gray-500">
-        All donations will be used exclusively for the development and
-        improvement of Grimm App. Thank you for your support!
-      </p>
+      <p className="text-xs text-gray-500">{t("donation.footer")}</p>
     </div>
   );
 };

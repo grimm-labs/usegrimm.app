@@ -6,6 +6,8 @@ import Image from "next/image";
 
 import logo from "@/app/assets/logo_19.png";
 import { BetaBadge } from "./beta-badge";
+import { LanguageSwitcher } from "./language-switcher";
+import { useTranslations } from "@/hooks/useTranslations";
 
 interface HeaderProps {
   onDownloadClick: () => void;
@@ -13,14 +15,18 @@ interface HeaderProps {
 
 export default function Header({ onDownloadClick }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations();
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
-      {/* Badge BETA positionné globalement */}
       <BetaBadge />
 
       <header className="bg-transparent backdrop-blur-sm">
@@ -40,7 +46,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                     href="/faq"
                     className="text-gray-600 hover:text-green-600 transition-colors font-medium"
                   >
-                    FAQ
+                    {t("common.faq")}
                   </Link>
                 </li>
                 <li>
@@ -50,7 +56,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                     className="text-gray-600 hover:text-green-600 transition-colors font-medium"
                     rel="noreferrer"
                   >
-                    X (Twitter)
+                    {t("header.twitter")}
                   </a>
                 </li>
                 <li>
@@ -60,15 +66,18 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                     className="text-gray-600 hover:text-green-600 transition-colors font-medium"
                     rel="noreferrer"
                   >
-                    LinkedIn
+                    {t("header.linkedin")}
                   </a>
+                </li>
+                <li>
+                  <LanguageSwitcher />
                 </li>
                 <li>
                   <button
                     onClick={onDownloadClick}
                     className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium"
                   >
-                    Download
+                    {t("common.download")}
                   </button>
                 </li>
               </ul>
@@ -79,7 +88,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                 onClick={onDownloadClick}
                 className="bg-green-600 px-4 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium text-sm"
               >
-                Download
+                {t("common.download")}
               </button>
 
               <button
@@ -121,39 +130,48 @@ export default function Header({ onDownloadClick }: HeaderProps) {
             </div>
           </div>
 
+          {/* Menu mobile */}
           {isMenuOpen && (
             <div className="md:hidden bg-white border-t border-gray-200 py-4 animate-slideDown">
-              <ul className="space-y-3 text-center">
+              <ul className="space-y-4 text-center">
                 <li>
                   <Link
                     href="/faq"
-                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-2"
-                    onClick={() => setIsMenuOpen(false)}
+                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-3 text-lg"
+                    onClick={closeMenu}
                   >
-                    FAQ
+                    {t("common.faq")}
                   </Link>
                 </li>
                 <li>
                   <a
                     href="https://x.com/useGrimmApp"
                     target="_blank"
-                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-2"
+                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-3 text-lg"
                     rel="noreferrer"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={closeMenu}
                   >
-                    X (Twitter)
+                    {t("header.twitter")}
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://linkedin.com/company/grimm-app"
                     target="_blank"
-                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-2"
+                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-3 text-lg"
                     rel="noreferrer"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={closeMenu}
                   >
-                    LinkedIn
+                    {t("header.linkedin")}
                   </a>
+                </li>
+                <li className="pt-4 border-t border-gray-200">
+                  <div className="flex flex-col items-center space-y-4">
+                    <span className="text-gray-500 text-sm font-medium mb-2">
+                      {t("common.language")}
+                    </span>
+                    <LanguageSwitcher />
+                  </div>
                 </li>
               </ul>
             </div>
