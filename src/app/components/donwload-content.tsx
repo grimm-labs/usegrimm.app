@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 import googlePlayButton from "@/app/assets/googlePlay.png";
 import appStoreButton from "@/app/assets/appStore.png";
-import grimmLogo from "@/app/assets/logo_17.png";
+import grimmLogo from "@/app/assets/logo_1.png";
 import { useTranslations } from "@/hooks/useTranslations";
 
 export const DownloadContent = () => {
