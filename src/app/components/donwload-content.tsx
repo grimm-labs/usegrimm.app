@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import googlePlayButton from "@/app/assets/googlePlay.png";
 import appStoreButton from "@/app/assets/appStore.png";
+import grimmLogo from "@/app/assets/logo_17.png";
 import { useTranslations } from "@/hooks/useTranslations";
 
 export const DownloadContent = () => {
@@ -25,11 +26,17 @@ export const DownloadContent = () => {
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-between">
         {/* QR Code Section */}
         <div className="flex-1 flex flex-col items-center order-2 sm:order-1">
-          <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm border border-gray-100">
+          <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm border border-gray-100 relative">
             <QRCodeSVG
               size={160}
-              value="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
+              value="https://onelink.to/4xc8vz"
               className="mx-auto"
+              imageSettings={{
+                src: grimmLogo.src,
+                height: 28,
+                width: 28,
+                excavate: true,
+              }}
             />
           </div>
           <p className="text-gray-500 text-xs mt-2 text-center max-w-xs">
@@ -56,8 +63,10 @@ export const DownloadContent = () => {
             </a>
 
             <a
-              href="#"
+              href="https://testflight.apple.com/join/kK732x9j"
               className="block transition-transform hover:scale-[1.02] active:scale-95"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Image
                 src={appStoreButton}

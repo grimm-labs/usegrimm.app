@@ -28,7 +28,7 @@ export const LanguageSwitcher: React.FC = () => {
       {/* Bouton principal */}
       <button
         onClick={toggleDropdown}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors border border-gray-300 min-w-[100px] justify-center"
+        className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors border border-gray-300 min-w-[130px] justify-center"
       >
         {currentLanguage?.flag && (
           <Image

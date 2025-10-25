@@ -79,6 +79,7 @@ export default function Footer() {
                 <a
                   href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
                   className="block"
+                  target="_blank"
                 >
                   <Image
                     src={googlePlayButton}
@@ -88,7 +89,11 @@ export default function Footer() {
                     height={78}
                   />
                 </a>
-                <a href="#" className="block">
+                <a
+                  href="https://testflight.apple.com/join/kK732x9j"
+                  className="block"
+                  target="_blank"
+                >
                   <Image
                     src={appSToreButton}
                     alt="Get it on App Store"
