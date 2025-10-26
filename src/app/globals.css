@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-satoshi:
+    "Satoshi", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
 body {
   color: #374151;
   background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-satoshi);
 }
 
 .main-page {
@@ -188,4 +193,8 @@ html {
 
 .z-50 {
   z-index: 50;
+}
+
+* {
+  font-family: var(--font-satoshi);
 }
