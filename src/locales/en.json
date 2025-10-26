@@ -1,0 +1,246 @@
+{
+  "common": {
+    "download": "Download",
+    "seeAll": "See all",
+    "home": "Home",
+    "faq": "FAQ",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "support": "Support",
+    "beta": "BETA",
+    "allRightsReserved": "All rights reserved.",
+    "language": "Language"
+  },
+  "header": {
+    "twitter": "X (Twitter)",
+    "linkedin": "LinkedIn"
+  },
+  "hero": {
+    "title": "The best mobile Bitcoin wallet",
+    "titleHighlight": "of all time",
+    "subtitle": "Focused on privacy, security and usability for day-to-day Bitcoin transactions.",
+    "startUsing": "Start using GrimmApp"
+  },
+  "features": {
+    "title": "Wallet Features",
+    "subtitle": "Many said it couldn't be done, but we've achieved our impossible dream: the perfect Bitcoin wallet, for anyone.",
+    "lightning": {
+      "title": "Instant and cheap lightning payments",
+      "description": "Lightning payments without liquidity and channel management. Send and receive payments seamlessly with one click."
+    },
+    "swaps": {
+      "title": "Automatic cross-network swaps",
+      "description": "Seamlessly move funds between Bitcoin, Lightning, and Liquid networks using non-custodial atomic swaps."
+    },
+    "privacy": {
+      "title": "Confidential transactions",
+      "description": "Enhanced privacy features to protect your financial information and transaction details."
+    },
+    "fees": {
+      "title": "Smart fee management",
+      "description": "Customizable mempool-based fee calculations and RBF technologies ensure you never overpay mining fees."
+    },
+    "backup": {
+      "title": "Easy and secure encrypted cloud backup",
+      "description": "Secure your wallet with encrypted cloud backups that protect your funds while ensuring easy recovery."
+    },
+    "hardware": {
+      "title": "Watch-only hardware wallets",
+      "description": "Receive to any offline wallet, monitor balances and transaction history of your hardware wallets."
+    }
+  },
+  "testimonial": {
+    "title": "Suitable for beginners and experts alike.",
+    "quote": "I built this wallet so that it would offer all the advanced features I want, but also that my mom could use it without being confused.",
+    "author": "— JONATHAN NENBA, founder of Grimm App",
+    "compatibility": {
+      "title": "Multi-network compatibility",
+      "description": "Transact seamlessly on the Bitcoin Network, Lightning Network and Liquid Network. Using non-custodial atomic-swap technologies, you can move funds between networks anonymously and securely."
+    },
+    "integration": {
+      "title": "Native integration with the Grimm App exchange",
+      "description": "Connect your Grimm App account to buy bitcoin, sell bitcoin and make flat payments directly with your self-custodial wallet. This is optional, and you don't have to link an account if you don't want to. It's so easy, it feels like using a custodial app!"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Grimm App",
+    "preview": {
+      "selfCustodial": {
+        "question": "What is a self-custodial wallet?",
+        "answer": "A self-custodial wallet is a type of wallet where you have full control and ownership of your private keys. This means you are the only one with access to your funds, without relying on a third party. It's crucial to securely back up your private keys to avoid losing access to your Bitcoin."
+      },
+      "buySell": {
+        "question": "Can I buy and sell Bitcoin directly through the app?",
+        "answer": "Yes! Our app allows you to buy and sell Bitcoin directly, provided you complete a Know Your Customer (KYC) identity verification process. This ensures compliance with local regulations and the security of your transactions."
+      },
+      "security": {
+        "question": "Is my personal information secure?",
+        "answer": "Absolutely! We prioritize the privacy and security of your data. All personal information is securely stored and never shared with third parties without your explicit consent."
+      }
+    }
+  },
+  "cta": {
+    "title": "Engineering Sovereignty",
+    "subtitle": "We build the tools and infrastructure you deserve to buy, sell, hold, and spend Bitcoin without compromise."
+  },
+  "download": {
+    "title": "Download Grimm App",
+    "subtitle": "Get the best Bitcoin wallet for your device",
+    "scan": "Scan with your phone camera",
+    "join": "Join thousands of Bitcoin users worldwide"
+  },
+  "donation": {
+    "title": "Support Grimm App with a Bitcoin Donation 💛",
+    "description": "Support Grimm App by donating Bitcoin — scan the QR code or copy the address below.",
+    "footer": "All donations will be used exclusively for the development and improvement of Grimm App. Thank you for your support!"
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last Updated: December 22, 2024",
+    "sections": {
+      "welcome": {
+        "part1": "Welcome to",
+        "part2": ", your Bitcoin wallet. Please read these Terms of Use (\"Terms\") carefully before using the Grimm App software application (the \"Service\"), operated by Grimm Technologies (\"we\", \"our\", or \"us\")."
+      },
+      "acceptance": "Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access the Service.",
+      "content": {
+        "title": "Content",
+        "part1": "Our Service may allow you to manage, store, and share information related to your Bitcoin holdings and transactions. You are solely responsible for any information or content you provide through the Service.",
+        "part2": "By using the Service, you grant us a non-exclusive, worldwide, royalty-free license to use, adapt, modify, and display any non-personal data necessary for the operation and improvement of the Service."
+      },
+      "links": {
+        "title": "Links to Third-Party Services",
+        "description": "The Service may contain links to third-party websites or services that are not owned or controlled by Grimm Technologies. We assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. Your use of any third-party websites or services is at your own risk."
+      },
+      "acceptableUse": {
+        "title": "Acceptable Use",
+        "part1": "You agree not to use the Service:",
+        "list": [
+          "In any unlawful, fraudulent, or harmful manner.",
+          "To compromise the security or functionality of the Service.",
+          "To access the Service through unauthorized means."
+        ],
+        "part2": "We reserve the right to terminate access to the Service for violations of these Terms."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "description": "All content provided through the Service, including logos, trademarks, software, and design elements, is the intellectual property of Grimm Technologies and protected under applicable copyright and trademark laws. You may not reproduce, distribute, or otherwise use the content without our explicit written consent."
+      },
+      "security": {
+        "title": "Security and Risks",
+        "description": "Grimm App does not store private keys, passwords, or recovery phrases. It is your responsibility to secure your device and maintain the confidentiality of your credentials. We are not liable for any loss of funds due to unauthorized access or misuse."
+      },
+      "disclaimer": {
+        "title": "Disclaimer of Warranties",
+        "description": "The Service is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. We make no warranties regarding the reliability, availability, or suitability of the Service for your purposes. Use of the Service is at your sole risk."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "description": "To the fullest extent permitted by law, Grimm Technologies shall not be held liable for any damages, including but not limited to loss of funds, data, or profits arising from your use or inability to use the Service."
+      },
+      "indemnification": {
+        "title": "Indemnification",
+        "description": "You agree to indemnify and hold harmless Grimm Technologies from any claims, damages, or expenses arising from your use of the Service, your violation of these Terms, or your infringement of any rights of a third party."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "description": "We reserve the right to modify these Terms at any time. Any changes will be effective immediately upon posting. Continued use of the Service after changes constitute your acceptance of the revised Terms."
+      },
+      "governingLaw": {
+        "title": "Governing Law",
+        "description": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Cameroon. Any disputes arising from these Terms shall be resolved in the courts of Cameroon."
+      },
+      "termination": {
+        "title": "Termination",
+        "description": "We may terminate or suspend your access to the Service at any time for violations of these Terms. Upon termination, all rights granted to you under these Terms will cease immediately."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "If you have any questions about these Terms, please contact us at:"
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: December 22, 2024",
+    "sections": {
+      "introduction": "Grimm Technologies (\"us\", \"we\", or \"our\") operates the Grimm App software application (the \"Service\"). This Privacy Policy explains how we collect, use, and protect your Personal Information when you use the Service. By using the Service, you agree to the collection and use of information as outlined in this policy.",
+      "informationCollection": {
+        "title": "Information Collection and Use",
+        "description": "While using our Service, we may ask you to provide certain personally identifiable information such as your name, email address, or other details (\"Personal Information\"). This information is used to improve your experience with the Service."
+      },
+      "logData": {
+        "title": "Log Data",
+        "description": "We may collect information sent by your browser when you access the Service (\"Log Data\"). This data may include your IP address, browser type, pages visited, and other diagnostic information. We may use third-party services like Google Analytics to analyze this data."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Cookies are small files stored on your device to improve your experience with the Service. You can disable cookies in your browser settings, but doing so may limit some functionality of the Service."
+      },
+      "security": {
+        "title": "Security",
+        "description": "We take the security of your Personal Information seriously and implement measures to protect it. However, no method of transmission over the Internet or electronic storage is completely secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "description": "You have the right to access, correct, or delete your Personal Information. If required by law, you may also revoke consent for the use of your data. To exercise these rights, please contact us."
+      },
+      "changes": {
+        "title": "Changes to This Privacy Policy",
+        "description": "This Privacy Policy is effective as of December 22, 2024, and may be updated periodically. Changes will be posted here, and continued use of the Service constitutes acceptance of the updated policy."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "If you have any questions about this Privacy Policy, please contact us at"
+      }
+    }
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "subtitle": "Everything you need to know about our self-custodial Bitcoin wallet.",
+    "questions": [
+      {
+        "question": "What is a self-custodial wallet?",
+        "answer": "A self-custodial wallet is a type of wallet where you have full control and ownership of your private keys. This means you are the only one with access to your funds, without relying on a third party. It's crucial to securely back up your private keys to avoid losing access to your Bitcoin."
+      },
+      {
+        "question": "Can I buy and sell Bitcoin directly through the app?",
+        "answer": "Yes! Our app allows you to buy and sell Bitcoin directly, provided you complete a Know Your Customer (KYC) identity verification process. This ensures compliance with local regulations and the security of your transactions."
+      },
+      {
+        "question": "Why do I need to complete KYC to buy or sell Bitcoin?",
+        "answer": "KYC (Know Your Customer) verification is a legal requirement that helps prevent fraud, money laundering, and other illegal activities. It ensures a safe and regulated environment for all transactions."
+      },
+      {
+        "question": "Is my personal information secure?",
+        "answer": "Absolutely! We prioritize the privacy and security of your data. All personal information is securely stored and never shared with third parties without your explicit consent."
+      },
+      {
+        "question": "Is the app customizable?",
+        "answer": "Yes, our app is designed to be customizable. You can personalize the appearance and certain features to suit your preferences, creating a unique user experience."
+      },
+      {
+        "question": "What fees are associated with transactions?",
+        "answer": "We maintain transparent fees for buying, selling, and transferring Bitcoin. You can view detailed fee information within the app before completing a transaction."
+      },
+      {
+        "question": "What happens if I lose my private key?",
+        "answer": "As a self-custodial wallet, you are the sole owner of your private keys. If you lose them, we cannot recover them for you. We strongly recommend securely backing up your private keys in a safe place."
+      },
+      {
+        "question": "Does the app support other cryptocurrencies?",
+        "answer": "Currently, our app focuses exclusively on Bitcoin to provide an optimized and secure experience. However, we plan to support additional cryptocurrencies in the future."
+      },
+      {
+        "question": "Is the app available in all countries?",
+        "answer": "The app is accessible in most countries, but certain features, such as buying and selling Bitcoin, may be restricted depending on local regulations."
+      },
+      {
+        "question": "How can I get help if I encounter an issue?",
+        "answer": "Our support team is here to assist you. You can contact us directly through the app or send an email to our customer support. We'll respond to your inquiries as quickly as possible."
+      }
+    ]
+  }
+}

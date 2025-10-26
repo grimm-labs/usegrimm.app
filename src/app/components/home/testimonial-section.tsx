@@ -3,8 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./animated-section";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const TestimonialSection = () => {
+  const t = useTranslations();
+
   return (
     <AnimatedSection delay={0.2}>
       <section className="py-20 relative overflow-hidden">
@@ -21,7 +24,7 @@ export const TestimonialSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Suitable for beginners and experts alike.
+            {t("testimonial.title")}
           </motion.h2>
 
           <motion.div
@@ -32,12 +35,10 @@ export const TestimonialSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <blockquote className="text-2xl md:text-3xl italic text-gray-700 leading-relaxed mb-6 max-w-4xl mx-auto">
-              &ldquo;I built this wallet so that it would offer all the advanced
-              features I want, but also that my mom could use it without being
-              confused.&rdquo;
+              {t("testimonial.quote")}
             </blockquote>
             <footer className="text-xl font-semibold text-gray-600">
-              — JONATHAN NENBA, founder of Grimm App
+              {t("testimonial.author")}
             </footer>
           </motion.div>
 
@@ -50,13 +51,10 @@ export const TestimonialSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Multi-network compatibility
+                {t("testimonial.compatibility.title")}
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Transact seamlessly on the <strong>Bitcoin</strong> Network,{" "}
-                <strong>Lightning</strong> Network and <strong>Liquid</strong>{" "}
-                Network. Using non-custodial atomic-swap technologies, you can
-                move funds between networks anonymously and securely.
+                {t("testimonial.compatibility.description")}
               </p>
             </motion.div>
 
@@ -68,14 +66,10 @@ export const TestimonialSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Native integration with the Grimm App exchange
+                {t("testimonial.integration.title")}
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Connect your Grimm App account to buy bitcoin, sell bitcoin and
-                make flat payments directly with your self-custodial wallet.
-                This is optional, and you don&apos;t have to link an account if
-                you don&apos;t want to. It&apos;s so easy, it feels like using a
-                custodial app!
+                {t("testimonial.integration.description")}
               </p>
             </motion.div>
           </div>

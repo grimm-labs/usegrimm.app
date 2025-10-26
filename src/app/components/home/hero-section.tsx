@@ -6,27 +6,29 @@ import Image from "next/image";
 import phoneImage from "@/app/assets/screenshot.png";
 import googlePlayButton from "@/app/assets/googlePlay.png";
 import appStoreButton from "@/app/assets/appStore.png";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const HeroSection = () => {
+  const t = useTranslations();
+
   return (
     <section className="pt-4 pb-8 md:py-12">
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
         <div className="flex-1 space-y-6 md:space-y-8 text-center lg:text-left">
           <div className="space-y-4 md:space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
-              The best mobile Bitcoin wallet
+              {t("hero.title")}
               <br />
-              <span className="text-green-600">of all time</span>
+              <span className="text-green-600">{t("hero.titleHighlight")}</span>
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              Focused on privacy, security and usability for day-to-day Bitcoin
-              transactions.
+              {t("hero.subtitle")}
             </p>
           </div>
 
           <p className="text-lg md:text-xl text-gray-500">
-            Start using GrimmApp
+            {t("hero.startUsing")}
           </p>
 
           <div className="flex flex-row gap-4 justify-center lg:justify-start">
@@ -44,7 +46,12 @@ export const HeroSection = () => {
                 height={78}
               />
             </a>
-            <a href="#" className="inline-block">
+            <a
+              href="https://testflight.apple.com/join/kK732x9j"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block"
+            >
               <Image
                 src={appStoreButton}
                 alt="Download on the App Store"
@@ -57,7 +64,8 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex-1 relative max-w-md mt-6 lg:mt-0">
-          <div className="relative z-10 rounded-3xl overflow-hidden">
+          {/* Conteneur principal sans overflow-hidden */}
+          <div className="relative z-10 rounded-3xl">
             <div className="relative w-full max-h-[500px] md:max-h-[600px] transition-all duration-500 ease-in-out">
               <Image
                 src={phoneImage}
@@ -68,10 +76,13 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          <div className="absolute -top-6 -right-6 w-48 h-48 md:w-72 md:h-72 bg-green-600/10 rounded-full blur-lg animate-pulse-slow" />
-          <div className="absolute -bottom-6 -left-6 w-48 h-48 md:w-72 md:h-72 bg-orange-600/10 rounded-full blur-lg animate-pulse-slow" />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 border-2 border-green-600/90 rounded-full animate-ping-slow" />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:w-96 md:h-96 border border-green-600/80 rounded-full animate-ping-slower" />
+          {/* Cercles d'arrière-plan avec pointer-events: none - SANS overflow-hidden */}
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute -top-6 -right-6 w-48 h-48 md:w-72 md:h-72 bg-green-600/10 rounded-full blur-lg animate-pulse-slow" />
+            <div className="absolute -bottom-6 -left-6 w-48 h-48 md:w-72 md:h-72 bg-orange-600/10 rounded-full blur-lg animate-pulse-slow" />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 border-2 border-green-600/90 rounded-full animate-ping-slow" />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:w-96 md:h-96 border border-green-600/80 rounded-full animate-ping-slower" />
+          </div>
         </div>
       </div>
     </section>
