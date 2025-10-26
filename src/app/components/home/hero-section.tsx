@@ -46,7 +46,12 @@ export const HeroSection = () => {
                 height={78}
               />
             </a>
-            <a href="#" className="inline-block">
+            <a
+              href="https://testflight.apple.com/join/kK732x9j"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block"
+            >
               <Image
                 src={appStoreButton}
                 alt="Download on the App Store"
