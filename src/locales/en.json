@@ -200,6 +200,11 @@
   "faqPage": {
     "title": "Frequently Asked Questions (FAQ)",
     "subtitle": "Everything you need to know about our self-custodial Bitcoin wallet.",
+    "warning": {
+      "title": "Beware of scammers asking for your 12-word seed!",
+      "description": "Grimm App is self-custodial: you (and only you) have the key controlling the funds in the wallet. This key is made of a 12-word mnemonic, known as a 'seed'. You can find it in the app settings. Make a backup, and keep it safe. If you lose your seed, we can't help you.",
+      "advice": "Do not enter your seed in any websites or Google forms. Our support team will never ask for it."
+    },
     "questions": [
       {
         "question": "What is a self-custodial wallet?",
@@ -242,5 +247,34 @@
         "answer": "Our support team is here to assist you. You can contact us directly through the app or send an email to our customer support. We'll respond to your inquiries as quickly as possible."
       }
     ]
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Get help with Grimm App",
+    "checkFAQ": "If you have a question about Grimm App, check our",
+    "first": " first.",
+    "warning": {
+      "title": "Beware of scammers!",
+      "description": "Never share your 12-word seed phrase with anyone. Our support team will never ask for it."
+    },
+    "email": {
+      "title": "Email Support",
+      "description": "If you have an issue or question, send us an email at:"
+    },
+    "stayInTouch": {
+      "title": "Keeping in touch"
+    },
+    "reachOut": {
+      "title": "Reach out"
+    },
+    "aboutUs": {
+      "title": "About us",
+      "builtBy": "Built by Grimm Labs",
+      "sourceCode": "Source code available"
+    },
+    "technical": {
+      "title": "Technical issues and discussions",
+      "description": "We use GitHub for bug tracking and technical discussions. Search existing issues for your bug, and create a new one if needed."
+    }
   }
 }

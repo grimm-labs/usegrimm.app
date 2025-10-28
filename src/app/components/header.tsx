@@ -50,6 +50,14 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    href="/support"
+                    className="text-gray-600 hover:text-green-600 transition-colors font-medium"
+                  >
+                    {t("common.support")}
+                  </Link>
+                </li>
+                <li>
                   <a
                     href="https://x.com/useGrimmApp"
                     target="_blank"
