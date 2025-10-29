@@ -200,6 +200,11 @@
   "faqPage": {
     "title": "Foire Aux Questions (FAQ)",
     "subtitle": "Tout ce que vous devez savoir sur notre portefeuille Bitcoin self-custodial.",
+    "warning": {
+      "title": "Méfiez-vous des arnaqueurs demandant votre seed de 12 mots !",
+      "description": "Grimm App est self-custodial : vous (et seulement vous) avez la clé contrôlant les fonds dans le portefeuille. Cette clé est composée d'un mnémonique de 12 mots, appelé 'seed'. Vous pouvez le trouver dans les paramètres de l'application. Faites une sauvegarde et gardez-la en sécurité. Si vous perdez votre seed, nous ne pouvons pas vous aider.",
+      "advice": "N'entrez jamais votre seed sur des sites web ou des formulaires Google. Notre équipe de support ne vous le demandera jamais."
+    },
     "questions": [
       {
         "question": "Qu'est-ce qu'un portefeuille self-custodial ?",
@@ -242,5 +247,34 @@
         "answer": "Notre équipe de support est là pour vous aider. Vous pouvez nous contacter directement via l'application ou envoyer un e-mail à notre service client. Nous répondrons à vos demandes aussi rapidement que possible."
       }
     ]
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Obtenez de l'aide avec Grimm App",
+    "checkFAQ": "Si vous avez une question sur Grimm App, consultez d'abord notre",
+    "first": ".",
+    "warning": {
+      "title": "Méfiez-vous des arnaqueurs !",
+      "description": "Ne partagez jamais votre phrase de récupération de 12 mots avec qui que ce soit. Notre équipe de support ne vous la demandera jamais."
+    },
+    "email": {
+      "title": "Support par email",
+      "description": "Si vous avez un problème ou une question, envoyez-nous un email à :"
+    },
+    "stayInTouch": {
+      "title": "Restez en contact"
+    },
+    "reachOut": {
+      "title": "Nous contacter"
+    },
+    "aboutUs": {
+      "title": "À propos",
+      "builtBy": "Développé par Grimm Labs",
+      "sourceCode": "Code source disponible"
+    },
+    "technical": {
+      "title": "Problèmes techniques et discussions",
+      "description": "Nous utilisons GitHub pour le suivi des bugs et les discussions techniques. Recherchez les problèmes existants pour votre bug, et créez-en un nouveau si nécessaire."
+    }
   }
 }

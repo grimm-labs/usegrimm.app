@@ -134,12 +134,12 @@ export default function Footer() {
                 >
                   {t("common.privacy")}
                 </Link>
-                <a
-                  href="mailto:contact@usegrimm.app"
+                <Link
+                  href="/support"
                   className="text-gray-500 hover:text-green-600 transition-colors"
                 >
-                  {t("common.contact")}
-                </a>
+                  {t("common.support")}
+                </Link>
               </div>
             </div>
           </div>
