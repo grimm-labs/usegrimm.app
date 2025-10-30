@@ -15,16 +15,16 @@ export const FAQPreview = () => {
 
   const faqs = [
     {
+      question: t("faq.preview.bitcoin.question"),
+      answer: t("faq.preview.bitcoin.answer"),
+    },
+    {
+      question: t("faq.preview.lightning.question"),
+      answer: t("faq.preview.lightning.answer"),
+    },
+    {
       question: t("faq.preview.selfCustodial.question"),
       answer: t("faq.preview.selfCustodial.answer"),
-    },
-    {
-      question: t("faq.preview.buySell.question"),
-      answer: t("faq.preview.buySell.answer"),
-    },
-    {
-      question: t("faq.preview.security.question"),
-      answer: t("faq.preview.security.answer"),
     },
   ];
 

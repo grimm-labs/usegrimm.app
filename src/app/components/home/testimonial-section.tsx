@@ -37,42 +37,10 @@ export const TestimonialSection = () => {
             <blockquote className="text-2xl md:text-3xl italic text-gray-700 leading-relaxed mb-6 max-w-4xl mx-auto">
               {t("testimonial.quote")}
             </blockquote>
-            <footer className="text-xl font-semibold text-gray-600">
+            <footer className="text-base text-gray-600">
               {t("testimonial.author")}
             </footer>
           </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <motion.div
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                {t("testimonial.compatibility.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                {t("testimonial.compatibility.description")}
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                {t("testimonial.integration.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                {t("testimonial.integration.description")}
-              </p>
-            </motion.div>
-          </div>
         </div>
       </section>
     </AnimatedSection>

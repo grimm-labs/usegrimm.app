@@ -28,8 +28,8 @@ export const FeaturesSection = () => {
       icon: <FaBolt size={24} />,
     },
     {
-      title: t("features.swaps.title"),
-      description: t("features.swaps.description"),
+      title: t("features.selfcustody.title"),
+      description: t("features.selfcustody.description"),
       icon: <FaExchangeAlt size={24} />,
     },
     {
@@ -48,8 +48,8 @@ export const FeaturesSection = () => {
       icon: <FaCloudUploadAlt size={24} />,
     },
     {
-      title: t("features.hardware.title"),
-      description: t("features.hardware.description"),
+      title: t("features.integration.title"),
+      description: t("features.integration.description"),
       icon: <FaEye size={24} />,
     },
   ];

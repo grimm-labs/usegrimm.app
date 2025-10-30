@@ -12,7 +12,7 @@ interface FAQItemProps {
 export const FAQItem: React.FC<FAQItemProps> = ({
   title,
   content,
-  defaultOpen = false,
+  defaultOpen = true,
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 

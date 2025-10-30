@@ -28,7 +28,6 @@ export default function FAQ() {
 
       <div className="flex-1 w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-7xl">
         {/* Header */}
-
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             {t("faqPage.title") as string}
@@ -38,8 +37,7 @@ export default function FAQ() {
             {t("faqPage.subtitle") as string}
           </p>
         </div>
-
-        <div className="mb-8">
+        <div className="my-8">
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
             <div className="flex items-start">
               <div className="flex-shrink-0">
@@ -71,7 +69,6 @@ export default function FAQ() {
             </div>
           </div>
         </div>
-
         {/* Content */}
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
           <div className="space-y-6">

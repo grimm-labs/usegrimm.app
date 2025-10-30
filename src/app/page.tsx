@@ -5,7 +5,6 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import { HeroSection } from "./components/home/hero-section";
 import { FeaturesSection } from "./components/home/features-section";
-import { TestimonialSection } from "./components/home/testimonial-section";
 import { FAQPreview } from "./components/home/faq-preview";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./components/home/animated-section";
@@ -30,9 +29,6 @@ export default function Home() {
 
         {/* Features Section */}
         <FeaturesSection />
-
-        {/* Testimonial Section */}
-        <TestimonialSection />
 
         {/* FAQ Preview */}
         <FAQPreview />

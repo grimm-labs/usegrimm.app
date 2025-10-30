@@ -20,7 +20,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         scale: 1.02,
         transition: { duration: 0.2 },
       }}
-      className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 h-full"
+      className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-300 hover:shadow-lg transition-all duration-300 h-full"
     >
       <div className="flex items-center gap-4 mb-6">
         <motion.div
@@ -33,9 +33,9 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         >
           {icon}
         </motion.div>
-        <h3 className="text-2xl font-medium text-gray-800">{title}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{title}</h3>
       </div>
-      <p className="text-gray-600 leading-relaxed text-lg">{description}</p>
+      <p className="text-gray-600 leading-relaxed">{description}</p>
     </motion.div>
   );
 };

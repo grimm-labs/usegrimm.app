@@ -86,7 +86,7 @@ export default function Support() {
             <div className="bg-gray-50 rounded-lg p-4">
               <a
                 href="mailto:support@usegrimm.app"
-                className="text-green-600 font-mono text-lg hover:text-green-700 transition-colors"
+                className="text-green-600 text-lg hover:text-green-700 transition-colors"
               >
                 support@usegrimm.app
               </a>
@@ -116,7 +116,7 @@ export default function Support() {
                     <span>Twitter</span>
                   </a>
                   <a
-                    href="https://github.com/grimm-labs"
+                    href="https://github.com/grimm-labs/grimm-mobile-app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-gray-600 hover:text-green-600 transition-colors"
