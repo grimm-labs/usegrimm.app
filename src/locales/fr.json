@@ -10,80 +10,72 @@
     "support": "Support",
     "beta": "BETA",
     "allRightsReserved": "Tous droits réservés.",
-    "language": "Langue"
+    "language": "Langue",
+    "motto": "Rendre le Bitcoin accessible à tous"
   },
   "header": {
     "twitter": "X (Twitter)",
     "linkedin": "LinkedIn"
   },
   "hero": {
-    "title": "Le meilleur portefeuille Bitcoin mobile",
-    "titleHighlight": "de tous les temps",
+    "title": "Rendre le Bitcoin accessible à tous — la liberté ne devrait connaître aucune frontière.",
     "subtitle": "Concentré sur la confidentialité, la sécurité et la facilité d'utilisation pour les transactions Bitcoin quotidiennes.",
-    "startUsing": "Commencez à utiliser GrimmApp"
+    "startUsing": "Commencez à utiliser Grimm App"
   },
   "features": {
-    "title": "Fonctionnalités du portefeuille",
-    "subtitle": "Beaucoup disaient que c'était impossible, mais nous avons réalisé notre rêve impossible : le portefeuille Bitcoin parfait, pour tous.",
+    "title": "Fonctionnalités du Portefeuille",
+    "subtitle": "Découvrez la véritable souveraineté Bitcoin avec un portefeuille Lightning entièrement self-custodial, propulsé par Breez SDK.",
     "lightning": {
-      "title": "Paiements Lightning instantanés et économiques",
-      "description": "Paiements Lightning sans gestion de liquidités et de canaux. Envoyez et recevez des paiements en un clic."
+      "title": "Paiements Lightning instantanés",
+      "description": "Envoyez et recevez des bitcoins en quelques secondes grâce à Lightning. Aucune gestion de canal, aucune complexité — uniquement des paiements rapides et sans frontières."
     },
-    "swaps": {
-      "title": "Échanges automatiques entre réseaux",
-      "description": "Déplacez vos fonds entre les réseaux Bitcoin, Lightning et Liquid en utilisant des atomic swaps non custodials."
+    "selfcustody": {
+      "title": "Souveraineté totale",
+      "description": "Vos clés, vos bitcoins. Profitez d’une indépendance financière totale grâce à une conception non custodiale."
     },
     "privacy": {
-      "title": "Transactions confidentielles",
-      "description": "Fonctionnalités de confidentialité avancées pour protéger vos informations financières et vos détails de transaction."
+      "title": "Confidentialité renforcée",
+      "description": "Vos données vous appartiennent. Effectuez vos transactions en toute discrétion, sans suivi tiers."
     },
     "fees": {
-      "title": "Gestion intelligente des frais",
-      "description": "Des calculs de frais personnalisables basés sur le mempool et les technologies RBF vous assurent de ne jamais surpayer les frais de minage."
+      "title": "Frais intelligents",
+      "description": "L’application choisit automatiquement la meilleure route et les frais les plus justes pour vos paiements Lightning."
     },
     "backup": {
-      "title": "Sauvegarde cloud chiffrée facile et sécurisée",
-      "description": "Sécurisez votre portefeuille avec des sauvegardes cloud chiffrées qui protègent vos fonds tout en permettant une récupération facile."
+      "title": "Sauvegarde et restauration simplifiées",
+      "description": "Protégez votre portefeuille avec des sauvegardes chiffrées locales, et restaurez-le facilement à tout moment."
     },
-    "hardware": {
-      "title": "Portefeuilles matériels en lecture seule",
-      "description": "Recevez sur n'importe quel portefeuille hors ligne, surveillez les soldes et l'historique des transactions de vos portefeuilles matériels."
+    "integration": {
+      "title": "Propulsé par Breez SDK",
+      "description": "Construit sur l’infrastructure fiable de Breez pour une intégration Lightning fluide, performante et évolutive."
     }
   },
   "testimonial": {
     "title": "Adapté aux débutants comme aux experts.",
     "quote": "J'ai conçu ce portefeuille pour qu'il offre toutes les fonctionnalités avancées que je souhaite, mais aussi pour que ma mère puisse l'utiliser sans être confuse.",
-    "author": "— JONATHAN NENBA, fondateur de Grimm App",
-    "compatibility": {
-      "title": "Compatibilité multi-réseaux",
-      "description": "Effectuez des transactions sur le réseau Bitcoin, le réseau Lightning et le réseau Liquid. En utilisant les technologies d'atomic swap non custodials, vous pouvez déplacer des fonds entre les réseaux de manière anonyme et sécurisée."
-    },
-    "integration": {
-      "title": "Intégration native avec l'exchange Grimm App",
-      "description": "Connectez votre compte Grimm App pour acheter du bitcoin, vendre du bitcoin et effectuer des paiements en monnaie fiduciaire directement avec votre portefeuille self-custodial. Ceci est optionnel, et vous n'avez pas à lier un compte si vous ne le souhaitez pas. C'est si facile que cela donne l'impression d'utiliser une application custodiale !"
-    }
+    "author": "— JONATHAN NENBA, Mainteneur de Grimm App"
   },
   "faq": {
     "title": "Foire Aux Questions",
     "subtitle": "Tout ce que vous devez savoir sur Grimm App",
     "preview": {
+      "bitcoin": {
+        "question": "Qu'est-ce que le Bitcoin ?",
+        "answer": "Le Bitcoin est une monnaie numérique décentralisée qui permet des paiements de pair à pair sans avoir besoin d’une banque centrale ou d’un intermédiaire. Les transactions sont enregistrées sur un registre public appelé blockchain, et le Bitcoin peut être utilisé pour envoyer, stocker ou faire croître de la valeur partout dans le monde."
+      },
+      "lightning": {
+        "question": "Qu'est-ce que le Lightning Network ?",
+        "answer": "Le Lightning Network est une solution de deuxième couche construite sur Bitcoin, permettant des transactions instantanées et à faible coût. Il est conçu pour les micropaiements et les transferts rapides du quotidien."
+      },
       "selfCustodial": {
-        "question": "Qu'est-ce qu'un portefeuille self-custodial ?",
-        "answer": "Un portefeuille self-custodial est un type de portefeuille où vous avez un contrôle total et la propriété de vos clés privées. Cela signifie que vous êtes le seul à avoir accès à vos fonds, sans dépendre d'un tiers. Il est crucial de sauvegarder vos clés privées en toute sécurité pour éviter de perdre l'accès à vos Bitcoin."
-      },
-      "buySell": {
-        "question": "Puis-je acheter et vendre du Bitcoin directement via l'application ?",
-        "answer": "Oui ! Notre application vous permet d'acheter et de vendre du Bitcoin directement, à condition de compléter un processus de vérification d'identité Know Your Customer (KYC). Cela assure la conformité avec les réglementations locales et la sécurité de vos transactions."
-      },
-      "security": {
-        "question": "Mes informations personnelles sont-elles sécurisées ?",
-        "answer": "Absolument ! Nous priorisons la confidentialité et la sécurité de vos données. Toutes les informations personnelles sont stockées en toute sécurité et ne sont jamais partagées avec des tiers sans votre consentement explicite."
+        "question": "Qu'est-ce qu’un portefeuille auto-hébergé (self-custodial) ?",
+        "answer": "Un portefeuille auto-hébergé signifie que vous possédez et contrôlez vos clés privées — et donc votre Bitcoin. Grimm App n’a jamais accès à vos fonds : vous êtes entièrement maître de votre argent."
       }
     }
   },
   "cta": {
-    "title": "Ingénierie de la Souveraineté",
-    "subtitle": "Nous construisons les outils et l'infrastructure que vous méritez pour acheter, vendre, détenir et dépenser du Bitcoin sans compromis."
+    "title": "Ingénierie de la souveraineté et de l’open source",
+    "subtitle": "Nous concevons des outils et une infrastructure qui vous permettent de détenir et d’utiliser Bitcoin en toute liberté."
   },
   "download": {
     "title": "Télécharger Grimm App",
@@ -207,44 +199,64 @@
     },
     "questions": [
       {
-        "question": "Qu'est-ce qu'un portefeuille self-custodial ?",
-        "answer": "Un portefeuille self-custodial est un type de portefeuille où vous avez un contrôle total et la propriété de vos clés privées. Cela signifie que vous êtes le seul à avoir accès à vos fonds, sans dépendre d'un tiers. Il est crucial de sauvegarder vos clés privées en toute sécurité pour éviter de perdre l'accès à vos Bitcoin."
-      },
-      {
-        "question": "Puis-je acheter et vendre du Bitcoin directement via l'application ?",
-        "answer": "Oui ! Notre application vous permet d'acheter et de vendre du Bitcoin directement, à condition de compléter un processus de vérification d'identité Know Your Customer (KYC). Cela assure la conformité avec les réglementations locales et la sécurité de vos transactions."
-      },
-      {
-        "question": "Pourquoi dois-je compléter le KYC pour acheter ou vendre du Bitcoin ?",
-        "answer": "La vérification KYC (Know Your Customer) est une exigence légale qui aide à prévenir la fraude, le blanchiment d'argent et autres activités illégales. Elle assure un environnement sûr et réglementé pour toutes les transactions."
+        "question": "Qu’est-ce qu’un portefeuille auto-custodial ?",
+        "answer": "Un portefeuille auto-custodial (ou auto-hébergé) est un type de portefeuille où vous avez le contrôle total et la propriété de vos clés privées. Cela signifie que vous êtes le seul à avoir accès à vos fonds, sans dépendre d’un tiers. Il est donc essentiel de sauvegarder vos clés privées de manière sécurisée afin d’éviter toute perte d’accès à vos Bitcoins."
       },
       {
         "question": "Mes informations personnelles sont-elles sécurisées ?",
-        "answer": "Absolument ! Nous priorisons la confidentialité et la sécurité de vos données. Toutes les informations personnelles sont stockées en toute sécurité et ne sont jamais partagées avec des tiers sans votre consentement explicite."
+        "answer": "Absolument ! Nous accordons la plus grande importance à la confidentialité et à la sécurité de vos données. Toutes les informations personnelles sont stockées de manière sécurisée et ne sont jamais partagées avec des tiers sans votre consentement explicite."
       },
       {
-        "question": "L'application est-elle personnalisable ?",
-        "answer": "Oui, notre application est conçue pour être personnalisable. Vous pouvez personnaliser l'apparence et certaines fonctionnalités selon vos préférences, créant ainsi une expérience utilisateur unique."
-      },
-      {
-        "question": "Quels frais sont associés aux transactions ?",
-        "answer": "Nous maintenons des frais transparents pour l'achat, la vente et le transfert de Bitcoin. Vous pouvez consulter les informations détaillées sur les frais dans l'application avant de finaliser une transaction."
+        "question": "L’application est-elle personnalisable ?",
+        "answer": "Oui, notre application est conçue pour être personnalisable. Vous pouvez adapter l’apparence et certaines fonctionnalités selon vos préférences afin de créer une expérience utilisateur unique."
       },
       {
         "question": "Que se passe-t-il si je perds ma clé privée ?",
-        "answer": "En tant que portefeuille self-custodial, vous êtes le seul propriétaire de vos clés privées. Si vous les perdez, nous ne pouvons pas les récupérer pour vous. Nous recommandons fortement de sauvegarder vos clés privées en toute sécurité dans un endroit sûr."
+        "answer": "En tant que portefeuille auto-custodial, vous êtes le seul propriétaire de vos clés privées. Si vous les perdez, nous ne pouvons pas les récupérer pour vous. Nous vous recommandons vivement de sauvegarder vos clés privées dans un endroit sûr."
       },
       {
-        "question": "L'application prend-elle en charge d'autres cryptomonnaies ?",
-        "answer": "Actuellement, notre application se concentre exclusivement sur le Bitcoin pour offrir une expérience optimisée et sécurisée. Cependant, nous prévoyons de prendre en charge d'autres cryptomonnaies à l'avenir."
+        "question": "Comment puis-je obtenir de l’aide en cas de problème ?",
+        "answer": "Notre équipe d’assistance est là pour vous aider. Vous pouvez nous contacter directement depuis l’application ou envoyer un e-mail à notre support client à l’adresse support@usegrimm.app. Nous répondrons à vos demandes dans les plus brefs délais."
       },
       {
-        "question": "L'application est-elle disponible dans tous les pays ?",
-        "answer": "L'application est accessible dans la plupart des pays, mais certaines fonctionnalités, telles que l'achat et la vente de Bitcoin, peuvent être restreintes en fonction des réglementations locales."
+        "question": "Qu’est-ce que le Bitcoin ?",
+        "answer": "Le Bitcoin est une monnaie numérique décentralisée qui permet des paiements de pair à pair sans avoir besoin d’une banque centrale ou d’un intermédiaire. Les transactions sont enregistrées sur un registre public appelé la blockchain. Le Bitcoin peut être utilisé pour envoyer de la valeur dans le monde entier, stocker de la richesse ou alimenter de nouvelles applications financières."
       },
       {
-        "question": "Comment puis-je obtenir de l'aide si je rencontre un problème ?",
-        "answer": "Notre équipe de support est là pour vous aider. Vous pouvez nous contacter directement via l'application ou envoyer un e-mail à notre service client. Nous répondrons à vos demandes aussi rapidement que possible."
+        "question": "Qu’est-ce que le réseau Lightning ?",
+        "answer": "Le réseau Lightning est un protocole de seconde couche construit au-dessus de Bitcoin. Il permet des paiements instantanés et à faible coût en ouvrant des canaux de paiement entre les participants et en ne réglant sur la blockchain principale que lorsque c’est nécessaire. Lightning est idéal pour les micro-paiements et les transferts fréquents."
+      },
+      {
+        "question": "Que sont les satoshis (sats) ?",
+        "answer": "Un satoshi (ou sat) est la plus petite unité de Bitcoin. Un Bitcoin équivaut à 100 000 000 satoshis. Nous affichons souvent les soldes en sats pour plus de précision, notamment lors des paiements Lightning de faible montant."
+      },
+      {
+        "question": "Grimm App collecte-t-elle des données sur ses utilisateurs ?",
+        "answer": "Nous collectons uniquement les données minimales nécessaires au fonctionnement du service. Cela peut inclure la vérification du numéro de téléphone et des données anonymisées (si activées). Nous ne collectons jamais votre phrase de récupération (seed). Le traitement des données personnelles respecte notre politique de confidentialité et s’effectue uniquement avec votre consentement."
+      },
+      {
+        "question": "Comment Grimm App stocke-t-elle ma phrase de récupération ?",
+        "answer": "Votre phrase de récupération est stockée uniquement sur votre appareil, chiffrée si vous choisissez le stockage sécurisé de l’appareil. Grimm App ne téléverse jamais votre seed et n’y a jamais accès. Nous vous guidons clairement pour la sauvegarder de manière sécurisée (sauvegarde hors ligne, sur papier ou sur un support matériel)."
+      },
+      {
+        "question": "Comment puis-je contacter Grimm App ?",
+        "answer": "Vous pouvez contacter notre équipe d’assistance via la section support de l’application ou par e-mail à support@usegrimm.app. Pour toute question liée à la conformité ou aux aspects légaux, utilisez l’adresse compliance@usegrimm.app. Ne partagez jamais votre seed ou vos clés privées avec le support."
+      },
+      {
+        "question": "Que se passe-t-il si Grimm App disparaît ?",
+        "answer": "Si Grimm App cesse de fonctionner, vos fonds restent les vôtres tant que vous possédez votre phrase de récupération. Comme Grimm est un portefeuille auto-custodial, vous pouvez restaurer votre portefeuille avec n’importe quelle autre application Bitcoin/Lightning compatible avec le même format de seed. Nous recommandons de conserver une copie de votre seed dans un endroit sûr et hors ligne."
+      },
+      {
+        "question": "Quels sont les pays où l’application n’est pas disponible ?",
+        "answer": "La disponibilité dépend des politiques des magasins d’applications et des lois locales. Grimm App peut être indisponible dans les juridictions où la réglementation sur les cryptomonnaies est stricte. Consultez la fiche de l’application dans votre store ou contactez le support pour obtenir les informations les plus récentes."
+      },
+      {
+        "question": "Dois-je compléter une vérification KYC pour créer un compte Grimm App ?",
+        "answer": "Non — la création d’un portefeuille auto-custodial de base ne nécessite généralement pas de vérification KYC. Cependant, pour accéder aux fonctionnalités en monnaie fiduciaire telles que l’achat ou la vente de Bitcoin, ou pour lever certaines limites, une vérification d’identité (KYC) peut être exigée selon les réglementations locales."
+      },
+      {
+        "question": "Comment Grimm App garantit-elle la sécurité de mes fonds ?",
+        "answer": "Grimm App adopte une architecture auto-custodiale : vos clés privées restent sous votre contrôle. Nous ne détenons jamais vos fonds. L’application utilise le stockage sécurisé de l’appareil, le chiffrement et les meilleures pratiques de gestion des clés. Pour la fonctionnalité Lightning, nous utilisons le SDK Breez, reconnu et audité, et respectons les standards de sécurité pour la gestion des canaux. Nous encourageons également les utilisateurs à sauvegarder leur seed hors ligne."
       }
     ]
   },
@@ -269,7 +281,7 @@
     },
     "aboutUs": {
       "title": "À propos",
-      "builtBy": "Développé par Grimm Labs",
+      "builtBy": "Développé par Grimm Technologies",
       "sourceCode": "Code source disponible"
     },
     "technical": {

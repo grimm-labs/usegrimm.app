@@ -29,18 +29,17 @@ export default function Footer() {
       <footer className="border-t border-gray-200 bg-white/90 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="py-12 flex flex-col md:flex-row justify-between items-center md:items-start gap-8 text-center">
-            {/* Section gauche - Logo et réseaux sociaux */}
             <div className="flex flex-col items-center md:items-start">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex items-center">
                   <Link href={"/"} className="block text-green-600">
                     <span className="sr-only">{t("common.home")}</span>
-                    <Image src={logo} alt="Grimm App" style={{ width: 180 }} />
+                    <Image src={logo} alt="Grimm Technologies" style={{ width: 150 }} />
                   </Link>
                 </div>
               </div>
               <p className="text-gray-600 mb-4 max-w-md">
-                {t("hero.title")} {t("hero.titleHighlight")}
+                {t("common.motto")}
               </p>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a
@@ -52,7 +51,7 @@ export default function Footer() {
                   <FaTwitter size={20} />
                 </a>
                 <a
-                  href="https://linkedin.com/company/grimm-app"
+                  href="https://www.linkedin.com/company/grimm-technologies/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-green-600 transition-colors"
@@ -60,7 +59,7 @@ export default function Footer() {
                   <FaLinkedin size={20} />
                 </a>
                 <a
-                  href="https://github.com/grimm-labs/usegrimm.app"
+                  href="https://github.com/grimm-labs/grimm-mobile-app"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-green-600 transition-colors"
@@ -69,8 +68,6 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-
-            {/* Section centre - Navigation */}
             <div className="flex flex-col items-center">
               <h3 className="font-semibold text-gray-800 mb-4">
                 {t("common.download")}
@@ -104,8 +101,6 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-
-            {/* Section droite - Sélecteur de langue */}
             <div className="flex flex-col items-center">
               <h3 className="font-semibold text-gray-800 mb-4">
                 {t("common.language")}
@@ -117,10 +112,9 @@ export default function Footer() {
           <div className="border-t border-gray-200 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-500 text-center md:text-left order-2 md:order-1">
-                &copy; {new Date().getFullYear()} Grimm App.{" "}
+                &copy; {new Date().getFullYear()} Grimm Technologies.{" "}
                 {t("common.allRightsReserved")}
               </p>
-
               <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm order-1 md:order-2 mb-4 md:mb-0">
                 <Link
                   href="/terms"

@@ -10,80 +10,72 @@
     "support": "Support",
     "beta": "BETA",
     "allRightsReserved": "All rights reserved.",
-    "language": "Language"
+    "language": "Language",
+    "motto": "Making Bitcoin accessible to everyone"
   },
   "header": {
     "twitter": "X (Twitter)",
     "linkedin": "LinkedIn"
   },
   "hero": {
-    "title": "The best mobile Bitcoin wallet",
-    "titleHighlight": "of all time",
+    "title": "Making Bitcoin accessible to everyone — freedom should know no borders.",
     "subtitle": "Focused on privacy, security and usability for day-to-day Bitcoin transactions.",
-    "startUsing": "Start using GrimmApp"
+    "startUsing": "Start using Grimm App"
   },
   "features": {
     "title": "Wallet Features",
-    "subtitle": "Many said it couldn't be done, but we've achieved our impossible dream: the perfect Bitcoin wallet, for anyone.",
+    "subtitle": "Experience true Bitcoin sovereignty with a fully self-custodial Lightning wallet powered by Breez SDK.",
     "lightning": {
-      "title": "Instant and cheap lightning payments",
-      "description": "Lightning payments without liquidity and channel management. Send and receive payments seamlessly with one click."
+      "title": "Instant Lightning Payments",
+      "description": "Send and receive Bitcoin in seconds with Lightning. No channel management, no complexity — just fast, borderless payments."
     },
-    "swaps": {
-      "title": "Automatic cross-network swaps",
-      "description": "Seamlessly move funds between Bitcoin, Lightning, and Liquid networks using non-custodial atomic swaps."
+    "selfcustody": {
+      "title": "Full Self-Custody",
+      "description": "You control your keys, you control your Bitcoin. Enjoy complete financial independence with a non-custodial design."
     },
     "privacy": {
-      "title": "Confidential transactions",
-      "description": "Enhanced privacy features to protect your financial information and transaction details."
+      "title": "Enhanced Privacy",
+      "description": "Your data, your business. Enjoy private transactions and local wallet management without third-party tracking."
     },
     "fees": {
-      "title": "Smart fee management",
-      "description": "Customizable mempool-based fee calculations and RBF technologies ensure you never overpay mining fees."
+      "title": "Smart Fee Optimization",
+      "description": "Let the wallet automatically select the best route and fee for your Lightning transactions — efficient and fair every time."
     },
     "backup": {
-      "title": "Easy and secure encrypted cloud backup",
-      "description": "Secure your wallet with encrypted cloud backups that protect your funds while ensuring easy recovery."
+      "title": "Seamless Backup & Recovery",
+      "description": "Secure your wallet with encrypted local backups. Restore anytime, anywhere, without compromising your keys."
     },
-    "hardware": {
-      "title": "Watch-only hardware wallets",
-      "description": "Receive to any offline wallet, monitor balances and transaction history of your hardware wallets."
+    "integration": {
+      "title": "Powered by Breez SDK",
+      "description": "Built on the trusted Breez infrastructure for seamless Lightning integration, reliability, and scalability."
     }
   },
   "testimonial": {
     "title": "Suitable for beginners and experts alike.",
     "quote": "I built this wallet so that it would offer all the advanced features I want, but also that my mom could use it without being confused.",
-    "author": "— JONATHAN NENBA, founder of Grimm App",
-    "compatibility": {
-      "title": "Multi-network compatibility",
-      "description": "Transact seamlessly on the Bitcoin Network, Lightning Network and Liquid Network. Using non-custodial atomic-swap technologies, you can move funds between networks anonymously and securely."
-    },
-    "integration": {
-      "title": "Native integration with the Grimm App exchange",
-      "description": "Connect your Grimm App account to buy bitcoin, sell bitcoin and make flat payments directly with your self-custodial wallet. This is optional, and you don't have to link an account if you don't want to. It's so easy, it feels like using a custodial app!"
-    }
+    "author": "— JONATHAN NENBA, Grimm App Maintainer"
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about Grimm App",
     "preview": {
+      "bitcoin": {
+        "question": "What is Bitcoin?",
+        "answer": "Bitcoin is a decentralized digital currency that allows peer-to-peer payments without needing a central bank or intermediary. Transactions are recorded on a public ledger called the blockchain and can be used to send, store, or grow value globally."
+      },
+      "lightning": {
+        "question": "What is the Lightning Network?",
+        "answer": "The Lightning Network is a layer-2 solution built on top of Bitcoin, enabling instant and low-cost transactions. It’s designed for micro-payments and fast, everyday Bitcoin transfers."
+      },
       "selfCustodial": {
         "question": "What is a self-custodial wallet?",
-        "answer": "A self-custodial wallet is a type of wallet where you have full control and ownership of your private keys. This means you are the only one with access to your funds, without relying on a third party. It's crucial to securely back up your private keys to avoid losing access to your Bitcoin."
-      },
-      "buySell": {
-        "question": "Can I buy and sell Bitcoin directly through the app?",
-        "answer": "Yes! Our app allows you to buy and sell Bitcoin directly, provided you complete a Know Your Customer (KYC) identity verification process. This ensures compliance with local regulations and the security of your transactions."
-      },
-      "security": {
-        "question": "Is my personal information secure?",
-        "answer": "Absolutely! We prioritize the privacy and security of your data. All personal information is securely stored and never shared with third parties without your explicit consent."
+        "answer": "A self-custodial wallet means you own and control your private keys — and therefore your Bitcoin. Grimm App never has access to your funds; you are fully in charge of your money."
       }
     }
   },
   "cta": {
-    "title": "Engineering Sovereignty",
-    "subtitle": "We build the tools and infrastructure you deserve to buy, sell, hold, and spend Bitcoin without compromise."
+    "title": "Engineering Sovereignty and Open Source",
+    "subtitle": "We build tools and infrastructure that empower you to hold and use Bitcoin freely."
   },
   "download": {
     "title": "Download Grimm App",
@@ -211,14 +203,6 @@
         "answer": "A self-custodial wallet is a type of wallet where you have full control and ownership of your private keys. This means you are the only one with access to your funds, without relying on a third party. It's crucial to securely back up your private keys to avoid losing access to your Bitcoin."
       },
       {
-        "question": "Can I buy and sell Bitcoin directly through the app?",
-        "answer": "Yes! Our app allows you to buy and sell Bitcoin directly, provided you complete a Know Your Customer (KYC) identity verification process. This ensures compliance with local regulations and the security of your transactions."
-      },
-      {
-        "question": "Why do I need to complete KYC to buy or sell Bitcoin?",
-        "answer": "KYC (Know Your Customer) verification is a legal requirement that helps prevent fraud, money laundering, and other illegal activities. It ensures a safe and regulated environment for all transactions."
-      },
-      {
         "question": "Is my personal information secure?",
         "answer": "Absolutely! We prioritize the privacy and security of your data. All personal information is securely stored and never shared with third parties without your explicit consent."
       },
@@ -227,24 +211,52 @@
         "answer": "Yes, our app is designed to be customizable. You can personalize the appearance and certain features to suit your preferences, creating a unique user experience."
       },
       {
-        "question": "What fees are associated with transactions?",
-        "answer": "We maintain transparent fees for buying, selling, and transferring Bitcoin. You can view detailed fee information within the app before completing a transaction."
-      },
-      {
         "question": "What happens if I lose my private key?",
         "answer": "As a self-custodial wallet, you are the sole owner of your private keys. If you lose them, we cannot recover them for you. We strongly recommend securely backing up your private keys in a safe place."
       },
       {
-        "question": "Does the app support other cryptocurrencies?",
-        "answer": "Currently, our app focuses exclusively on Bitcoin to provide an optimized and secure experience. However, we plan to support additional cryptocurrencies in the future."
-      },
-      {
-        "question": "Is the app available in all countries?",
-        "answer": "The app is accessible in most countries, but certain features, such as buying and selling Bitcoin, may be restricted depending on local regulations."
-      },
-      {
         "question": "How can I get help if I encounter an issue?",
-        "answer": "Our support team is here to assist you. You can contact us directly through the app or send an email to our customer support. We'll respond to your inquiries as quickly as possible."
+        "answer": "Our support team is here to assist you. You can contact us directly through the app or send an email to our customer support at support@usegrimm.app. We'll respond to your inquiries as quickly as possible."
+      },
+      {
+        "question": "What is Bitcoin?",
+        "answer": "Bitcoin is a decentralized digital currency that allows peer-to-peer payments without requiring a central bank or middleman. Transactions are recorded on a public ledger called the blockchain. Bitcoin can be used for sending value globally, storing wealth, and powering new financial applications."
+      },
+      {
+        "question": "What is the Lightning Network?",
+        "answer": "The Lightning Network is a second-layer protocol built on top of Bitcoin. It enables instant, low-cost payments by opening payment channels between participants and settling on-chain only when necessary. Lightning is ideal for micro-payments and high-frequency transfers."
+      },
+      {
+        "question": "What are satoshis (sats)?",
+        "answer": "A satoshi (sats) is the smallest unit of Bitcoin. One Bitcoin equals 100,000,000 satoshis. We often display balances in sats for precision, especially for small Lightning payments."
+      },
+      {
+        "question": "Does Grimm App collect any data from its users?",
+        "answer": "We collect only the minimum data necessary to operate the service. This may include phone number verification, and anonymized telemetry (if enabled). We never collect your seed phrase. Personal data handling follows our Privacy Policy and is only used with your consent."
+      },
+      {
+        "question": "How does Grimm App store my seed phrase?",
+        "answer": "Your seed phrase is stored locally on your device only, encrypted if you choose device-level secure storage. Grimm App never uploads or has access to your seed phrase. We provide clear guidance for backing up your seed securely (off-device backups, paper backup, hardware wallet recommendations)."
+      },
+      {
+        "question": "How do I contact Grimm App?",
+        "answer": "You can contact our support team through the app's support section or by email at support@usegrimm.app. For compliance and legal matters, use compliance@usegrimm.app. Please do not share your seed or private keys with support."
+      },
+      {
+        "question": "What happens if Grimm App disappears?",
+        "answer": "If Grimm App ceases operation, your funds remain yours as long as you have your seed phrase. Because Grimm is self-custodial, you can restore your wallet using any compatible Bitcoin/Lightning wallet that supports the same seed format. We recommend keeping a secure, offline backup of your seed."
+      },
+      {
+        "question": "Which countries are unable to download?",
+        "answer": "Availability depends on app store policies and local laws. Grimm App may be unavailable in jurisdictions with strict crypto restrictions. Check the app store listing for your country or contact support for the latest availability information."
+      },
+      {
+        "question": "Do I need to complete KYC to create a Grimm App account?",
+        "answer": "No — creating a basic self-custodial wallet usually does not require KYC. However, to access fiat features such as buying/selling Bitcoin or to lift certain limits, you will need to complete identity verification (KYC) as required by local regulations."
+      },
+      {
+        "question": "How does Grimm App ensure my funds are secure?",
+        "answer": "Grimm App uses a self-custodial design: private keys remain under your control. We never hold custody of your funds. The app leverages device secure storage, encryption, and best practices for handling secrets. For Lightning functionality we use a well-audited SDK (Breez) and follow secure patterns for channel management. We also encourage users to backup their seed phrases offline."
       }
     ]
   },
@@ -269,7 +281,7 @@
     },
     "aboutUs": {
       "title": "About us",
-      "builtBy": "Built by Grimm Labs",
+      "builtBy": "Built by Grimm Technologies",
       "sourceCode": "Source code available"
     },
     "technical": {

@@ -35,7 +35,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
             <div className="flex items-center gap-3">
               <Link href={"/"} className="block text-green-600">
                 <span className="sr-only">Home</span>
-                <Image src={logo} alt="Grimm App" style={{ width: 180 }} />
+                <Image src={logo} alt="Grimm App" style={{ width: 150 }} />
               </Link>
             </div>
 
@@ -69,7 +69,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/company/grimm-app"
+                    href="https://www.linkedin.com/company/grimm-technologies/"
                     target="_blank"
                     className="text-gray-600 hover:text-green-600 transition-colors font-medium"
                     rel="noreferrer"
@@ -172,7 +172,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/company/grimm-app"
+                    href="https://www.linkedin.com/company/grimm-technologies/"
                     target="_blank"
                     className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-3 text-lg"
                     rel="noreferrer"
