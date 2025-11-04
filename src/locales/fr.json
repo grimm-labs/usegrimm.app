@@ -18,7 +18,7 @@
     "linkedin": "LinkedIn"
   },
   "hero": {
-    "title": "Rendre le Bitcoin accessible à tous — la liberté ne devrait connaître aucune frontière.",
+    "title": "Rendre le Bitcoin accessible à tous, la liberté ne devrait connaître aucune frontière.",
     "subtitle": "Concentré sur la confidentialité, la sécurité et la facilité d'utilisation pour les transactions Bitcoin quotidiennes.",
     "startUsing": "Commencez à utiliser Grimm App"
   },
@@ -27,7 +27,7 @@
     "subtitle": "Découvrez la véritable souveraineté Bitcoin avec un portefeuille Lightning entièrement self-custodial, propulsé par Breez SDK.",
     "lightning": {
       "title": "Paiements Lightning instantanés",
-      "description": "Envoyez et recevez des bitcoins en quelques secondes grâce à Lightning. Aucune gestion de canal, aucune complexité — uniquement des paiements rapides et sans frontières."
+      "description": "Envoyez et recevez des bitcoins en quelques secondes grâce à Lightning. Aucune gestion de canal, aucune complexité, uniquement des paiements rapides et sans frontières."
     },
     "selfcustody": {
       "title": "Souveraineté totale",
@@ -69,7 +69,7 @@
       },
       "selfCustodial": {
         "question": "Qu'est-ce qu’un portefeuille auto-hébergé (self-custodial) ?",
-        "answer": "Un portefeuille auto-hébergé signifie que vous possédez et contrôlez vos clés privées — et donc votre Bitcoin. Grimm App n’a jamais accès à vos fonds : vous êtes entièrement maître de votre argent."
+        "answer": "Un portefeuille auto-hébergé signifie que vous possédez et contrôlez vos clés privées et donc votre Bitcoin. Grimm App n’a jamais accès à vos fonds : vous êtes entièrement maître de votre argent."
       }
     }
   },
@@ -85,7 +85,7 @@
   },
   "donation": {
     "title": "Soutenez Grimm App avec un don Bitcoin 💛",
-    "description": "Soutenez Grimm App en faisant un don Bitcoin — scannez le code QR ou copiez l'adresse ci-dessous.",
+    "description": "Soutenez Grimm App en faisant un don Bitcoin. Scannez le code QR ou copiez l'adresse ci-dessous.",
     "footer": "Tous les dons seront utilisés exclusivement pour le développement et l'amélioration de Grimm App. Merci pour votre soutien !"
   },
   "terms": {
@@ -252,7 +252,7 @@
       },
       {
         "question": "Dois-je compléter une vérification KYC pour créer un compte Grimm App ?",
-        "answer": "Non — la création d’un portefeuille auto-custodial de base ne nécessite généralement pas de vérification KYC. Cependant, pour accéder aux fonctionnalités en monnaie fiduciaire telles que l’achat ou la vente de Bitcoin, ou pour lever certaines limites, une vérification d’identité (KYC) peut être exigée selon les réglementations locales."
+        "answer": "Non! La création d’un portefeuille auto-custodial de base ne nécessite généralement pas de vérification KYC. Cependant, pour accéder aux fonctionnalités en monnaie fiduciaire telles que l’achat ou la vente de Bitcoin, ou pour lever certaines limites, une vérification d’identité (KYC) peut être exigée selon les réglementations locales."
       },
       {
         "question": "Comment Grimm App garantit-elle la sécurité de mes fonds ?",

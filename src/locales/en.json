@@ -18,7 +18,7 @@
     "linkedin": "LinkedIn"
   },
   "hero": {
-    "title": "Making Bitcoin accessible to everyone — freedom should know no borders.",
+    "title": "Making Bitcoin accessible to everyone, freedom should know no borders.",
     "subtitle": "Focused on privacy, security and usability for day-to-day Bitcoin transactions.",
     "startUsing": "Start using Grimm App"
   },
@@ -27,7 +27,7 @@
     "subtitle": "Experience true Bitcoin sovereignty with a fully self-custodial Lightning wallet powered by Breez SDK.",
     "lightning": {
       "title": "Instant Lightning Payments",
-      "description": "Send and receive Bitcoin in seconds with Lightning. No channel management, no complexity — just fast, borderless payments."
+      "description": "Send and receive Bitcoin in seconds with Lightning. No channel management, no complexity, just fast, borderless payments."
     },
     "selfcustody": {
       "title": "Full Self-Custody",
@@ -39,7 +39,7 @@
     },
     "fees": {
       "title": "Smart Fee Optimization",
-      "description": "Let the wallet automatically select the best route and fee for your Lightning transactions — efficient and fair every time."
+      "description": "Let the wallet automatically select the best route and fee for your Lightning transactions, efficient and fair every time."
     },
     "backup": {
       "title": "Seamless Backup & Recovery",
@@ -69,7 +69,7 @@
       },
       "selfCustodial": {
         "question": "What is a self-custodial wallet?",
-        "answer": "A self-custodial wallet means you own and control your private keys — and therefore your Bitcoin. Grimm App never has access to your funds; you are fully in charge of your money."
+        "answer": "A self-custodial wallet means you own and control your private keys and therefore your Bitcoin. Grimm App never has access to your funds; you are fully in charge of your money."
       }
     }
   },
@@ -85,7 +85,7 @@
   },
   "donation": {
     "title": "Support Grimm App with a Bitcoin Donation 💛",
-    "description": "Support Grimm App by donating Bitcoin — scan the QR code or copy the address below.",
+    "description": "Support Grimm App by donating Bitcoin. Scan the QR code or copy the address below.",
     "footer": "All donations will be used exclusively for the development and improvement of Grimm App. Thank you for your support!"
   },
   "terms": {
@@ -252,7 +252,7 @@
       },
       {
         "question": "Do I need to complete KYC to create a Grimm App account?",
-        "answer": "No — creating a basic self-custodial wallet usually does not require KYC. However, to access fiat features such as buying/selling Bitcoin or to lift certain limits, you will need to complete identity verification (KYC) as required by local regulations."
+        "answer": "No! Creating a basic self-custodial wallet usually does not require KYC. However, to access fiat features such as buying/selling Bitcoin or to lift certain limits, you will need to complete identity verification (KYC) as required by local regulations."
       },
       {
         "question": "How does Grimm App ensure my funds are secure?",
