@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { Modal } from "../../components/modal";
@@ -134,11 +135,14 @@ export default function BlogPostPage() {
 
         {/* Cover Image */}
         {post.coverImage && (
-          <div className="aspect-video bg-gray-200 rounded-2xl overflow-hidden mb-8">
-            <img
+          <div className="aspect-video bg-gray-200 rounded-2xl overflow-hidden mb-8 relative">
+            <Image
               src={post.coverImage}
               alt={post.title}
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 72rem"
+              className="object-cover"
+              priority={true} // Image principale de l'article
             />
           </div>
         )}
