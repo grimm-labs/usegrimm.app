@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "tests/src/components/header.test.js"
+    "tests/src/components/header.test.js",
+    "src/lib/blog.ts",
+    "scripts/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

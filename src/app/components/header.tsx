@@ -58,6 +58,14 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    href="/blog"
+                    className="text-gray-600 hover:text-green-600 transition-colors font-medium"
+                  >
+                    {t("common.blog")}
+                  </Link>
+                </li>
+                <li>
                   <a
                     href="https://x.com/useGrimmApp"
                     target="_blank"
@@ -157,6 +165,15 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                     className="text-gray-600 hover:text-green-600 transition-colors font-medium"
                   >
                     {t("common.support")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-gray-600 hover:text-green-600 transition-colors font-medium block py-3 text-lg"
+                    onClick={closeMenu}
+                  >
+                    {t("common.blog")}
                   </Link>
                 </li>
                 <li>

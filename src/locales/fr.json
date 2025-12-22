@@ -11,7 +11,24 @@
     "beta": "BETA",
     "allRightsReserved": "Tous droits réservés.",
     "language": "Langue",
-    "motto": "Rendre le Bitcoin accessible à tous"
+    "motto": "Rendre le Bitcoin accessible à tous",
+    "blog": "Blog"
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "Actualités, guides et insights sur Bitcoin et Grimm App",
+    "loading": "Chargement des articles...",
+    "noPosts": "Aucun article disponible pour le moment.",
+    "stayTuned": "Restez à l'écoute pour nos prochaines publications !"
+  },
+  "blogPostPage": {
+    "loading": "Chargement de l'article...",
+    "notFound": {
+      "title": "Article introuvable",
+      "description": "Désolé, l'article que vous recherchez n'existe pas ou a été supprimé.",
+      "backToBlog": "Retour au blog"
+    },
+    "backButton": "Retour au blog"
   },
   "header": {
     "twitter": "X (Twitter)",
