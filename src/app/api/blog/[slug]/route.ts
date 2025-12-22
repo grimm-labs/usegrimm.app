@@ -3,10 +3,10 @@ import { getPostBySlug } from '@/lib/blog';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const { slug } = params;
+    const { slug } = await params;
     
     if (!slug) {
       return NextResponse.json(
@@ -34,4 +34,4 @@ export async function GET(
   }
 }
 
-export const dynamic = 'force-static'; // ou 'force-dynamic' si tu veux du rendu dynamique
+export const dynamic = 'force-static';
