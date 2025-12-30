@@ -11,6 +11,7 @@ import { AnimatedSection } from "./components/home/animated-section";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
 import { useTranslations } from "@/hooks/useTranslations";
+import { FaDownload } from "react-icons/fa";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
@@ -61,12 +62,13 @@ export default function Home() {
                 {t("cta.subtitle")}
               </motion.p>
 
-              <button
-                onClick={openDownloadModal}
-                className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium"
-              >
-                {t("common.download")}
-              </button>
+            <button
+              onClick={openDownloadModal}
+              className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full text-white transition-colors font-medium flex items-center gap-3 mx-auto"
+            >
+              <FaDownload />
+              {t("common.download")}
+            </button>
             </div>
           </section>
         </AnimatedSection>

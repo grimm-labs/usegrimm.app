@@ -7,6 +7,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { Modal } from "../../components/modal";
 import { DownloadContent } from "../../components/donwload-content";
+import { DownloadInvite } from "../../components/download-invite";
 import { BlogPost } from "@/types/blog";
 import { useTranslations } from "@/hooks/useTranslations";
 
@@ -153,6 +154,11 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             prose-li:text-gray-700"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {/* Download Invite Section */}
+        <div className="mt-12 mb-8">
+          <DownloadInvite onDownloadClick={openDownloadModal} />
+        </div>
       </article>
 
       <Footer />
