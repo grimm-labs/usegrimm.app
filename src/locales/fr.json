@@ -41,7 +41,10 @@
       "description": "Désolé, l'article que vous recherchez n'existe pas ou a été supprimé.",
       "backToBlog": "Retour au blog"
     },
-    "backButton": "Retour au blog"
+    "backButton": "Retour au blog",
+    "shareTitle": "Partager cet article",
+    "shareOnTwitter": "Partager sur Twitter",
+    "shareOnLinkedIn": "Partager sur LinkedIn"
   },
   "header": {
     "twitter": "X (Twitter)",

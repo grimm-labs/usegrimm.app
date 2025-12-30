@@ -18,3 +18,15 @@ export interface BlogPostMetadata {
   tags?: string[];
   coverImage?: string;
 }
+export interface BlogPostPageTranslations {
+  loading: string;
+  notFound: {
+    title: string;
+    description: string;
+    backToBlog: string;
+  };
+  backButton: string;
+  shareTitle: string;
+  shareOnTwitter: string;
+  shareOnLinkedIn: string;
+}
