@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { getAllPostSlugs } from '@/lib/blog';
 
+export const dynamic = 'force-static';
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://usegrimm.app';
   const posts = await getAllPostSlugs();
