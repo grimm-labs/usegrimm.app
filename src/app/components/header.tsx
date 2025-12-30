@@ -8,6 +8,7 @@ import logo from "@/app/assets/logo_19.png";
 import { BetaBadge } from "./beta-badge";
 import { LanguageSwitcher } from "./language-switcher";
 import { useTranslations } from "@/hooks/useTranslations";
+import { FaDownload } from "react-icons/fa";
 
 interface HeaderProps {
   onDownloadClick: () => void;
@@ -89,23 +90,25 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                   <LanguageSwitcher />
                 </li>
                 <li>
-                  <button
-                    onClick={onDownloadClick}
-                    className="bg-green-600 px-6 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium"
-                  >
-                    {t("common.download")}
-                  </button>
+                <button
+                  onClick={onDownloadClick}
+                  className="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-full text-white transition-colors duration-300 font-medium flex items-center gap-2"
+                >
+                  <FaDownload className="text-sm" />
+                  {t("common.download")}
+                </button>
                 </li>
               </ul>
             </nav>
 
             <div className="flex items-center gap-3 md:hidden">
-              <button
-                onClick={onDownloadClick}
-                className="bg-green-600 px-4 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium text-sm"
-              >
-                {t("common.download")}
-              </button>
+            <button
+              onClick={onDownloadClick}
+              className="bg-green-600 px-4 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium text-sm flex items-center gap-2"
+            >
+              <FaDownload className="text-xs" />
+              {t("common.download")}
+            </button>
 
               <button
                 type="button"

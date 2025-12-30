@@ -19,7 +19,20 @@
     "subtitle": "News, guides and insights about Bitcoin and Grimm App",
     "loading": "Loading articles...",
     "noPosts": "No articles available at the moment.",
-    "stayTuned": "Stay tuned for our next publications!"
+    "stayTuned": "Stay tuned for our next publications!",
+    "loadMore": "Load more articles",
+    "showing": "{{current}} of {{total}} articles"
+  },
+  "downloadInvite": {
+    "title": "Take control of your finances",
+    "description": "Download Grimm App to manage your Bitcoin and Lightning payments securely.",
+    "cta": "Download the app",
+    "features": {
+      "privacy": "Privacy first",
+      "security": "Maximum security",
+      "control": "Full control",
+      "freedom": "Financial freedom"
+    }
   },
   "blogPostPage": {
     "loading": "Loading article...",
