@@ -5,6 +5,7 @@ date: "2024-12-26"
 author: "Jonathan Nenba"
 tags: ["Bitcoin", "Souveraineté", "Liberté Financière", "Philosophie"]
 coverImage: "/images/blog/sovereignty-cover.jpeg"
+isPublished: false
 ---
 
 # Bitcoin : Le Pilier Indispensable de Votre Souveraineté Numérique

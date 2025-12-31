@@ -7,6 +7,7 @@ export interface BlogPost {
   tags?: string[];
   coverImage?: string;
   content: string;
+  isPublished?: boolean;
 }
 
 export interface BlogPostMetadata {
@@ -17,6 +18,7 @@ export interface BlogPostMetadata {
   author: string;
   tags?: string[];
   coverImage?: string;
+  isPublished?: boolean;
 }
 export interface BlogPostPageTranslations {
   loading: string;
