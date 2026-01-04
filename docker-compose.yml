@@ -1,0 +1,17 @@
+services:
+  web-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - web-app-network
+    restart: unless-stopped
+
+networks:
+  web-app-network:
+    driver: bridge
