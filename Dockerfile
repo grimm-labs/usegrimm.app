@@ -2,7 +2,6 @@ FROM node:20-alpine AS deps
 WORKDIR /app
 
 RUN apk add --no-cache libc6-compat
-RUN npm install -g npm@9
 
 COPY package.json package-lock.json* ./
 RUN npm ci --no-audit --no-fund
@@ -20,8 +19,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
