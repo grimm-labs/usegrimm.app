@@ -1,12 +1,13 @@
 import { notFound } from "next/navigation";
-import { getBlogPosts, getBlogPost } from "@/data/blog-posts";
+import { getBlogPost } from "@/data/blog-posts";
 import BlogPostClient from "./BlogPostClient";
+import { getAllPostSlugs } from "@/lib/blog";
 
 export async function generateStaticParams() {
-  const posts = await getBlogPosts();
+  const slugs = await getAllPostSlugs();
   
-  return posts.map((post) => ({
-    slug: post.slug,
+  return slugs.map((slug) => ({
+    slug: slug,
   }));
 }
 
@@ -17,6 +18,7 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params;
   const post = await getBlogPost(slug);
+  
   
   if (!post) {
     notFound();
