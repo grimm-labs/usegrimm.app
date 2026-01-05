@@ -4,10 +4,9 @@ WORKDIR /app
 
 RUN apk add --no-cache libc6-compat
 
-COPY package.json package-lock.json* ./
-RUN npm install
-
 COPY . .
+
+RUN npm install
 
 RUN ./node_modules/.bin/next build
 
