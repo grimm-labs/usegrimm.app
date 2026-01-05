@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . .
 
-RUN npx next build
+RUN npm run build
 
 RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
 
