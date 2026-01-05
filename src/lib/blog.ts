@@ -52,7 +52,8 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     const { data, content } = matter(fileContents);
 
     const isPublished = data.isPublished !== false;
-    if (!isPublished) {
+    
+    if (process.env.NODE_ENV === 'production' && !isPublished) {
       return null;
     }
 
