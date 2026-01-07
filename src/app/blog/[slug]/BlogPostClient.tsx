@@ -10,7 +10,6 @@ import { DownloadContent } from "../../components/donwload-content";
 import { DownloadInvite } from "../../components/download-invite";
 import { BlogPost } from "@/types/blog";
 import { useTranslations } from "@/hooks/useTranslations";
-import { SEO } from "../../components/seo";
 import { JsonLd } from "../../components/json-ld";
 
 interface BlogPostClientProps {
@@ -50,40 +49,11 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     shareOnLinkedIn: string;
   };
 
-  // Extraire le texte brut du contenu pour les méta descriptions
-  const plainTextContent = post.content.replace(/<[^>]*>/g, "").substring(0, 160);
-  const description = post.description || plainTextContent + "...";
-  
-  // URL canonique
   const canonicalUrl = `https://usegrimm.app/blog/${post.slug}`;
-  
-  // Vérifier si l'image de couverture existe
   const coverImage = post.coverImage || "/og-image.png";
-  
-  // Titre optimisé (50-60 caractères)
-  const pageTitle = post.title.length < 50 
-    ? `${post.title} | Grimm App Blog - Bitcoin & Lightning Network` 
-    : `${post.title} | Grimm App Blog`;
 
   return (
     <>
-      {/* SEO Component avec métadonnées optimisées */}
-      <SEO
-        title={pageTitle}
-        description={description}
-        canonicalUrl={canonicalUrl}
-        ogImage={coverImage}
-        ogType="article"
-        twitterCard="summary_large_image"
-        article={{
-          publishedTime: post.date,
-          modifiedTime: post.date,
-          author: post.author,
-          section: "Cryptocurrency & Bitcoin",
-          tags: post.tags || [],
-        }}
-      />
-      
       {/* JSON-LD Structured Data pour l'article */}
       <JsonLd 
         post={post} 
@@ -303,7 +273,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             </h3>
             <div className="flex gap-4">
               <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(pageTitle)}&url=${encodeURIComponent(canonicalUrl)}`}
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(canonicalUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#1DA1F2] text-white px-4 py-2 rounded-lg hover:bg-[#1a8cd8] transition-colors"
