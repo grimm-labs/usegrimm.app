@@ -7,10 +7,14 @@ export async function getBlogPosts() {
 export async function getBlogPost(slug: string) {
   const post = await getPostBySlug(slug);
   
-  if (post && post.coverImage) {
+  if (!post) return null;
+  
+  if (post.coverImage) {
     if (post.coverImage.startsWith('/images/')) {
     } else if (post.coverImage.startsWith('./') || post.coverImage.startsWith('../')) {
       post.coverImage = `/images/blog/${post.coverImage.split('/').pop()}`;
+    } else if (!post.coverImage.startsWith('/') && !post.coverImage.startsWith('http')) {
+      post.coverImage = `/${post.coverImage}`;
     }
   }
   

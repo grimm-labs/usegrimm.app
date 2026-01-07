@@ -56,15 +56,23 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   
   // URL canonique
   const canonicalUrl = `https://usegrimm.app/blog/${post.slug}`;
+  
+  // Vérifier si l'image de couverture existe
+  const coverImage = post.coverImage || "/og-image.png";
+  
+  // Titre optimisé (50-60 caractères)
+  const pageTitle = post.title.length < 50 
+    ? `${post.title} | Grimm App Blog - Bitcoin & Lightning Network` 
+    : `${post.title} | Grimm App Blog`;
 
   return (
     <>
-      {/* SEO Component avec balises Open Graph complètes */}
+      {/* SEO Component avec métadonnées optimisées */}
       <SEO
-        title={`${post.title} | Grimm App Blog`}
+        title={pageTitle}
         description={description}
         canonicalUrl={canonicalUrl}
-        ogImage={post.coverImage || "/og-image.png"}
+        ogImage={coverImage}
         ogType="article"
         twitterCard="summary_large_image"
         article={{
@@ -72,7 +80,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           modifiedTime: post.date,
           author: post.author,
           section: "Cryptocurrency & Bitcoin",
-          tags: post.tags,
+          tags: post.tags || [],
         }}
       />
       
@@ -122,7 +130,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           itemScope
           itemType="https://schema.org/BlogPosting"
         >
-          {/* Breadcrumb Navigation - Bon pour le SEO */}
+          {/* Breadcrumb Navigation */}
           <nav className="text-sm mb-6" aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
@@ -178,8 +186,8 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             {blogPostTranslations.backButton}
           </Link>
 
-          {/* Cover Image */}
-          {post.coverImage && (
+          {/* Cover Image avec priorité de chargement */}
+          {coverImage && coverImage !== "/og-image.png" && (
             <div 
               className="aspect-video bg-gray-200 rounded-2xl overflow-hidden mb-8 relative"
               itemProp="image"
@@ -187,7 +195,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               itemType="https://schema.org/ImageObject"
             >
               <Image
-                src={post.coverImage}
+                src={coverImage}
                 alt={`Image de couverture pour l'article: ${post.title}`}
                 title={`Image: ${post.title}`}
                 fill
@@ -199,7 +207,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
               />
-              <meta itemProp="url" content={`https://usegrimm.app${post.coverImage}`} />
+              <meta itemProp="url" content={`https://usegrimm.app${coverImage}`} />
               <meta itemProp="width" content="1200" />
               <meta itemProp="height" content="630" />
             </div>
@@ -295,7 +303,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             </h3>
             <div className="flex gap-4">
               <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(canonicalUrl)}`}
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(pageTitle)}&url=${encodeURIComponent(canonicalUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#1DA1F2] text-white px-4 py-2 rounded-lg hover:bg-[#1a8cd8] transition-colors"
