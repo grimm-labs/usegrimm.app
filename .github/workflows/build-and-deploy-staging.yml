@@ -1,11 +1,11 @@
-name: Build and Deploy to Dev
+name: Build and Deploy to Staging
 
 on:
   workflow_dispatch:
 
 jobs:
   deploy:
-    name: Deploy to Dev
+    name: Deploy to Staging
     runs-on: ubuntu-latest
     
     steps:
@@ -31,12 +31,12 @@ jobs:
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.9.0
         with:
-          ssh-private-key: ${{ secrets.DEV_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
 
       - name: Add server to known_hosts
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -H ${{ vars.DEV_SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ vars.STAGING_SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -55,6 +55,6 @@ jobs:
         env:
           KAMAL_REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           APP_PORT: ${{ vars.APP_PORT }}
-          SERVER_IP: ${{ vars.DEV_SERVER_IP }}
-          DOMAIN_NAME: ${{ vars.DEV_DOMAIN_NAME }}
+          SERVER_IP: ${{ vars.STAGING_SERVER_IP }}
+          DOMAIN_NAME: ${{ vars.STAGING_DOMAIN_NAME }}
           NODE_ENV: production
