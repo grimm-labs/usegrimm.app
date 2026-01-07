@@ -47,13 +47,12 @@ export const DownloadInvite: React.FC<DownloadInviteProps> = ({
         <div className="flex flex-col lg:flex-row items-center gap-6 w-full lg:w-auto">
           {/* Logo with subtle animation - Centered and above on mobile */}
           <div className="relative mb-6 lg:mb-0 flex justify-center lg:justify-start w-full lg:w-auto">
-            <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl blur-md"></div>
-            <div className="relative bg-white p-3 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300">
+            <div className="relative bg-white p-3 rounded-xl border transition-shadow duration-300">
               <Image 
                 src={logo} 
                 alt="Grimm App" 
-                width={150}
-                height={150}
+                width={200}
+                height={200}
                 className="object-contain hover:scale-105 transition-transform duration-300"
               />
             </div>
