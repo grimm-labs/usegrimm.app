@@ -36,31 +36,12 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Grimm App - Your Bitcoin Superapp",
+  title: {
+    default: "Grimm App - Your Bitcoin Superapp",
+    template: "%s | Grimm App",
+  },
   description:
     "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
-  openGraph: {
-    title: "Grimm App - Your Bitcoin Superapp",
-    description:
-      "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
-    url: "https://usegrimm.app",
-    siteName: "Grimm App",
-    images: [
-      {
-        url: "https://usegrimm.app/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-      {
-        url: "https://usegrimm.app/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Grimm App - Your Bitcoin Superapp",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
 };
 
 export default function RootLayout({
