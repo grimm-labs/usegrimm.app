@@ -10,7 +10,6 @@ import { DownloadContent } from "../../components/donwload-content";
 import { DownloadInvite } from "../../components/download-invite";
 import { BlogPost } from "@/types/blog";
 import { useTranslations } from "@/hooks/useTranslations";
-import { SEO } from "../../components/seo";
 import { JsonLd } from "../../components/json-ld";
 
 interface BlogPostClientProps {
@@ -50,32 +49,11 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     shareOnLinkedIn: string;
   };
 
-  // Extraire le texte brut du contenu pour les méta descriptions
-  const plainTextContent = post.content.replace(/<[^>]*>/g, "").substring(0, 160);
-  const description = post.description || plainTextContent + "...";
-  
-  // URL canonique
   const canonicalUrl = `https://usegrimm.app/blog/${post.slug}`;
+  const coverImage = post.coverImage || "/og-image.png";
 
   return (
     <>
-      {/* SEO Component avec balises Open Graph complètes */}
-      <SEO
-        title={`${post.title} | Grimm App Blog`}
-        description={description}
-        canonicalUrl={canonicalUrl}
-        ogImage={post.coverImage || "/og-image.png"}
-        ogType="article"
-        twitterCard="summary_large_image"
-        article={{
-          publishedTime: post.date,
-          modifiedTime: post.date,
-          author: post.author,
-          section: "Cryptocurrency & Bitcoin",
-          tags: post.tags,
-        }}
-      />
-      
       {/* JSON-LD Structured Data pour l'article */}
       <JsonLd 
         post={post} 
@@ -122,7 +100,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           itemScope
           itemType="https://schema.org/BlogPosting"
         >
-          {/* Breadcrumb Navigation - Bon pour le SEO */}
+          {/* Breadcrumb Navigation */}
           <nav className="text-sm mb-6" aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
@@ -178,8 +156,8 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             {blogPostTranslations.backButton}
           </Link>
 
-          {/* Cover Image */}
-          {post.coverImage && (
+          {/* Cover Image avec priorité de chargement */}
+          {coverImage && coverImage !== "/og-image.png" && (
             <div 
               className="aspect-video bg-gray-200 rounded-2xl overflow-hidden mb-8 relative"
               itemProp="image"
@@ -187,7 +165,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               itemType="https://schema.org/ImageObject"
             >
               <Image
-                src={post.coverImage}
+                src={coverImage}
                 alt={`Image de couverture pour l'article: ${post.title}`}
                 title={`Image: ${post.title}`}
                 fill
@@ -199,7 +177,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
               />
-              <meta itemProp="url" content={`https://usegrimm.app${post.coverImage}`} />
+              <meta itemProp="url" content={`https://usegrimm.app${coverImage}`} />
               <meta itemProp="width" content="1200" />
               <meta itemProp="height" content="630" />
             </div>

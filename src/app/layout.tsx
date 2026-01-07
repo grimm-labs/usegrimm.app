@@ -36,21 +36,17 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Grimm App - Your Bitcoin Superapp",
-  description:
-    "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+  title: {
+    default: "Grimm App - Your Bitcoin Superapp",
+    template: "%s | Grimm App",
+  },
+  description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
   openGraph: {
-    title: "Grimm App - Your Bitcoin Superapp",
-    description:
-      "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+    type: "website",
     url: "https://usegrimm.app",
-    siteName: "Grimm App",
+    title: "Grimm App - Your Bitcoin Superapp",
+    description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
     images: [
-      {
-        url: "https://usegrimm.app/og-image.png",
-        width: 1200,
-        height: 630,
-      },
       {
         url: "https://usegrimm.app/og-image.png",
         width: 1200,
@@ -58,8 +54,13 @@ export const metadata: Metadata = {
         alt: "Grimm App - Your Bitcoin Superapp",
       },
     ],
-    locale: "en_US",
-    type: "website",
+    siteName: "Grimm App",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Grimm App - Your Bitcoin Superapp | Self-Custodial Lightning Wallet",
+    description: "Grimm App is a next-generation self-custodial Bitcoin Superapp, designed for seamless everyday payments via the Lightning Network.",
+    images: ["https://usegrimm.app/og-image.png"],
   },
 };
 

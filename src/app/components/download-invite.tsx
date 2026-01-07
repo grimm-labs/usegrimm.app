@@ -43,33 +43,33 @@ export const DownloadInvite: React.FC<DownloadInviteProps> = ({
       <div className="absolute -bottom-3 -left-3 w-16 h-16 bg-orange-600/10 rounded-full blur-lg" />
       
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
-        {/* Logo and Text Section */}
-        <div className="flex items-center gap-6">
-          {/* Logo with subtle animation */}
-          <div className="relative">
+        {/* Logo and Text Section - Vertical on mobile, horizontal on desktop */}
+        <div className="flex flex-col lg:flex-row items-center gap-6 w-full lg:w-auto">
+          {/* Logo with subtle animation - Centered and above on mobile */}
+          <div className="relative mb-6 lg:mb-0 flex justify-center lg:justify-start w-full lg:w-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl blur-md"></div>
             <div className="relative bg-white p-3 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300">
               <Image 
                 src={logo} 
                 alt="Grimm App" 
-                width={220}
-                height={220}
+                width={150}
+                height={150}
                 className="object-contain hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
           
-          {/* Text Content */}
-          <div className="max-w-xl">
+          {/* Text Content - Centered on mobile, left aligned on desktop */}
+          <div className="max-w-xl text-center lg:text-left w-full lg:w-auto">
             <h3 className="text-xl font-bold text-gray-800 mb-2">
               {downloadInviteTranslations.title}
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed mb-4 lg:mb-0">
               {downloadInviteTranslations.description}
             </p>
             
-            {/* Feature Dots */}
-            <div className="flex flex-wrap gap-4 mt-4">
+            {/* Feature Dots - Centered on mobile, left aligned on desktop */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
               <div className="flex items-center gap-2 group/feature">
                 <div className="w-2 h-2 bg-green-500 rounded-full group-hover/feature:scale-150 transition-transform duration-300"></div>
                 <span className="text-xs font-medium text-gray-700 group-hover/feature:text-green-600 transition-colors duration-300">
@@ -98,12 +98,12 @@ export const DownloadInvite: React.FC<DownloadInviteProps> = ({
           </div>
         </div>
         
-        {/* Download Button with Animated Icon */}
+        {/* Download Button - Centered on mobile, right on desktop */}
         <button
           onClick={handleDownloadClick}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="relative bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full text-white font-medium transition-all duration-300 shadow-md hover:shadow-lg flex-shrink-0 flex items-center gap-3 group overflow-hidden"
+          className="relative bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full text-white font-medium transition-all duration-300 shadow-md hover:shadow-lg flex-shrink-0 flex items-center gap-3 group overflow-hidden w-full lg:w-auto justify-center lg:justify-start"
         >
           {/* Background animation effect */}
           <div className={`absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isHovered ? 'opacity-100' : ''}`}></div>
