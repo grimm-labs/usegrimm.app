@@ -1,22 +1,20 @@
-FROM node:20-alpine
-
+FROM node:20 AS base
 WORKDIR /app
 
-RUN apk add --no-cache libc6-compat
-
-COPY . .
-
+COPY package.json package-lock.json ./
 RUN npm install
 
-RUN ./node_modules/.bin/next build
+COPY . .
+RUN npm run build
 
-RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
+FROM node:20-alpine3.19 AS release
+WORKDIR /app
 
-USER nextjs
+COPY --from=base /app/node_modules ./node_modules
+COPY --from=base /app/package.json ./package.json
+COPY --from=base /app/.next ./.next
+COPY --from=base /app/public ./public
+COPY --from=base /app/next.config.ts ./next.config.ts
 
 EXPOSE 3000
-ENV PORT=3000
-ENV HOSTNAME=0.0.0.0
-ENV NODE_ENV=production
-
-CMD ["node", ".next/standalone/server.js"]
+CMD ["npm", "start"]
