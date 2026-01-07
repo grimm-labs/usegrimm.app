@@ -55,6 +55,7 @@ jobs:
         env:
           KAMAL_REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           APP_PORT: ${{ vars.APP_PORT }}
+          SERVER_IP: ${{ vars.DEV_SERVER_IP }}
           NODE_ENV: production
 
       - name: Deployment Success Notification
