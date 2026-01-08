@@ -36,6 +36,7 @@ jobs:
       - name: Add server to known_hosts
         run: |
           mkdir -p ~/.ssh
+          ssh-keygen -R ${{ vars.DEV_SERVER_IP }} || true
           ssh-keyscan -H ${{ vars.DEV_SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Set up Ruby
