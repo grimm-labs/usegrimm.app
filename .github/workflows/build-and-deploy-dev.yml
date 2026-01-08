@@ -38,7 +38,7 @@ jobs:
           touch ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
-          ssh-keyscan -t ed25519 -p 22 ${{ vars.DEV_SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -t ed25519 -p 22 ${{ vars.DEV_DOMAIN_NAME }} >> ~/.ssh/known_hosts
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -57,6 +57,5 @@ jobs:
         env:
           KAMAL_REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           APP_PORT: ${{ vars.APP_PORT }}
-          SERVER_IP: ${{ vars.DEV_SERVER_IP }}
           DOMAIN_NAME: ${{ vars.DEV_DOMAIN_NAME }}
           NODE_ENV: production
