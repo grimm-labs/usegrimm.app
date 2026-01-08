@@ -10,7 +10,11 @@ jobs:
     
     steps:
       - name: Setup WARP
-        uses: fscarmen/warp-on-actions@v1.0
+        uses: fscarmen/warp-on-actions@v1.4
+
+      - name: Test IPv6
+        run: |
+          curl -6 https://ipv6.icanhazip.com
 
       - name: Checkout code
         uses: actions/checkout@v4
