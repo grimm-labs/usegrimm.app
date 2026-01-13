@@ -5,7 +5,7 @@ date: "2026-01-05"
 author: "Jonathan Nenba"
 tags: ["Bitcoin", "MonnaieNumérique", "Liberté Financière", "Blockchain"]
 coverImage: "/images/blog/bitcoin.jpg"
-isPublished: true
+isPublished: false
 ---
 
 # Bitcoin, c’est quoi exactement  ? Une explication simple pour tout le monde
