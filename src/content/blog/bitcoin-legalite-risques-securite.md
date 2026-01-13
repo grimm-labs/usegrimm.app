@@ -5,7 +5,7 @@ date: "2026-01-12"
 author: "Jonathan Nenba"
 tags: ["Bitcoin", "#BitcoinLegal", "GrimmApp"]
 coverImage: "/images/blog/bitcoin-legal.png"
-isPublished: true
+isPublished: false
 ---
 
 # Est-ce que Bitcoin est légal ? Est-ce que c’est dangereux ?
