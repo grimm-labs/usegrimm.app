@@ -1,11 +1,11 @@
-name: Build and Deploy to Prod
+name: Remove Dev Deployment
 
 on:
   workflow_dispatch:
 
 jobs:
   deploy:
-    name: Deploy to Prod
+    name: Remove Dev Deployment
     runs-on: ubuntu-latest
     
     steps:
@@ -38,14 +38,14 @@ jobs:
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.9.0
         with:
-          ssh-private-key: ${{ secrets.PROD_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.DEV_SSH_PRIVATE_KEY }}
 
       - name: Add server to known_hosts
         run: |
           touch ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
-          ssh-keyscan -t ed25519 -p 22 ${{ vars.PROD_DOMAIN_NAME }} >> ~/.ssh/known_hosts
+          ssh-keyscan -t ed25519 -p 22 ${{ vars.DEV_DOMAIN_NAME }} >> ~/.ssh/known_hosts
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -59,10 +59,10 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Deploy with Kamal
-        run: kamal setup
+      - name: Delete deployment with Kamal
+        run: kamal remove -y
         env:
           KAMAL_REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           APP_PORT: ${{ vars.APP_PORT }}
-          DOMAIN_NAME: ${{ vars.PROD_DOMAIN_NAME }}
+          DOMAIN_NAME: ${{ vars.DEV_DOMAIN_NAME }}
           NODE_ENV: production
