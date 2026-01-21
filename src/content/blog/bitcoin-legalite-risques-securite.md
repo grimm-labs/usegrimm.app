@@ -3,7 +3,7 @@ title: "Est-ce que Bitcoin est légal ? Est-ce que c’est dangereux ?"
 description: "Ce qu'il faut savoir sur l'aspect légal du Bitcoin."
 date: "2026-01-12"
 author: "Jonathan Nenba"
-tags: ["Bitcoin", "#BitcoinLegal", "GrimmApp"]
+tags: ["Bitcoin", "BitcoinLegal", "GrimmApp"]
 coverImage: "/images/blog/bitcoin-legal.png"
 isPublished: true
 ---
