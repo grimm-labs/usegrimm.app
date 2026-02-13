@@ -9,13 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Setup WARP
-        uses: fscarmen/warp-on-actions@v1.4
-
-      - name: Test IPv6
-        run: |
-          curl -6 https://ipv6.icanhazip.com
-
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -44,7 +37,6 @@ jobs:
         run: |
           touch ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
-
           ssh-keyscan -t ed25519 -p 22 ${{ vars.PROD_DOMAIN_NAME }} >> ~/.ssh/known_hosts
 
       - name: Set up Ruby
