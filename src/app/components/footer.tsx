@@ -134,6 +134,14 @@ export default function Footer() {
                 >
                   {t("common.support")}
                 </Link>
+                <a
+                  href="https://status.usegrimm.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-500 hover:text-green-600 transition-colors"
+                >
+                  Status
+                </a>
               </div>
             </div>
           </div>
