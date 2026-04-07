@@ -9,7 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@eslint/compat": "^2.0.4",
     "@tailwindcss/typography": "^0.5.19",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
