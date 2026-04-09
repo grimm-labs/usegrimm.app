@@ -17,17 +17,25 @@ export const Modal: React.FC<ModalProps> = ({
   size = "medium",
 }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [prevIsOpen, setPrevIsOpen] = useState(false);
 
+  // Adjust state during render (React recommended pattern for deriving state from props)
+  if (isOpen && !prevIsOpen) {
+    setPrevIsOpen(true);
+    setIsVisible(true);
+  } else if (!isOpen && prevIsOpen) {
+    setPrevIsOpen(false);
+  }
+
+  // Delayed hide for exit animation
   useEffect(() => {
-    if (isOpen) {
-      setIsVisible(true);
-    } else {
+    if (!isOpen && isVisible) {
       const timer = setTimeout(() => {
         setIsVisible(false);
       }, 300);
       return () => clearTimeout(timer);
     }
-  }, [isOpen]);
+  }, [isOpen, isVisible]);
 
   if (!isVisible) return null;
 

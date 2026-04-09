@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useSyncExternalStore } from "react";
 
 type Language = "en" | "fr";
 
@@ -13,22 +13,22 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined,
 );
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en");
+function getInitialLanguage(): Language {
+  if (typeof window === "undefined") return "en";
+  const saved = localStorage.getItem("language");
+  if (saved === "en" || saved === "fr") return saved;
+  const browserLang = navigator.language.split("-")[0];
+  return browserLang === "fr" ? "fr" : "en";
+}
 
-  useEffect(() => {
-    // Check if user has a language preference in localStorage
-    const savedLanguage = localStorage.getItem("language") as Language;
-    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "fr")) {
-      setLanguage(savedLanguage);
-    } else {
-      // Check browser language
-      const browserLang = navigator.language.split("-")[0];
-      if (browserLang === "fr") {
-        setLanguage("fr");
-      }
-    }
-  }, []);
+function subscribe(callback: () => void) {
+  window.addEventListener("storage", callback);
+  return () => window.removeEventListener("storage", callback);
+}
+
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const initialLang = useSyncExternalStore(subscribe, getInitialLanguage, () => "en" as Language);
+  const [language, setLanguage] = useState<Language>(initialLang);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
