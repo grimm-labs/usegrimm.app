@@ -41,7 +41,7 @@ export const HeroSection = () => {
               />
             </a>
             <a
-              href="https://testflight.apple.com/join/kK732x9j"
+              href="https://apps.apple.com/us/app/grimm-app-bitcoin-wallet/id6754340143"
               target="_blank"
               rel="noreferrer"
               className="inline-block"

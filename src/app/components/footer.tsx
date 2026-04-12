@@ -87,7 +87,7 @@ export default function Footer() {
                   />
                 </a>
                 <a
-                  href="https://testflight.apple.com/join/kK732x9j"
+                  href="https://apps.apple.com/us/app/grimm-app-bitcoin-wallet/id6754340143"
                   className="block"
                   target="_blank"
                 >

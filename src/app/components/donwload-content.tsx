@@ -63,7 +63,7 @@ export const DownloadContent = () => {
             </a>
 
             <a
-              href="https://testflight.apple.com/join/kK732x9j"
+              href="https://apps.apple.com/us/app/grimm-app-bitcoin-wallet/id6754340143"
               className="block transition-transform hover:scale-[1.02] active:scale-95"
               target="_blank"
               rel="noopener noreferrer"
