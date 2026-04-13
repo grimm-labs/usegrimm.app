@@ -3,7 +3,7 @@
 import { QRCodeSVG } from "qrcode.react";
 import React from "react";
 import Image from "next/image";
-import googlePlayButton from "@/app/assets/googlePlay.png";
+import googlePlayButton from "@/app/assets/google_play_cs.png";
 import appStoreButton from "@/app/assets/appStore.png";
 import grimmLogo from "@/app/assets/logo_1.png";
 import { useTranslations } from "@/hooks/useTranslations";
@@ -48,8 +48,9 @@ export const DownloadContent = () => {
         <div className="flex-1 space-y-3 sm:space-y-4 w-full order-1 sm:order-2">
           <div className="space-y-2 sm:space-y-3">
             <a
-              href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
-              target="_blank"
+              // href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
+              href="#"
+              // target="_blank"
               rel="noopener noreferrer"
               className="block transition-transform hover:scale-[1.02] active:scale-95"
             >
