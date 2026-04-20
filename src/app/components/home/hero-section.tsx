@@ -6,6 +6,7 @@ import phoneImage from "@/app/assets/screenshot.png";
 import googlePlayButton from "@/app/assets/google_play_cs.png";
 import appStoreButton from "@/app/assets/appStore.png";
 import { useTranslations } from "@/hooks/useTranslations";
+import { BitcoinPrice } from "../bitcoin-price";
 
 export const HeroSection = () => {
   const t = useTranslations();
@@ -55,6 +56,10 @@ export const HeroSection = () => {
                 height={78}
               />
             </a>
+          </div>
+          {/* Bitcoin Price Widget */}
+          <div className="pt-4 flex justify-center lg:justify-start">
+            <BitcoinPrice />
           </div>
         </div>
         <div className="flex-1 relative max-w-md mt-6 lg:mt-0">

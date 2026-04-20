@@ -322,5 +322,11 @@
       "title": "Technical issues and discussions",
       "description": "We use GitHub for bug tracking and technical discussions. Search existing issues for your bug, and create a new one if needed."
     }
+  },
+  "bitcoinPrice": {
+    "label": "BTC/USD",
+    "loading": "Loading...",
+    "error": "Failed to load",
+    "updated": "Updated"
   }
 }
