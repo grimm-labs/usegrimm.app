@@ -321,5 +321,12 @@
       "title": "Problèmes techniques et discussions",
       "description": "Nous utilisons GitHub pour le suivi des bugs et les discussions techniques. Recherchez les problèmes existants pour votre bug, et créez-en un nouveau si nécessaire."
     }
+  },
+  "bitcoinPrice": {
+    "label": "BTC/USD",
+    "loading": "Chargement...",
+    "error": "Échec du chargement",
+    "updated": "Mis à jour"
   }
+
 }
