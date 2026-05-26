@@ -8,7 +8,7 @@ coverImage: "/images/blog/compte-sur-grimm-point.png"
 isPublished: true
 ---
 
-# comment créer son compte sur Grimm Point ?
+# Comment créer son compte sur Grimm Point ?
 
 **Grimm Point** est une plateforme décentralisée pensée pour les Camerounais, qui réinvente le paiement des services du quotidien grâce au Bitcoin Lightning. Concrètement, elle te permet de :
 
