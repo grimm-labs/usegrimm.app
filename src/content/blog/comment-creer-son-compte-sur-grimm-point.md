@@ -1,5 +1,5 @@
 ---
-title: "comment créer son compte sur Grimm Point ?"
+title: "Comment créer son compte sur Grimm Point ?"
 description: "Grimm Point est la première plateforme camerounaise spécialisée dans le paiement de services du quotidien via le réseau Bitcoin Lightning. Rapide, simple, sécurisée et accessible à tous, que tu sois débutant ou habitué du Bitcoin.."
 date: "2026-05-21"
 author: "Jonathan Nenba"
