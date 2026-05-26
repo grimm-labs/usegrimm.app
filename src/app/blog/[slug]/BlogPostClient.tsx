@@ -185,12 +185,6 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
 
           {/* Header */}
           <header className="mb-8">
-            <h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
-              itemProp="headline"
-            >
-              {post.title}
-            </h1>
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
               <time 
                 dateTime={post.date} 

@@ -22,6 +22,7 @@ isPublished: true
 Créer un compte sur Grimm Point est rapide et ne prend que quelques minutes. Voici les étapes : 
 
 **1. Rends-toi sur la plateforme**
+
 Ouvre ton navigateur et va sur https://grimmpoint.app/. La plateforme est accessible depuis ton téléphone ou ton ordinateur.
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin: 2rem 0; width: 100%;">
@@ -36,6 +37,7 @@ Ouvre ton navigateur et va sur https://grimmpoint.app/. La plateforme est access
 </div>
 
 **2. Crée ton compte**
+
 Clique sur "Créer un compte" et renseigne les informations demandées : ton nom, sélectionner ton pays, entrer ton adresse e-mail et un mot de passe sécurisé. Valide ensuite ton inscription via le lien de confirmation envoyé dans ta boîte mail.
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin: 2rem 0; width: 100%;">
@@ -61,6 +63,7 @@ Clique sur "Créer un compte" et renseigne les informations demandées : ton nom
 </div>
 
 **3. Gère tes transactions**
+
 Clique sur le menu en haut, puis sur "Mes transactions" pour consulter et gérer régulièrement l'historique de tes transactions.
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin: 2rem 0; width: 100%;">
@@ -86,4 +89,4 @@ Utilise un portefeuille fiable pour les petits montants du quotidien (**Wallet o
 
 ### Conclusion 
 
-Grimm Point marque une étape importante dans l'adoption du Bitcoin au Cameroun. En rendant accessibles les paiements Lightning pour les services du quotidien (factures, Mobile Money, crédit téléphonique), la plateforme ouvre une nouvelle ère pour la finance décentralisée en Afrique. Créer son compte ne prend que quelques minutes, et tu peux commencer à payer tes services en Bitcoin dès aujourd'hui. Que tu sois débutant ou utilisateur averti, Grimm Point est l'outil qu'il te faut pour intégrer Bitcoin dans ta vie quotidienne au Cameroun. Rends-toi sur https://grimmpoint.app/, crée ton compte et découvre une nouvelle façon de payer au Cameroun.
+Grimm Point marque une étape importante dans l'adoption du Bitcoin au Cameroun. En rendant accessibles les paiements Lightning pour les services du quotidien (factures, Mobile Money, crédit téléphonique), la plateforme ouvre une nouvelle ére pour la finance décentralisée en Afrique. Créer son compte ne prend que quelques minutes, et tu peux commencer à payer tes services en Bitcoin dès aujourd'hui. Que tu sois débutant ou utilisateur averti, Grimm Point est l'outil qu'il te faut pour intégrer Bitcoin dans ta vie quotidienne au Cameroun. Rends-toi sur https://grimmpoint.app/, crée ton compte et découvre une nouvelle façon de payer au Cameroun.
