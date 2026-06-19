@@ -7,8 +7,8 @@ import { useState } from "react";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import logo from "@/app/assets/logo_19.png";
 import Image from "next/image";
-import googlePlayButton from "@/app/assets/google_play_cs.png";
-import appSToreButton from "@/app/assets/appStore.png";
+import googlePlayButton from "@/app/assets/GetItOnGooglePlay.png";
+import appSToreButton from "@/app/assets/appStore_resized.png";
 import { useTranslations } from "@/hooks/useTranslations";
 import { LanguageSwitcher } from "./language-switcher";
 
@@ -74,10 +74,9 @@ export default function Footer() {
               </h3>
               <div className="flex flex-row gap-3">
                 <a
-                  // href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
                   className="block"
-                  // target="_blank"
+                  target="_blank"
                 >
                   <Image
                     src={googlePlayButton}

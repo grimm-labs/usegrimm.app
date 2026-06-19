@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 
 import phoneImage from "@/app/assets/screenshot.png";
-import googlePlayButton from "@/app/assets/google_play_cs.png";
-import appStoreButton from "@/app/assets/appStore.png";
+import googlePlayButton from "@/app/assets/GetItOnGooglePlay.png";
+import appStoreButton from "@/app/assets/appStore_resized.png";
 import { useTranslations } from "@/hooks/useTranslations";
 import { BitcoinPrice } from "../bitcoin-price";
 
@@ -28,9 +28,8 @@ export const HeroSection = () => {
           </p>
           <div className="flex flex-row gap-4 justify-center lg:justify-start">
             <a
-              // href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
-              href="#"
-              // target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.grimm.labs.app"
+              target="_blank"
               rel="noreferrer"
               className="inline-block"
             >
