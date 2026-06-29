@@ -10,15 +10,20 @@ import { motion } from "framer-motion";
 import { AnimatedSection } from "./components/home/animated-section";
 import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
+import { Donation } from "./components/donation";
 import { useTranslations } from "@/hooks/useTranslations";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaGithub, FaBitcoin } from "react-icons/fa";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
   const t = useTranslations();
 
   const openDownloadModal = () => setIsDownloadModalOpen(true);
   const closeDownloadModal = () => setIsDownloadModalOpen(false);
+
+  const openDonationModal = () => setIsDonationModalOpen(true);
+  const closeDonationModal = () => setIsDonationModalOpen(false);
 
   return (
     <div className="flex flex-col justify-between min-h-screen relative overflow-x-hidden">
@@ -62,13 +67,33 @@ export default function Home() {
                 {t("cta.subtitle")}
               </motion.p>
 
-            <button
-              onClick={openDownloadModal}
-              className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full text-white transition-colors font-medium flex items-center gap-3 mx-auto"
-            >
-              <FaDownload />
-              {t("common.download")}
-            </button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                <button
+                  onClick={openDownloadModal}
+                  className="w-full sm:w-auto bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full text-white transition-colors font-medium flex items-center justify-center gap-3"
+                >
+                  <FaDownload />
+                  {t("common.download")}
+                </button>
+
+                <a
+                  href="https://github.com/grimm-labs/grimm-mobile-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-3 rounded-full transition-colors font-medium flex items-center justify-center gap-3"
+                >
+                  <FaGithub />
+                  {t("common.contribute")}
+                </a>
+
+                <button
+                  onClick={openDonationModal}
+                  className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full text-white transition-colors font-medium flex items-center justify-center gap-3"
+                >
+                  <FaBitcoin />
+                  {t("common.donate")}
+                </button>
+              </div>
             </div>
           </section>
         </AnimatedSection>
@@ -76,13 +101,23 @@ export default function Home() {
 
       <Footer />
 
-      {/* Modal au niveau racine */}
+      {/* Download Modal */}
       {isDownloadModalOpen && (
         <Modal
           isOpen={isDownloadModalOpen}
           content={<DownloadContent />}
           onClose={closeDownloadModal}
           size="large"
+        />
+      )}
+
+      {/* Donation Modal */}
+      {isDonationModalOpen && (
+        <Modal
+          isOpen={isDonationModalOpen}
+          content={<Donation />}
+          onClose={closeDonationModal}
+          size="medium"
         />
       )}
     </div>

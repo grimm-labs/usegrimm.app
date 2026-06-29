@@ -12,7 +12,9 @@
     "allRightsReserved": "Tous droits réservés.",
     "language": "Langue",
     "motto": "Rendre le Bitcoin accessible à tous",
-    "blog": "Blog"
+    "blog": "Blog",
+        "contribute": "Contribuer",
+    "donate": "Faire un don"
   },
   "blogPage": {
     "title": "Blog",
