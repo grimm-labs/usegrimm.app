@@ -29,7 +29,7 @@ export const Donation = () => {
 
       {/* Bitcoin Address */}
       <div
-        className="bg-green-500 text-white text-sm font-mono px-4 py-2 rounded-md mb-4 cursor-pointer hover:bg-green-600"
+        className="bg-green-600 text-white text-sm font-mono font-bold px-4 py-2 rounded-md mb-4 cursor-pointer hover:bg-green-700"
         onClick={() =>
           navigator.clipboard.writeText(
             "bc1qh5flgxstwg07mcuphxw0g8avnr2ecmtx4susyg",
