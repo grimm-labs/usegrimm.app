@@ -4,7 +4,7 @@ description: "Grimm Point et Grimm App vous permettent d'acheter facilement des 
 date: "2026-07-15"
 author: "Jonathan Nenba"
 tags: ["grimmapp", "grimmpoint", "lightningnetwork", "walletbitcoin" ]
-coverImage: "/images/blog/grimmpoint_achat_bitcoin.jpg"
+coverImage: "/images/blog/grimmpoint_achat_bitcoin.png"
 isPublished: true
 ---
 
