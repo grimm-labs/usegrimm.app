@@ -1,8 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { FaBitcoin, FaSync } from "react-icons/fa";
+
+const requestBitcoinPrice = async (): Promise<number> => {
+  const response = await fetch(
+    "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+  );
+  if (!response.ok) throw new Error("Failed to fetch");
+  const data = await response.json();
+  return data.bitcoin.usd;
+};
 
 export const BitcoinPrice = () => {
   const [price, setPrice] = useState<number | null>(null);
@@ -10,31 +19,34 @@ export const BitcoinPrice = () => {
   const [error, setError] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
-  const fetchPrice = async () => {
-    try {
-      setLoading(true);
-      setError(false);
-      const response = await fetch(
-        "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
-      );
-      if (!response.ok) throw new Error("Failed to fetch");
-      const data = await response.json();
-      setPrice(data.bitcoin.usd);
-      setLastUpdated(new Date());
-    } catch (err) {
-      console.error("Error fetching Bitcoin price:", err);
-      setError(true);
-    } finally {
-      setLoading(false);
-    }
-  };
+  const applyPrice = useCallback((request: Promise<number>) => {
+    return request
+      .then((value) => {
+        setPrice(value);
+        setLastUpdated(new Date());
+      })
+      .catch((err) => {
+        console.error("Error fetching Bitcoin price:", err);
+        setError(true);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  const fetchPrice = useCallback(() => {
+    setLoading(true);
+    setError(false);
+    return applyPrice(requestBitcoinPrice());
+  }, [applyPrice]);
 
   useEffect(() => {
-    fetchPrice();
+    // Chargement initial : loading vaut déjà true et error false
+    applyPrice(requestBitcoinPrice());
     // Rafraîchir toutes les 60 secondes
     const interval = setInterval(fetchPrice, 60000);
     return () => clearInterval(interval);
-  }, []);
+  }, [applyPrice, fetchPrice]);
 
   const formatPrice = (value: number) => {
     return new Intl.NumberFormat("en-US", {
