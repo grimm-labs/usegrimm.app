@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { IoMdAdd, IoMdRemove } from "react-icons/io";
+import { PlusIcon, MinusIcon } from "./icons";
 
 interface FAQItemProps {
   title: string;
@@ -27,11 +27,11 @@ export const FAQItem: React.FC<FAQItemProps> = ({
         onClick={toggleOpen}
       >
         <h2 className="text-lg font-bold">{title}</h2>
-        <span className="relative size-5 shrink-0 text-primary-600">
+        <span className="relative size-5 shrink-0 text-grimm">
           {!isOpen ? (
-            <IoMdAdd className="size-5 transition-all duration-300 ease-in-out" />
+            <PlusIcon duotone className="size-5 transition-all duration-300 ease-in-out" />
           ) : (
-            <IoMdRemove className="size-5 transition-all duration-300 ease-in-out" />
+            <MinusIcon className="size-5 transition-all duration-300 ease-in-out" />
           )}
         </span>
       </div>

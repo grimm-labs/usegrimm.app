@@ -7,7 +7,7 @@ import Image from "next/image";
 import logo from "@/app/assets/logo_19.png";
 import { LanguageSwitcher } from "./language-switcher";
 import { useTranslations } from "@/hooks/useTranslations";
-import { FaDownload } from "react-icons/fa";
+import { DownloadIcon, MenuIcon, CloseIcon } from "./icons";
 
 interface HeaderProps {
   onDownloadClick: () => void;
@@ -91,7 +91,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                   onClick={onDownloadClick}
                   className="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-full text-white transition-colors duration-300 font-medium flex items-center gap-2"
                 >
-                  <FaDownload className="text-sm" />
+                  <DownloadIcon size={16} />
                   {t("common.download")}
                 </button>
                 </li>
@@ -103,7 +103,7 @@ export default function Header({ onDownloadClick }: HeaderProps) {
               onClick={onDownloadClick}
               className="bg-green-600 px-4 py-2 rounded-full text-white transition-colors hover:bg-green-700 font-medium text-sm flex items-center gap-2"
             >
-              <FaDownload className="text-xs" />
+              <DownloadIcon size={14} />
               {t("common.download")}
             </button>
 
@@ -114,33 +114,9 @@ export default function Header({ onDownloadClick }: HeaderProps) {
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? (
-                  <svg
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+                  <CloseIcon className="h-6 w-6 text-gray-700" />
                 ) : (
-                  <svg
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
+                  <MenuIcon className="h-6 w-6 text-gray-700" />
                 )}
               </button>
             </div>

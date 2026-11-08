@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import { Modal } from "../components/modal";
 import { DownloadContent } from "../components/donwload-content";
+import { WarningIcon } from "../components/icons";
 import { useTranslations } from "@/hooks/useTranslations";
 
 interface FAQData {
@@ -41,19 +42,7 @@ export default function FAQ() {
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
             <div className="flex items-start">
               <div className="flex-shrink-0">
-                <svg
-                  className="h-6 w-6 text-orange-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"
-                  />
-                </svg>
+                <WarningIcon className="h-6 w-6 text-orange-600" />
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-orange-800 mb-2">

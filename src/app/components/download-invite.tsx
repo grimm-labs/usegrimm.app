@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaDownload } from "react-icons/fa";
+import { DownloadIcon, ArrowRightIcon } from "./icons";
 import logo from "@/app/assets/logo_19.png";
 import { useTranslations } from "@/hooks/useTranslations";
 
@@ -109,21 +109,14 @@ export const DownloadInvite: React.FC<DownloadInviteProps> = ({
           
           {/* Icon with bounce animation */}
           <div className="relative z-10">
-            <FaDownload className={`text-lg transition-all duration-300 ${isHovered ? 'scale-110 -translate-y-0.5' : ''}`} />
+            <DownloadIcon className={`text-xl transition-all duration-300 ${isHovered ? 'scale-110 -translate-y-0.5' : ''}`} />
           </div>
           
           {/* Text */}
           <span className="relative z-10 font-semibold">{downloadInviteTranslations.cta}</span>
           
           {/* Arrow animation on hover */}
-          <svg 
-            className={`w-4 h-4 relative z-10 transition-all duration-300 ${isHovered ? 'opacity-100 translate-x-1' : 'opacity-0 -translate-x-1'}`}
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
+          <ArrowRightIcon className={`w-4 h-4 relative z-10 transition-all duration-300 ${isHovered ? 'opacity-100 translate-x-1' : 'opacity-0 -translate-x-1'}`} />
         </button>
       </div>
     </div>

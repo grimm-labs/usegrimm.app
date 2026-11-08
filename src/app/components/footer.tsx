@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Modal } from "./modal";
 import { Donation } from "./donation";
 import { useState } from "react";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { XIcon, LinkedinIcon, GithubIcon } from "./icons";
 import logo from "@/app/assets/logo_19.png";
 import Image from "next/image";
 import googlePlayButton from "@/app/assets/GetItOnGooglePlay.png";
@@ -44,27 +44,30 @@ export default function Footer() {
               <div className="flex gap-4 justify-center md:justify-start">
                 <a
                   href="https://x.com/useGrimmApp"
+                  aria-label="X (Twitter)"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-green-600 transition-colors"
                 >
-                  <FaTwitter size={20} />
+                  <XIcon size={18} />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/grimm-technologies/"
+                  aria-label="LinkedIn"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-green-600 transition-colors"
                 >
-                  <FaLinkedin size={20} />
+                  <LinkedinIcon size={20} />
                 </a>
                 <a
                   href="https://github.com/grimm-labs/grimm-mobile-app"
+                  aria-label="GitHub"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-green-600 transition-colors"
                 >
-                  <FaGithub size={20} />
+                  <GithubIcon size={20} />
                 </a>
               </div>
             </div>

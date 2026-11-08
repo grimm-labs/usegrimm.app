@@ -84,6 +84,66 @@
       "description": "Construit sur l’infrastructure fiable de Breez pour une intégration Lightning fluide, performante et évolutive."
     }
   },
+  "walletFeatures": {
+    "eyebrow": "Dans l'application",
+    "title": "Tout ce dont vous avez besoin pour utiliser Bitcoin au quotidien",
+    "subtitle": "Payer, recevoir, sécuriser : voici ce que Grimm App vous permet de faire dès aujourd'hui.",
+    "groups": {
+      "payments": "Payer et recevoir",
+      "security": "Sécurité et contrôle",
+      "everyday": "Simple et privé"
+    },
+    "items": {
+      "instantPayments": {
+        "title": "Paiements Lightning instantanés",
+        "description": "Envoyez et recevez des bitcoins en quelques secondes sur le réseau Lightning, grâce à Breez SDK Spark."
+      },
+      "lowFees": {
+        "title": "Frais minimes",
+        "description": "Des frais généralement inférieurs à un centime, même quand le réseau Bitcoin est encombré."
+      },
+      "qrCode": {
+        "title": "QR codes",
+        "description": "Scannez un QR code pour payer, ou affichez le vôtre pour recevoir."
+      },
+      "units": {
+        "title": "Bitcoin ou satoshis",
+        "description": "Affichez vos montants en BTC ou en sats, selon ce qui vous parle le plus."
+      },
+      "selfCustody": {
+        "title": "Vos clés, vos bitcoins",
+        "description": "Vos clés privées sont générées sur votre téléphone et n'en sortent jamais. Personne d'autre ne peut toucher à vos fonds."
+      },
+      "secureStorage": {
+        "title": "Stockage sécurisé",
+        "description": "Vos clés sont protégées par le stockage sécurisé de votre appareil : Keychain sur iOS, Keystore sur Android."
+      },
+      "recoveryPhrase": {
+        "title": "Phrase de récupération",
+        "description": "Une phrase de récupération au standard BIP39 pour sauvegarder et restaurer votre portefeuille."
+      },
+      "openSource": {
+        "title": "Open source",
+        "description": "Tout le code est public et vérifiable : n'importe qui peut auditer ce que fait l'application."
+      },
+      "history": {
+        "title": "Historique détaillé",
+        "description": "Retrouvez chaque transaction avec tous ses détails."
+      },
+      "balance": {
+        "title": "Solde en temps réel",
+        "description": "Votre solde se met à jour instantanément à chaque paiement."
+      },
+      "privacy": {
+        "title": "Sans KYC",
+        "description": "Aucune vérification d'identité, aucune collecte de données personnelles."
+      },
+      "simple": {
+        "title": "Simple à prendre en main",
+        "description": "Une interface claire, pensée pour les débutants comme pour les utilisateurs avancés."
+      }
+    }
+  },
   "testimonial": {
     "title": "Adapté aux débutants comme aux experts.",
     "quote": "J'ai conçu ce portefeuille pour qu'il offre toutes les fonctionnalités avancées que je souhaite, mais aussi pour que ma mère puisse l'utiliser sans être confuse.",

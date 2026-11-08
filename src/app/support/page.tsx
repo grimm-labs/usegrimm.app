@@ -6,7 +6,7 @@ import Header from "../components/header";
 import { Modal } from "../components/modal";
 import { DownloadContent } from "../components/donwload-content";
 import { useTranslations } from "@/hooks/useTranslations";
-import { FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
+import { XIcon, GithubIcon, MailIcon, WarningIcon } from "../components/icons";
 import Link from "next/link";
 
 export default function Support() {
@@ -49,19 +49,7 @@ export default function Support() {
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
             <div className="flex items-start">
               <div className="flex-shrink-0">
-                <svg
-                  className="h-6 w-6 text-orange-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"
-                  />
-                </svg>
+                <WarningIcon className="h-6 w-6 text-orange-600" />
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-orange-800 mb-2">
@@ -77,7 +65,7 @@ export default function Support() {
           {/* Email Support */}
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
-              <FaEnvelope className="w-5 h-5 text-green-600 mr-3" />
+              <MailIcon duotone className="w-6 h-6 text-grimm mr-3" />
               {t("support.email.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -112,7 +100,7 @@ export default function Support() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-gray-600 hover:text-green-600 transition-colors"
                   >
-                    <FaTwitter className="w-5 h-5" />
+                    <XIcon className="w-[18px] h-[18px]" />
                     <span>Twitter</span>
                   </a>
                   <a
@@ -121,7 +109,7 @@ export default function Support() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-gray-600 hover:text-green-600 transition-colors"
                   >
-                    <FaGithub className="w-5 h-5" />
+                    <GithubIcon className="w-5 h-5" />
                     <span>GitHub</span>
                   </a>
                 </div>
@@ -143,7 +131,7 @@ export default function Support() {
           {/* Technical Issues */}
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 flex items-center">
-              <FaGithub className="w-5 h-5 text-green-600 mr-3" />
+              <GithubIcon className="w-6 h-6 text-grimm mr-3" />
               {t("support.technical.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">

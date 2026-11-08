@@ -12,6 +12,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // Grimm App brand colors (logo + mobile app palette)
+        grimm: {
+          DEFAULT: "#086E5C",
+          accent: "#01A753",
+          light: "#E8F3F0",
+        },
       },
       fontFamily: {
         sans: ["var(--font-satoshi)", "system-ui", "sans-serif"],

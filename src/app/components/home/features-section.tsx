@@ -2,14 +2,7 @@
 
 import React from "react";
 import { FeatureCard } from "./feature-card";
-import {
-  FaMoneyBillWave,
-  FaCloudUploadAlt,
-  FaBolt,
-  FaUserSecret,
-  FaExchangeAlt,
-  FaEye,
-} from "react-icons/fa";
+import Image from "next/image";
 import {
   AnimatedSection,
   AnimatedItem,
@@ -18,6 +11,10 @@ import {
 import { motion } from "framer-motion";
 import { useTranslations } from "@/hooks/useTranslations";
 
+const FeatureIcon = ({ name }: { name: string }) => (
+  <Image src={`/icons/features/${name}.svg`} alt="" width={28} height={28} />
+);
+
 export const FeaturesSection = () => {
   const t = useTranslations();
 
@@ -25,32 +22,32 @@ export const FeaturesSection = () => {
     {
       title: t("features.lightning.title"),
       description: t("features.lightning.description"),
-      icon: <FaBolt size={24} />,
+      icon: <FeatureIcon name="instant-payments" />,
     },
     {
       title: t("features.selfcustody.title"),
       description: t("features.selfcustody.description"),
-      icon: <FaExchangeAlt size={24} />,
+      icon: <FeatureIcon name="self-custody" />,
     },
     {
       title: t("features.privacy.title"),
       description: t("features.privacy.description"),
-      icon: <FaUserSecret size={24} />,
+      icon: <FeatureIcon name="privacy" />,
     },
     {
       title: t("features.fees.title"),
       description: t("features.fees.description"),
-      icon: <FaMoneyBillWave size={24} />,
+      icon: <FeatureIcon name="low-fees" />,
     },
     {
       title: t("features.backup.title"),
       description: t("features.backup.description"),
-      icon: <FaCloudUploadAlt size={24} />,
+      icon: <FeatureIcon name="recovery-phrase" />,
     },
     {
       title: t("features.integration.title"),
       description: t("features.integration.description"),
-      icon: <FaEye size={24} />,
+      icon: <FeatureIcon name="integration" />,
     },
   ];
 

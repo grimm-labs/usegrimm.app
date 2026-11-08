@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import { HeroSection } from "./components/home/hero-section";
 import { FeaturesSection } from "./components/home/features-section";
+import { WalletFeaturesSection } from "./components/home/wallet-features-section";
 import { FAQPreview } from "./components/home/faq-preview";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./components/home/animated-section";
@@ -12,7 +13,7 @@ import { Modal } from "./components/modal";
 import { DownloadContent } from "./components/donwload-content";
 import { Donation } from "./components/donation";
 import { useTranslations } from "@/hooks/useTranslations";
-import { FaDownload, FaGithub, FaBitcoin } from "react-icons/fa";
+import { DownloadIcon, GithubIcon, BitcoinIcon } from "./components/icons";
 
 export default function Home() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
@@ -35,6 +36,9 @@ export default function Home() {
 
         {/* Features Section */}
         <FeaturesSection />
+
+        {/* Wallet features (from the mobile app README) */}
+        <WalletFeaturesSection />
 
         {/* FAQ Preview */}
         <FAQPreview />
@@ -72,7 +76,7 @@ export default function Home() {
                   onClick={openDownloadModal}
                   className="w-full sm:w-auto bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full text-white transition-colors font-medium flex items-center justify-center gap-3"
                 >
-                  <FaDownload />
+                  <DownloadIcon size={18} />
                   {t("common.download")}
                 </button>
 
@@ -82,7 +86,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-3 rounded-full transition-colors font-medium flex items-center justify-center gap-3"
                 >
-                  <FaGithub />
+                  <GithubIcon size={18} />
                   {t("common.contribute")}
                 </a>
 
@@ -90,7 +94,7 @@ export default function Home() {
                   onClick={openDonationModal}
                   className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full text-white transition-colors font-medium flex items-center justify-center gap-3"
                 >
-                  <FaBitcoin />
+                  <BitcoinIcon size={18} />
                   {t("common.donate")}
                 </button>
               </div>

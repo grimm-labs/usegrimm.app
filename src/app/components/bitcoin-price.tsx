@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaBitcoin, FaSync } from "react-icons/fa";
+import { BitcoinIcon, RefreshIcon } from "./icons";
 
 export const BitcoinPrice = () => {
   const [price, setPrice] = useState<number | null>(null);
@@ -61,7 +61,7 @@ export const BitcoinPrice = () => {
     >
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
-          <FaBitcoin className="text-2xl text-orange-500" />
+          <BitcoinIcon className="text-2xl text-orange-500" />
           <span className="text-gray-700 font-medium">BTC/USD</span>
         </div>
         <div className="flex items-center gap-3">
@@ -87,7 +87,7 @@ export const BitcoinPrice = () => {
             className="p-2 text-gray-500 hover:text-green-600 transition-colors disabled:opacity-50"
             aria-label="Refresh price"
           >
-            <FaSync className={loading ? "animate-spin" : ""} size={14} />
+            <RefreshIcon className={loading ? "animate-spin" : ""} size={16} />
           </button>
         </div>
       </div>

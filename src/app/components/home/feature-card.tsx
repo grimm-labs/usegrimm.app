@@ -24,7 +24,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
     >
       <div className="flex items-center gap-4 mb-6">
         <motion.div
-          className="p-4 bg-green-100 rounded-xl text-green-600"
+          className="p-3.5 bg-grimm-light rounded-xl"
           whileHover={{
             rotate: 5,
             scale: 1.1,

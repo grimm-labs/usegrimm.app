@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { IoIosCloseCircle } from "react-icons/io";
+import { CloseIcon } from "./icons";
 
 interface ModalProps {
   isOpen: boolean;
@@ -75,11 +75,14 @@ export const Modal: React.FC<ModalProps> = ({
         >
           {/* Close Button */}
           <div className="absolute top-2 right-2 z-10">
-            <IoIosCloseCircle
-              size={32}
+            <button
+              type="button"
               onClick={onClose}
-              className="text-red-500 cursor-pointer hover:text-red-600 transition-colors"
-            />
+              aria-label="Close"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors"
+            >
+              <CloseIcon size={18} />
+            </button>
           </div>
 
           {/* Modal Content */}

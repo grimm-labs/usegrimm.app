@@ -85,6 +85,66 @@
       "description": "Built on the trusted Breez infrastructure for seamless Lightning integration, reliability, and scalability."
     }
   },
+  "walletFeatures": {
+    "eyebrow": "Inside the app",
+    "title": "Everything you need to use Bitcoin every day",
+    "subtitle": "Pay, receive, stay secure: here's what you can do with Grimm App today.",
+    "groups": {
+      "payments": "Pay & receive",
+      "security": "Security & control",
+      "everyday": "Simple & private"
+    },
+    "items": {
+      "instantPayments": {
+        "title": "Instant Lightning payments",
+        "description": "Send and receive bitcoin in seconds over the Lightning Network, powered by Breez SDK Spark."
+      },
+      "lowFees": {
+        "title": "Tiny fees",
+        "description": "Fees typically under a penny, even when the Bitcoin network is congested."
+      },
+      "qrCode": {
+        "title": "QR codes",
+        "description": "Scan a QR code to pay, or show your own to get paid."
+      },
+      "units": {
+        "title": "Bitcoin or sats",
+        "description": "Display amounts in BTC or sats, whichever makes more sense to you."
+      },
+      "selfCustody": {
+        "title": "Your keys, your bitcoin",
+        "description": "Your private keys are generated on your phone and never leave it. No one else can touch your funds."
+      },
+      "secureStorage": {
+        "title": "Secure storage",
+        "description": "Your keys are protected by your device's secure storage: Keychain on iOS, Keystore on Android."
+      },
+      "recoveryPhrase": {
+        "title": "Recovery phrase",
+        "description": "A standard BIP39 recovery phrase to back up and restore your wallet."
+      },
+      "openSource": {
+        "title": "Open source",
+        "description": "All the code is public and auditable: anyone can check what the app does."
+      },
+      "history": {
+        "title": "Detailed history",
+        "description": "Find every transaction with all its details."
+      },
+      "balance": {
+        "title": "Real-time balance",
+        "description": "Your balance updates instantly with every payment."
+      },
+      "privacy": {
+        "title": "No KYC",
+        "description": "No identity checks, no personal data collected."
+      },
+      "simple": {
+        "title": "Easy to use",
+        "description": "A clean interface designed for beginners and experienced users alike."
+      }
+    }
+  },
   "testimonial": {
     "title": "Suitable for beginners and experts alike.",
     "quote": "I built this wallet so that it would offer all the advanced features I want, but also that my mom could use it without being confused.",
