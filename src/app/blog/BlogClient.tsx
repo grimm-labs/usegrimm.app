@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../components/header";
@@ -18,13 +18,11 @@ interface BlogClientProps {
 
 export default function BlogClient({ posts }: BlogClientProps) {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
-  const [visiblePosts, setVisiblePosts] = useState<BlogPostMetadata[]>([]);
   const [displayCount, setDisplayCount] = useState(9);
   const t = useTranslations();
 
-  useEffect(() => {
-    setVisiblePosts(posts.slice(0, displayCount));
-  }, [posts, displayCount]);
+  // Derived from props and state: no need to store it in its own state.
+  const visiblePosts = posts.slice(0, displayCount);
 
   const openDownloadModal = () => setIsDownloadModalOpen(true);
   const closeDownloadModal = () => setIsDownloadModalOpen(false);

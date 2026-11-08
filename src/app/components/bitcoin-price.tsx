@@ -1,40 +1,64 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { BitcoinIcon, RefreshIcon } from "./icons";
+
+const PRICE_URL =
+  "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd";
+const REFRESH_INTERVAL_MS = 60_000;
+
+async function fetchBitcoinPrice(): Promise<number> {
+  const response = await fetch(PRICE_URL);
+  if (!response.ok) throw new Error("Failed to fetch");
+  const data = await response.json();
+  return data.bitcoin.usd;
+}
 
 export const BitcoinPrice = () => {
   const [price, setPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+  // Incremented to request a new fetch (refresh button and timer).
+  const [refreshKey, setRefreshKey] = useState(0);
 
-  const fetchPrice = async () => {
-    try {
-      setLoading(true);
-      setError(false);
-      const response = await fetch(
-        "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
-      );
-      if (!response.ok) throw new Error("Failed to fetch");
-      const data = await response.json();
-      setPrice(data.bitcoin.usd);
-      setLastUpdated(new Date());
-    } catch (err) {
-      console.error("Error fetching Bitcoin price:", err);
-      setError(true);
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  // Fetch on mount and on each refresh. State is only updated in the
+  // promise callbacks, and a response that arrives after a newer request
+  // started is ignored.
   useEffect(() => {
-    fetchPrice();
-    // Rafraîchir toutes les 60 secondes
-    const interval = setInterval(fetchPrice, 60000);
-    return () => clearInterval(interval);
+    let cancelled = false;
+    fetchBitcoinPrice()
+      .then((value) => {
+        if (cancelled) return;
+        setPrice(value);
+        setLastUpdated(new Date());
+        setError(false);
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        console.error("Error fetching Bitcoin price:", err);
+        setError(true);
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [refreshKey]);
+
+  const refreshPrice = useCallback(() => {
+    setLoading(true);
+    setError(false);
+    setRefreshKey((key) => key + 1);
   }, []);
+
+  // Rafraîchir toutes les 60 secondes
+  useEffect(() => {
+    const interval = setInterval(refreshPrice, REFRESH_INTERVAL_MS);
+    return () => clearInterval(interval);
+  }, [refreshPrice]);
 
   const formatPrice = (value: number) => {
     return new Intl.NumberFormat("en-US", {
@@ -82,7 +106,7 @@ export const BitcoinPrice = () => {
             </>
           )}
           <button
-            onClick={fetchPrice}
+            onClick={refreshPrice}
             disabled={loading}
             className="p-2 text-gray-500 hover:text-green-600 transition-colors disabled:opacity-50"
             aria-label="Refresh price"
