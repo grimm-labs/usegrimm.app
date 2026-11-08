@@ -55,15 +55,15 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 md:py-16 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-72 h-72 bg-green-600/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-600/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       <div className="relative z-10">
         <AnimatedSection>
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.h2
-              className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
+              className="text-3xl md:text-4xl font-bold text-gray-800 mb-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -72,7 +72,7 @@ export const FeaturesSection = () => {
               {t("features.title")}
             </motion.h2>
             <motion.p
-              className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

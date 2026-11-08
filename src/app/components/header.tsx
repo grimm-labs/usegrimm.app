@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import logo from "@/app/assets/logo_19.png";
-import { BetaBadge } from "./beta-badge";
 import { LanguageSwitcher } from "./language-switcher";
 import { useTranslations } from "@/hooks/useTranslations";
 import { FaDownload } from "react-icons/fa";
@@ -28,15 +27,13 @@ export default function Header({ onDownloadClick }: HeaderProps) {
 
   return (
     <>
-      <BetaBadge />
-
       <header className="bg-transparent backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-3">
               <Link href={"/"} className="block text-green-600">
                 <span className="sr-only">Home</span>
-                <Image src={logo} alt="Grimm App" style={{ width: 150 }} />
+                <Image src={logo} alt="Grimm App" style={{ width: 120 }} />
               </Link>
             </div>
 

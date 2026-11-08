@@ -13,17 +13,17 @@ export const HeroSection = () => {
 
   return (
     <section className="pt-4 pb-8 md:py-12">
-      <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
-        <div className="flex-1 space-y-6 md:space-y-8 text-center lg:text-left">
-          <div className="space-y-4 md:space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 leading-8">
+      <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-10">
+        <div className="flex-1 space-y-5 md:space-y-6 text-center lg:text-left">
+          <div className="space-y-3 md:space-y-4">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-gray-800 leading-tight">
               {t("hero.title")}
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed">
               {t("hero.subtitle")}
             </p>
           </div>
-          <p className="text-lg md:text-xl text-gray-500">
+          <p className="text-base md:text-lg text-gray-500">
             {t("hero.startUsing")}
           </p>
           <div className="flex flex-row gap-4 justify-center lg:justify-start">
@@ -61,22 +61,24 @@ export const HeroSection = () => {
             <BitcoinPrice />
           </div>
         </div>
-        <div className="flex-1 relative max-w-md mt-6 lg:mt-0">
+        <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[420px] flex-shrink-0 mx-auto lg:mx-0 mt-6 lg:mt-0">
           <div className="relative z-10 rounded-3xl">
-            <div className="relative w-full max-h-[500px] md:max-h-[600px] transition-all duration-500 ease-in-out">
+            <div className="relative w-full max-h-[420px] sm:max-h-[450px] md:max-h-[480px] transition-all duration-500 ease-in-out">
               <Image
                 src={phoneImage}
                 alt="Grimm App mobile interface"
-                className="object-scale-down w-full h-auto"
-                style={{ height: 580 }}
+                className="object-contain w-full h-auto max-h-[420px] sm:max-h-[450px] md:max-h-[480px]"
+                width={1419}
+                height={2796}
+                priority
               />
             </div>
           </div>
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -top-6 -right-6 w-48 h-48 md:w-72 md:h-72 bg-green-600/10 rounded-full blur-lg animate-pulse-slow" />
-            <div className="absolute -bottom-6 -left-6 w-48 h-48 md:w-72 md:h-72 bg-orange-600/10 rounded-full blur-lg animate-pulse-slow" />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 border-2 border-green-600/90 rounded-full animate-ping-slow" />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:w-96 md:h-96 border border-green-600/80 rounded-full animate-ping-slower" />
+            <div className="absolute -top-5 -right-5 w-40 h-40 md:w-52 md:h-52 bg-green-600/10 rounded-full blur-lg animate-pulse-slow" />
+            <div className="absolute -bottom-5 -left-5 w-40 h-40 md:w-52 md:h-52 bg-orange-600/10 rounded-full blur-lg animate-pulse-slow" />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-52 h-52 md:w-64 md:h-64 border-2 border-green-600/90 rounded-full animate-ping-slow" />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-72 md:h-72 border border-green-600/80 rounded-full animate-ping-slower" />
           </div>
         </div>
       </div>

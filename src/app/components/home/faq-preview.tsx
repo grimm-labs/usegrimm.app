@@ -29,15 +29,15 @@ export const FAQPreview = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 md:py-16 relative overflow-hidden">
       <div className="absolute top-10 right-10 w-20 h-20 bg-green-600/10 rounded-full blur-xl" />
       <div className="absolute bottom-10 left-10 w-16 h-16 bg-orange-600/10 rounded-full blur-xl" />
 
       <div className="relative z-10">
         <AnimatedSection>
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.h2
-              className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
+              className="text-3xl md:text-4xl font-bold text-gray-800 mb-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -46,7 +46,7 @@ export const FAQPreview = () => {
               {t("faq.title")}
             </motion.h2>
             <motion.p
-              className="text-xl text-gray-600 max-w-2xl mx-auto"
+              className="text-lg text-gray-600 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -72,7 +72,7 @@ export const FAQPreview = () => {
                 y: -5,
                 transition: { duration: 0.2 },
               }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
             >
               <motion.h3
                 className="text-xl font-bold text-gray-800 mb-4"

@@ -34,7 +34,7 @@ export default function Footer() {
                 <div className="flex items-center">
                   <Link href={"/"} className="block text-green-600">
                     <span className="sr-only">{t("common.home")}</span>
-                    <Image src={logo} alt="Grimm Technologies" style={{ width: 150 }} />
+                    <Image src={logo} alt="Grimm Technologies" style={{ width: 120 }} />
                   </Link>
                 </div>
               </div>

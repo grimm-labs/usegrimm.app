@@ -41,14 +41,14 @@ export default function Home() {
 
         {/* CTA Final */}
         <AnimatedSection delay={0.3}>
-          <section className="py-12 md:py-20 text-center relative overflow-hidden">
+          <section className="py-12 md:py-16 text-center relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 h-48 md:w-64 md:h-64 bg-green-600/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-36 h-36 md:w-48 md:h-48 bg-orange-600/10 rounded-full blur-3xl" />
 
             <div className="relative z-10">
               <motion.h2
-                className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6"
+                className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -58,7 +58,7 @@ export default function Home() {
               </motion.h2>
 
               <motion.p
-                className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed"
+                className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
