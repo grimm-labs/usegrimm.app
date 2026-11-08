@@ -57,34 +57,6 @@
     "subtitle": "Focused on privacy, security and usability for day-to-day Bitcoin transactions.",
     "startUsing": "Start using Grimm App"
   },
-  "features": {
-    "title": "Wallet Features",
-    "subtitle": "Experience true Bitcoin sovereignty with a fully self-custodial Lightning wallet powered by Breez SDK.",
-    "lightning": {
-      "title": "Instant Lightning Payments",
-      "description": "Send and receive Bitcoin in seconds with Lightning. No channel management, no complexity, just fast, borderless payments."
-    },
-    "selfcustody": {
-      "title": "Full Self-Custody",
-      "description": "You control your keys, you control your Bitcoin. Enjoy complete financial independence with a non-custodial design."
-    },
-    "privacy": {
-      "title": "Enhanced Privacy",
-      "description": "Your data, your business. Enjoy private transactions and local wallet management without third-party tracking."
-    },
-    "fees": {
-      "title": "Smart Fee Optimization",
-      "description": "Let the wallet automatically select the best route and fee for your Lightning transactions, efficient and fair every time."
-    },
-    "backup": {
-      "title": "Seamless Backup & Recovery",
-      "description": "Secure your wallet with encrypted local backups. Restore anytime, anywhere, without compromising your keys."
-    },
-    "integration": {
-      "title": "Powered by Breez SDK",
-      "description": "Built on the trusted Breez infrastructure for seamless Lightning integration, reliability, and scalability."
-    }
-  },
   "walletFeatures": {
     "eyebrow": "Inside the app",
     "title": "Everything you need to use Bitcoin every day",

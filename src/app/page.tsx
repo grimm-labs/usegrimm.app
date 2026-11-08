@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { HeroSection } from "./components/home/hero-section";
-import { FeaturesSection } from "./components/home/features-section";
 import { WalletFeaturesSection } from "./components/home/wallet-features-section";
 import { FAQPreview } from "./components/home/faq-preview";
 import { motion } from "framer-motion";
@@ -33,9 +32,6 @@ export default function Home() {
       <main className="flex-1 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 md:py-8">
         {/* Hero Section */}
         <HeroSection />
-
-        {/* Features Section */}
-        <FeaturesSection />
 
         {/* Wallet features (from the mobile app README) */}
         <WalletFeaturesSection />

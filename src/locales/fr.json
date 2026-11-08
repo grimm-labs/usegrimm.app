@@ -56,34 +56,6 @@
     "subtitle": "Concentré sur la confidentialité, la sécurité et la facilité d'utilisation pour les transactions Bitcoin quotidiennes.",
     "startUsing": "Commencez à utiliser Grimm App"
   },
-  "features": {
-    "title": "Fonctionnalités du Portefeuille",
-    "subtitle": "Découvrez la véritable souveraineté Bitcoin avec un portefeuille Lightning entièrement self-custodial, propulsé par Breez SDK.",
-    "lightning": {
-      "title": "Paiements Lightning instantanés",
-      "description": "Envoyez et recevez des bitcoins en quelques secondes grâce à Lightning. Aucune gestion de canal, aucune complexité, uniquement des paiements rapides et sans frontières."
-    },
-    "selfcustody": {
-      "title": "Souveraineté totale",
-      "description": "Vos clés, vos bitcoins. Profitez d’une indépendance financière totale grâce à une conception non custodiale."
-    },
-    "privacy": {
-      "title": "Confidentialité renforcée",
-      "description": "Vos données vous appartiennent. Effectuez vos transactions en toute discrétion, sans suivi tiers."
-    },
-    "fees": {
-      "title": "Frais intelligents",
-      "description": "L’application choisit automatiquement la meilleure route et les frais les plus justes pour vos paiements Lightning."
-    },
-    "backup": {
-      "title": "Sauvegarde et restauration simplifiées",
-      "description": "Protégez votre portefeuille avec des sauvegardes chiffrées locales, et restaurez-le facilement à tout moment."
-    },
-    "integration": {
-      "title": "Propulsé par Breez SDK",
-      "description": "Construit sur l’infrastructure fiable de Breez pour une intégration Lightning fluide, performante et évolutive."
-    }
-  },
   "walletFeatures": {
     "eyebrow": "Dans l'application",
     "title": "Tout ce dont vous avez besoin pour utiliser Bitcoin au quotidien",
